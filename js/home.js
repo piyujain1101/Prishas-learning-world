@@ -361,4 +361,8 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+    var vocabStars = document.getElementById('vocabulary-stars');
+    if (vocabStars) {
+        vocabStars.textContent = '⭐ ' + Rewards.getStars('vocabulary');
+    }
 });

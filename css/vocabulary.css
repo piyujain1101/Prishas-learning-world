@@ -1,0 +1,246 @@
+/* ========================================
+   Vocabulary Module Styles
+   ======================================== */
+
+/* --- Vocab Card --- */
+.vocab-card-container {
+    width: 100%;
+    max-width: 320px;
+    margin-top: 20px;
+}
+
+.vocab-card {
+    background: white;
+    border-radius: 30px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+    animation: cardSlideIn 0.4s ease;
+}
+
+.vocab-visual {
+    font-size: 100px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vocab-word {
+    font-size: 36px;
+    font-weight: bold;
+    color: #2d3436;
+    margin-bottom: 5px;
+}
+
+.vocab-hint {
+    font-size: 16px;
+    color: #636e72;
+    line-height: 1.4;
+}
+
+/* --- Color swatch for color cards --- */
+.color-swatch {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+    border: 5px solid rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+/* --- Shape display --- */
+.shape-display {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* --- Quiz Visual Area --- */
+.vquiz-visual {
+    margin: 15px 0;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vquiz-target {
+    font-size: 80px;
+    animation: targetPop 0.5s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+
+/* --- Quiz Choices --- */
+.vquiz-choices {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 400px;
+    margin-top: 10px;
+}
+
+/* Color quiz buttons */
+.color-choice-btn {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 5px solid white;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    transition: all 0.2s;
+}
+
+.color-choice-btn:active {
+    transform: scale(0.9);
+}
+
+.color-choice-btn.correct {
+    border-color: #4CAF50;
+    box-shadow: 0 0 25px rgba(76,175,80,0.5);
+    animation: correctBounce 0.5s ease;
+}
+
+.color-choice-btn.wrong {
+    border-color: #333;
+    opacity: 0.4;
+    animation: wrongShake 0.5s ease;
+}
+
+.color-choice-btn.disabled {
+    pointer-events: none;
+}
+
+.color-choice-btn.hint {
+    border-color: #FFD93D;
+    box-shadow: 0 0 25px rgba(255,217,61,0.5);
+    animation: hintPulse 1s ease-in-out infinite;
+}
+
+/* Shape quiz buttons */
+.shape-choice-btn {
+    width: 100px;
+    height: 100px;
+    border: 4px solid white;
+    background: white;
+    border-radius: 20px;
+    font-size: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shape-choice-btn:active {
+    transform: scale(0.9);
+}
+
+.shape-choice-btn.correct {
+    background: #6BCB77;
+    border-color: #4CAF50;
+    animation: correctBounce 0.5s ease;
+}
+
+.shape-choice-btn.wrong {
+    background: #FF6B6B;
+    border-color: #e74c3c;
+    animation: wrongShake 0.5s ease;
+}
+
+.shape-choice-btn.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.shape-choice-btn.hint {
+    border-color: #FFD93D;
+    box-shadow: 0 0 20px rgba(255,217,61,0.5);
+    animation: hintPulse 1s ease-in-out infinite;
+}
+
+/* Animal quiz buttons */
+.animal-choice-btn {
+    width: 90px;
+    height: 100px;
+    border: 4px solid white;
+    background: white;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    transition: all 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
+
+.animal-choice-btn .animal-emoji {
+    font-size: 40px;
+}
+
+.animal-choice-btn .animal-name {
+    font-size: 12px;
+    font-weight: bold;
+    color: #636e72;
+}
+
+.animal-choice-btn:active {
+    transform: scale(0.9);
+}
+
+.animal-choice-btn.correct {
+    background: #6BCB77;
+    border-color: #4CAF50;
+    animation: correctBounce 0.5s ease;
+}
+
+.animal-choice-btn.wrong {
+    background: #FF6B6B;
+    border-color: #e74c3c;
+    animation: wrongShake 0.5s ease;
+}
+
+.animal-choice-btn.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.animal-choice-btn.hint {
+    border-color: #FFD93D;
+    box-shadow: 0 0 20px rgba(255,217,61,0.5);
+}
+
+/* --- Animal sound display --- */
+.animal-sound-display {
+    background: rgba(255,255,255,0.2);
+    padding: 15px 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+}
+
+.animal-sound-text {
+    font-size: 28px;
+    color: white;
+    font-weight: bold;
+}
+
+@keyframes hintPulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+}
+
+/* --- Responsive --- */
+@media (max-width: 360px) {
+    .vocab-visual { font-size: 80px; min-height: 100px; }
+    .vocab-word { font-size: 28px; }
+    .color-choice-btn { width: 65px; height: 65px; }
+    .shape-choice-btn { width: 80px; height: 80px; font-size: 40px; }
+}
