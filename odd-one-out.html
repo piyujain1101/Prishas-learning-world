@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#6C5CE7">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦕</text></svg>">
+    <title>Odd One Out - Prisha's Learning World 🦕</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/phonics.css">
+    <link rel="stylesheet" href="css/matching.css">
+    <link rel="stylesheet" href="css/odd-one-out.css">
+</head>
+<body>
+    <button class="back-button" onclick="navigateTo('games.html')">🏠</button>
+    <div class="star-counter" id="star-counter">⭐ 0</div>
+
+    <div id="app">
+        <!-- Intro Screen -->
+        <div id="ooo-intro" class="screen active">
+            <div class="stars-bg"></div>
+
+            <div class="intro-content">
+                <div class="intro-mascot">🦕</div>
+                <h1 class="intro-title">Odd One Out!</h1>
+                <p class="intro-desc">
+                    One of these is <strong>different!</strong><br>
+                    Can you find it? 🤔
+                </p>
+
+                <div class="ooo-demo">
+                    <div class="demo-item">🍎</div>
+                    <div class="demo-item">🍎</div>
+                    <div class="demo-item demo-odd">🐱</div>
+                </div>
+                <p class="ooo-demo-label">🐱 is not a fruit!</p>
+
+                <button class="big-button btn-primary" onclick="startOddOneOut()">
+                    Let's Play! 🎮
+                </button>
+
+                <div class="intro-difficulty">
+                    <p class="diff-label">Choose difficulty:</p>
+                    <div class="diff-buttons">
+                        <button class="diff-btn active" id="ooo-diff-easy" onclick="setOooDifficulty('easy')">
+                            🌟 Easy<br><small>3 items</small>
+                        </button>
+                        <button class="diff-btn" id="ooo-diff-medium" onclick="setOooDifficulty('medium')">
+                            ⭐ Medium<br><small>4 items</small>
+                        </button>
+                        <button class="diff-btn" id="ooo-diff-hard" onclick="setOooDifficulty('hard')">
+                            🏆 Hard<br><small>5 items</small>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Game Screen -->
+        <div id="ooo-game" class="screen">
+            <div class="game-progress">
+                <div class="game-progress-bar">
+                    <div class="game-progress-fill" id="ooo-progress-fill"></div>
+                </div>
+                <div class="game-round-text" id="ooo-round-text"></div>
+            </div>
+
+            <div class="game-prompt">
+                <div class="prompt-dino">🦕</div>
+                <div class="prompt-text" id="ooo-prompt-text"></div>
+            </div>
+
+            <!-- Category hint -->
+            <div class="ooo-category-hint" id="ooo-category-hint"></div>
+
+            <!-- Items -->
+            <div class="ooo-items-container" id="ooo-items-container"></div>
+
+            <!-- Feedback -->
+            <div class="feedback-area" id="ooo-feedback"></div>
+
+            <!-- Teaching moment -->
+            <div class="teaching-moment" id="ooo-teaching"></div>
+
+            <!-- Score -->
+            <div class="game-score">
+                <span class="score-correct" id="ooo-score-correct">✅ 0</span>
+                <span class="score-wrong" id="ooo-score-wrong">❌ 0</span>
+            </div>
+        </div>
+
+        <!-- Results Screen -->
+        <div id="ooo-results" class="screen">
+            <div class="stars-bg"></div>
+
+            <div class="results-content">
+                <div class="results-mascot" id="ooo-results-mascot"></div>
+                <h1 class="results-title" id="ooo-results-title"></h1>
+                <div class="results-score">
+                    <div class="results-stars-display" id="ooo-results-stars"></div>
+                    <p class="results-text" id="ooo-results-text"></p>
+                </div>
+
+                <div class="results-review" id="ooo-results-review"></div>
+
+                <div class="results-buttons">
+                    <button class="big-button btn-primary" onclick="startOddOneOut()">
+                        Play Again! 🎮
+                    </button>
+                    <button class="big-button btn-secondary" onclick="navigateTo('games.html')">
+                        Back to Games 🏠
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/speech.js"></script>
+    <script src="js/odd-one-out.js"></script>
+</body>
+</html>

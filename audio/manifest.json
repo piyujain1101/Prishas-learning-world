@@ -519,5 +519,50 @@
         "path": "audio/vocabulary/instructions/keep_practicing_vocab.mp3"
       }
     ]
+  },
+  "game_instructions": [
+    {
+      "id": "find_the_different",
+      "path": "audio/games/instructions/find_the_different.mp3"
+    },
+    {
+      "id": "which_one_different",
+      "path": "audio/games/instructions/which_one_different.mp3"
+    },
+    {
+      "id": "great_thinking",
+      "path": "audio/games/instructions/great_thinking.mp3"
+    },
+    {
+      "id": "keep_trying",
+      "path": "audio/games/instructions/keep_trying.mp3"
+    },
+    {
+      "id": "odd_one_out_intro",
+      "path": "audio/games/instructions/odd_one_out_intro.mp3"
+    }
+  ],
+  "game_explanations": {
+    "cat_is_an_animal_not_a_fruit": "audio/games/explanations/cat_is_an_animal_not_a_fruit.mp3",
+    "dog_is_an_animal_not_a_fruit": "audio/games/explanations/dog_is_an_animal_not_a_fruit.mp3",
+    "flower_is_a_plant_not_a_fruit": "audio/games/explanations/flower_is_a_plant_not_a_fruit.mp3",
+    "car_is_a_vehicle_not_an_animal": "audio/games/explanations/car_is_a_vehicle_not_an_animal.mp3",
+    "star_is_in_the_sky_not_an_animal": "audio/games/explanations/star_is_in_the_sky_not_an_animal.mp3",
+    "pizza_is_food_not_an_animal": "audio/games/explanations/pizza_is_food_not_an_animal.mp3",
+    "blue_is_different_from_all_the_red_ones": "audio/games/explanations/blue_is_different_from_all_the_red_ones.mp3",
+    "yellow_is_different_from_all_the_green_ones": "audio/games/explanations/yellow_is_different_from_all_the_green_ones.mp3",
+    "orange_is_different_from_all_the_purple_ones": "audio/games/explanations/orange_is_different_from_all_the_purple_ones.mp3",
+    "brown_is_different_from_all_the_pink_ones": "audio/games/explanations/brown_is_different_from_all_the_pink_ones.mp3",
+    "triangle_has_3_sides_circles_are_round": "audio/games/explanations/triangle_has_3_sides_circles_are_round.mp3",
+    "heart_is_different_from_all_the_stars": "audio/games/explanations/heart_is_different_from_all_the_stars.mp3",
+    "circle_is_round_squares_have_straight_sides": "audio/games/explanations/circle_is_round_squares_have_straight_sides.mp3",
+    "mouse_is_tiny_elephants_are_big": "audio/games/explanations/mouse_is_tiny_elephants_are_big.mp3",
+    "teddy_bear_is_a_toy_not_food": "audio/games/explanations/teddy_bear_is_a_toy_not_food.mp3",
+    "ball_is_a_toy_not_food": "audio/games/explanations/ball_is_a_toy_not_food.mp3",
+    "fish_swims_in_water_it_cannot_fly": "audio/games/explanations/fish_swims_in_water_it_cannot_fly.mp3",
+    "lion_lives_on_land_not_in_water": "audio/games/explanations/lion_lives_on_land_not_in_water.mp3",
+    "elephant_is_an_animal_not_a_vehicle": "audio/games/explanations/elephant_is_an_animal_not_a_vehicle.mp3",
+    "moon_is_different_from_all_the_stars": "audio/games/explanations/moon_is_different_from_all_the_stars.mp3",
+    "dog_is_different_from_all_the_cats": "audio/games/explanations/dog_is_different_from_all_the_cats.mp3"
   }
 }

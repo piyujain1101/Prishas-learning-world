@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#6C5CE7">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦕</text></svg>">
+    <title>Games - Prisha's Learning World 🦕</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/phonics.css">
+</head>
+<body>
+    <button class="back-button" onclick="navigateTo('index.html')">🏠</button>
+    <div class="star-counter" id="star-counter">⭐ 0</div>
+
+    <div id="app">
+        <!-- Games Menu -->
+        <div id="games-menu" class="screen active">
+            <div class="stars-bg"></div>
+
+            <div class="phonics-header">
+                <div class="dino-small">🦕</div>
+                <h1 class="phonics-title">Fun Games!</h1>
+                <p class="phonics-subtitle">Play and learn with Dino!</p>
+            </div>
+
+            <div class="phonics-options">
+                <div class="phonics-option-card" onclick="navigateTo('odd-one-out.html')">
+                    <div class="option-icon">🎨</div>
+                    <div class="option-title">Odd One Out</div>
+                    <div class="option-desc">Which one is different?</div>
+                    <div class="option-progress">New!</div>
+                </div>
+
+                <div class="phonics-option-card locked-module" style="opacity:0.5; pointer-events:none;">
+                    <div class="option-icon">🧩</div>
+                    <div class="option-title">Memory Match</div>
+                    <div class="option-desc">Find the matching pairs!</div>
+                    <div class="option-progress">Coming Soon!</div>
+                </div>
+
+                <div class="phonics-option-card locked-module" style="opacity:0.5; pointer-events:none;">
+                    <div class="option-icon">🫧</div>
+                    <div class="option-title">Pop the Bubbles</div>
+                    <div class="option-desc">Pop the right bubbles!</div>
+                    <div class="option-progress">Coming Soon!</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/speech.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var el = document.getElementById('star-counter');
+            if (el) el.textContent = '⭐ ' + Rewards.getStars('games');
+        });
+    </script>
+</body>
+</html>

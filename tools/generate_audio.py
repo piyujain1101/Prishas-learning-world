@@ -13,7 +13,41 @@ import asyncio
 import argparse
 import random
 from pathlib import Path
+# ========================================
+# GAME AUDIO DATA
+# ========================================
 
+GAME_INSTRUCTIONS = [
+    {"id": "find_the_different", "text": "Find the one that's different, Prisha!"},
+    {"id": "which_one_different", "text": "Which one is different?"},
+    {"id": "great_thinking", "text": "Great thinking, Prisha!"},
+    {"id": "keep_trying", "text": "Keep trying, Prisha! You can do it!"},
+    {"id": "odd_one_out_intro", "text": "One of these doesn't belong. Can you find it?"},
+]
+
+GAME_EXPLANATIONS = [
+    {"id": "cat_is_an_animal_not_a_fruit", "text": "Cat is an animal, not a fruit!"},
+    {"id": "dog_is_an_animal_not_a_fruit", "text": "Dog is an animal, not a fruit!"},
+    {"id": "flower_is_a_plant_not_a_fruit", "text": "Flower is a plant, not a fruit!"},
+    {"id": "car_is_a_vehicle_not_an_animal", "text": "Car is a vehicle, not an animal!"},
+    {"id": "star_is_in_the_sky_not_an_animal", "text": "Star is in the sky, not an animal!"},
+    {"id": "pizza_is_food_not_an_animal", "text": "Pizza is food, not an animal!"},
+    {"id": "blue_is_different_from_all_the_red_ones", "text": "Blue is different from all the red ones!"},
+    {"id": "yellow_is_different_from_all_the_green_ones", "text": "Yellow is different from all the green ones!"},
+    {"id": "orange_is_different_from_all_the_purple_ones", "text": "Orange is different from all the purple ones!"},
+    {"id": "brown_is_different_from_all_the_pink_ones", "text": "Brown is different from all the pink ones!"},
+    {"id": "triangle_has_3_sides_circles_are_round", "text": "Triangle has 3 sides, circles are round!"},
+    {"id": "heart_is_different_from_all_the_stars", "text": "Heart is different from all the stars!"},
+    {"id": "circle_is_round_squares_have_straight_sides", "text": "Circle is round, squares have straight sides!"},
+    {"id": "mouse_is_tiny_elephants_are_big", "text": "Mouse is tiny, elephants are big!"},
+    {"id": "teddy_bear_is_a_toy_not_food", "text": "Teddy Bear is a toy, not food!"},
+    {"id": "ball_is_a_toy_not_food", "text": "Ball is a toy, not food!"},
+    {"id": "fish_swims_in_water_it_cannot_fly", "text": "Fish swims in water, it cannot fly!"},
+    {"id": "lion_lives_on_land_not_in_water", "text": "Lion lives on land, not in water!"},
+    {"id": "elephant_is_an_animal_not_a_vehicle", "text": "Elephant is an animal, not a vehicle!"},
+    {"id": "moon_is_different_from_all_the_stars", "text": "Moon is different from all the stars!"},
+    {"id": "dog_is_different_from_all_the_cats", "text": "Dog is different from all the cats!"},
+]
 # --- Letter audio data ---
 LETTERS_DATA = [
     {"letter": "A", "phonics": "aah", "word": "Apple", "sentence": "A is for Apple"},
@@ -191,11 +225,12 @@ def setup_dirs():
         "vocabulary/animals/words", "vocabulary/animals/sentences",
         "vocabulary/animals/sounds",
         "vocabulary/instructions",
+        "games/instructions",        # ADD
+        "games/explanations",        # ADD
     ]
     for d in dirs:
         (AUDIO_DIR / d).mkdir(parents=True, exist_ok=True)
     print("✅ Created audio directories")
-
 
 def file_exists(filepath):
     """Check if file exists and is not empty"""
@@ -228,7 +263,7 @@ async def generate_edge_tts(text, filepath, voice="en-US-AnaNeural", rate="-10%"
 
 
 async def section_pause(name):
-    wait = random.uniform(5, 8)
+    wait = random.uniform(1, 3)
     print(f"\n   ⏳ Pausing {wait:.0f}s before {name}...")
     await asyncio.sleep(wait)
 
@@ -522,7 +557,35 @@ async def generate_all_edge():
         await generate_edge_tts(item["text"], filepath, voice, rate_normal, pitch)
         total += 1
         print(f"   ✅ {item['text']}")
+    await section_pause("game instructions")
 
+    # 15. Game instructions
+    print("🎮 Generating game instructions...")
+    for item in GAME_INSTRUCTIONS:
+        filepath = AUDIO_DIR / "games" / "instructions" / f"{item['id']}.mp3"
+        if file_exists(filepath):
+            print(f"   ⏭️  {item['text']} (exists)")
+            skipped += 1
+            total += 1
+            continue
+        await generate_edge_tts(item["text"], filepath, voice, rate_normal, pitch)
+        total += 1
+        print(f"   ✅ {item['text']}")
+
+    await section_pause("game explanations")
+
+    # 16. Game explanations
+    print("🎮 Generating game explanations...")
+    for item in GAME_EXPLANATIONS:
+        filepath = AUDIO_DIR / "games" / "explanations" / f"{item['id']}.mp3"
+        if file_exists(filepath):
+            print(f"   ⏭️  {item['text']} (exists)")
+            skipped += 1
+            total += 1
+            continue
+        await generate_edge_tts(item["text"], filepath, voice, rate_normal, pitch)
+        total += 1
+        print(f"   ✅ {item['text']}")
     print(f"\n🎉 Done! Generated {total} files ({skipped} skipped, {total - skipped} new)")
 
 
@@ -598,6 +661,18 @@ def generate_audio_manifest():
             "id": item["id"],
             "path": f"audio/vocabulary/instructions/{item['id']}.mp3"
         })
+
+    # Games
+    manifest["game_instructions"] = []
+    for item in GAME_INSTRUCTIONS:
+        manifest["game_instructions"].append({
+            "id": item["id"],
+            "path": f"audio/games/instructions/{item['id']}.mp3"
+        })
+
+    manifest["game_explanations"] = {}
+    for item in GAME_EXPLANATIONS:
+        manifest["game_explanations"][item["id"]] = f"audio/games/explanations/{item['id']}.mp3"
 
     manifest_path = AUDIO_DIR / "manifest.json"
     with open(manifest_path, 'w') as f:

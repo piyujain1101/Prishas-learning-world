@@ -1,0 +1,194 @@
+/* ========================================
+   Odd One Out Game Styles
+   ======================================== */
+
+/* --- Demo on Intro --- */
+.ooo-demo {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.demo-item {
+    width: 80px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 45px;
+    backdrop-filter: blur(5px);
+}
+
+.demo-odd {
+    border: 3px solid #FFD93D;
+    box-shadow: 0 0 20px rgba(255, 217, 61, 0.4);
+    animation: hintPulse 1.5s ease-in-out infinite;
+}
+
+.ooo-demo-label {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 20px;
+}
+
+/* --- Category Hint --- */
+.ooo-category-hint {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.1);
+    padding: 6px 18px;
+    border-radius: 15px;
+    margin-top: 10px;
+    min-height: 28px;
+    text-align: center;
+}
+
+/* --- Items Container --- */
+.ooo-items-container {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 420px;
+    margin-top: 25px;
+}
+
+/* --- Item Card --- */
+.ooo-item-card {
+    width: 100px;
+    height: 120px;
+    background: white;
+    border: 4px solid white;
+    border-radius: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    cursor: pointer;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    transition: all 0.2s ease;
+    animation: itemPopIn 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55) backwards;
+}
+
+.ooo-item-card:nth-child(1) { animation-delay: 0.0s; }
+.ooo-item-card:nth-child(2) { animation-delay: 0.1s; }
+.ooo-item-card:nth-child(3) { animation-delay: 0.2s; }
+.ooo-item-card:nth-child(4) { animation-delay: 0.3s; }
+.ooo-item-card:nth-child(5) { animation-delay: 0.4s; }
+
+@keyframes itemPopIn {
+    0% { transform: scale(0) rotate(-10deg); opacity: 0; }
+    100% { transform: scale(1) rotate(0deg); opacity: 1; }
+}
+
+.ooo-item-card:active {
+    transform: scale(0.92);
+}
+
+.ooo-item-emoji {
+    font-size: 50px;
+    line-height: 1;
+}
+
+.ooo-item-label {
+    font-size: 12px;
+    font-weight: bold;
+    color: #636e72;
+    text-align: center;
+    line-height: 1.2;
+}
+
+/* --- Item States --- */
+.ooo-item-card.correct {
+    background: #6BCB77;
+    border-color: #4CAF50;
+    animation: correctBounce 0.5s ease;
+    box-shadow: 0 0 25px rgba(107, 203, 119, 0.5);
+}
+
+.ooo-item-card.correct .ooo-item-label {
+    color: white;
+}
+
+.ooo-item-card.wrong {
+    background: #FF6B6B;
+    border-color: #e74c3c;
+    animation: wrongShake 0.5s ease;
+}
+
+.ooo-item-card.wrong .ooo-item-label {
+    color: white;
+}
+
+.ooo-item-card.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.ooo-item-card.dimmed {
+    pointer-events: none;
+    opacity: 0.4;
+    transform: scale(0.9);
+    transition: all 0.3s ease;
+}
+
+.ooo-item-card.hint {
+    border-color: #FFD93D;
+    box-shadow: 0 0 25px rgba(255, 217, 61, 0.5);
+    animation: hintPulse 1s ease-in-out infinite;
+}
+
+/* --- Color swatch items --- */
+.ooo-color-swatch {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 3px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Teaching moment override for this game --- */
+#ooo-teaching {
+    min-height: 50px;
+    margin-top: 10px;
+    text-align: center;
+    max-width: 380px;
+}
+
+#ooo-teaching .teaching-msg {
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+/* --- Responsive --- */
+@media (max-width: 360px) {
+    .ooo-item-card {
+        width: 85px;
+        height: 100px;
+    }
+    .ooo-item-emoji {
+        font-size: 40px;
+    }
+    .ooo-item-label {
+        font-size: 11px;
+    }
+    .demo-item {
+        width: 65px;
+        height: 65px;
+        font-size: 35px;
+    }
+}
+
+@media (max-height: 700px) {
+    .ooo-items-container {
+        margin-top: 15px;
+    }
+    .ooo-item-card {
+        width: 90px;
+        height: 105px;
+    }
+}

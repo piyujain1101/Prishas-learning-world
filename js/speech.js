@@ -560,6 +560,75 @@ const AudioManager = {
             'keep_practicing_vocab': "Keep practicing, Prisha! You're learning so many words!"
         };
         Speech.speak(fallback[id] || id, 0.9, 1.1);
+    },
+    // =============================================
+    // GAME AUDIO METHODS
+    // =============================================
+
+    // --- Play game instruction ---
+    playGameInstruction: function(id) {
+        var self = this;
+        if (this.isLoaded && this.audioManifest.game_instructions) {
+            var instruction = null;
+            for (var i = 0; i < this.audioManifest.game_instructions.length; i++) {
+                if (this.audioManifest.game_instructions[i].id === id) {
+                    instruction = this.audioManifest.game_instructions[i];
+                    break;
+                }
+            }
+            if (instruction) {
+                return this.play(instruction.path)
+                    .catch(function() {
+                        console.warn('Game instruction MP3 failed for ' + id);
+                        self._speakGameInstructionFallback(id);
+                    });
+            }
+        }
+        this._speakGameInstructionFallback(id);
+        return Promise.resolve();
+    },
+
+    // --- Play game explanation (dynamic text — uses TTS with MP3 cache attempt) ---
+playGameExplanation: function(text) {
+        var self = this;
+
+        // Convert explanation text to a lookup ID
+        var explanationId = text.toLowerCase()
+            .replace(/[^a-z0-9\s]/g, '')
+            .replace(/\s+/g, '_')
+            .substring(0, 60);
+
+        if (this.isLoaded && this.audioManifest.game_explanations &&
+            this.audioManifest.game_explanations[explanationId]) {
+            return this.play(this.audioManifest.game_explanations[explanationId])
+                .catch(function() {
+                    console.warn('Game explanation MP3 failed for: ' + explanationId);
+                    Speech.speak(text, 0.85, 1.1);
+                    var wordCount = text.split(' ').length;
+                    return new Promise(function(resolve) {
+                        setTimeout(resolve, Math.max(2000, wordCount * 350));
+                    });
+                });
+        }
+
+        // Fallback to TTS
+        Speech.speak(text, 0.85, 1.1);
+        var wordCount = text.split(' ').length;
+        var duration = Math.max(2000, wordCount * 350);
+        return new Promise(function(resolve) {
+            setTimeout(resolve, duration);
+        });
+    },
+    // --- Game instruction TTS fallbacks ---
+    _speakGameInstructionFallback: function(id) {
+        var fallback = {
+            'find_the_different': "Find the one that's different, Prisha!",
+            'which_one_different': 'Which one is different?',
+            'great_thinking': 'Great thinking, Prisha!',
+            'keep_trying': 'Keep trying, Prisha! You can do it!',
+            'odd_one_out_intro': "One of these doesn't belong. Can you find it?"
+        };
+        Speech.speak(fallback[id] || id, 0.9, 1.1);
     }
 };
 
