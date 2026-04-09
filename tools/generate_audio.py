@@ -110,6 +110,63 @@ for i in range(1, 11):
         "text": f"{words}!"
     })
 
+# ========================================
+# VOCABULARY AUDIO DATA
+# ========================================
+
+COLORS_AUDIO = [
+    {"id": "red",    "word": "Red",    "sentence": "Red! Red like an apple!"},
+    {"id": "blue",   "word": "Blue",   "sentence": "Blue! Blue like the ocean!"},
+    {"id": "yellow", "word": "Yellow", "sentence": "Yellow! Yellow like the sun!"},
+    {"id": "green",  "word": "Green",  "sentence": "Green! Green like a frog!"},
+    {"id": "orange", "word": "Orange", "sentence": "Orange! Orange like an orange!"},
+    {"id": "purple", "word": "Purple", "sentence": "Purple! Purple like grapes!"},
+    {"id": "pink",   "word": "Pink",   "sentence": "Pink! Pink like a flamingo!"},
+    {"id": "brown",  "word": "Brown",  "sentence": "Brown! Brown like a bear!"},
+    {"id": "black",  "word": "Black",  "sentence": "Black! Black like the night!"},
+    {"id": "white",  "word": "White",  "sentence": "White! White like a cloud!"},
+]
+
+SHAPES_AUDIO = [
+    {"id": "circle",    "word": "Circle",    "sentence": "Circle! A circle is round like a ball!"},
+    {"id": "square",    "word": "Square",    "sentence": "Square! A square has 4 equal sides!"},
+    {"id": "triangle",  "word": "Triangle",  "sentence": "Triangle! A triangle has 3 sides!"},
+    {"id": "star",      "word": "Star",      "sentence": "Star! A star has 5 points!"},
+    {"id": "heart",     "word": "Heart",     "sentence": "Heart! A heart means love!"},
+    {"id": "diamond",   "word": "Diamond",   "sentence": "Diamond! A diamond has 4 pointy sides!"},
+    {"id": "rectangle", "word": "Rectangle", "sentence": "Rectangle! A rectangle is like a long square!"},
+    {"id": "oval",      "word": "Oval",      "sentence": "Oval! An oval is like a stretched circle!"},
+]
+
+ANIMALS_AUDIO = [
+    {"id": "cat",      "word": "Cat",      "sound": "Meow!",    "sentence": "Cat! A cat says meow!"},
+    {"id": "dog",      "word": "Dog",      "sound": "Woof!",    "sentence": "Dog! A dog says woof!"},
+    {"id": "cow",      "word": "Cow",      "sound": "Moo!",     "sentence": "Cow! A cow says moo!"},
+    {"id": "duck",     "word": "Duck",     "sound": "Quack!",   "sentence": "Duck! A duck says quack!"},
+    {"id": "pig",      "word": "Pig",      "sound": "Oink!",    "sentence": "Pig! A pig says oink!"},
+    {"id": "sheep",    "word": "Sheep",    "sound": "Baa!",     "sentence": "Sheep! A sheep says baa!"},
+    {"id": "horse",    "word": "Horse",    "sound": "Neigh!",   "sentence": "Horse! A horse says neigh!"},
+    {"id": "lion",     "word": "Lion",     "sound": "Roar!",    "sentence": "Lion! A lion says roar!"},
+    {"id": "frog",     "word": "Frog",     "sound": "Ribbit!",  "sentence": "Frog! A frog says ribbit!"},
+    {"id": "chicken",  "word": "Chicken",  "sound": "Cluck!",   "sentence": "Chicken! A chicken says cluck!"},
+    {"id": "bird",     "word": "Bird",     "sound": "Tweet!",   "sentence": "Bird! A bird says tweet!"},
+    {"id": "monkey",   "word": "Monkey",   "sound": "Ooh ooh!", "sentence": "Monkey! A monkey says ooh ooh ah ah!"},
+    {"id": "elephant", "word": "Elephant", "sound": "Trumpet!", "sentence": "Elephant! An elephant makes a trumpet sound!"},
+    {"id": "snake",    "word": "Snake",    "sound": "Hiss!",    "sentence": "Snake! A snake says hiss!"},
+    {"id": "bee",      "word": "Bee",      "sound": "Buzz!",    "sentence": "Bee! A bee says buzz!"},
+]
+
+VOCAB_INSTRUCTIONS = [
+    {"id": "lets_learn_colors",  "text": "Let's learn colors, Prisha!"},
+    {"id": "lets_learn_shapes",  "text": "Let's learn shapes, Prisha!"},
+    {"id": "lets_learn_animals", "text": "Let's learn animals, Prisha!"},
+    {"id": "find_the_color",     "text": "Find the right color, Prisha!"},
+    {"id": "find_the_shape",     "text": "Find the right shape, Prisha!"},
+    {"id": "what_animal_sound",  "text": "What animal makes this sound, Prisha?"},
+    {"id": "this_is",            "text": "This is"},
+    {"id": "keep_practicing_vocab", "text": "Keep practicing, Prisha! You're learning so many words!"},
+]
+
 AUDIO_DIR = Path("../audio")
 
 def get_phonics_speech_text(letter, phonics):
@@ -128,7 +185,12 @@ def setup_dirs():
         "letters", "phonics", "words", "sentences",
         "celebrations", "instructions",
         "numbers/names", "numbers/sentences",
-        "numbers/counting", "numbers/instructions"
+        "numbers/counting", "numbers/instructions",
+        "vocabulary/colors/words", "vocabulary/colors/sentences",
+        "vocabulary/shapes/words", "vocabulary/shapes/sentences",
+        "vocabulary/animals/words", "vocabulary/animals/sentences",
+        "vocabulary/animals/sounds",
+        "vocabulary/instructions",
     ]
     for d in dirs:
         (AUDIO_DIR / d).mkdir(parents=True, exist_ok=True)
@@ -172,7 +234,7 @@ async def section_pause(name):
 
 
 async def generate_all_edge():
-    print("🔊 Generating audio with Edge TTS (Ana Neural voice)...")
+    print("🎙 Generating audio with Edge TTS (Ana Neural voice)...")
     print("   Skipping files that already exist.\n")
 
     voice = "en-US-AnaNeural"
@@ -199,7 +261,7 @@ async def generate_all_edge():
     await section_pause("phonics sounds")
 
     # 2. Phonics sounds
-    print("📝 Generating phonics sounds...")
+    print("🔊 Generating phonics sounds...")
     for item in LETTERS_DATA:
         letter = item["letter"]
         filepath = AUDIO_DIR / "phonics" / f"{letter.lower()}.mp3"
@@ -216,7 +278,7 @@ async def generate_all_edge():
     await section_pause("example words")
 
     # 3. Example words
-    print("📝 Generating example words...")
+    print("📖 Generating example words...")
     for item in LETTERS_DATA:
         letter = item["letter"]
         filepath = AUDIO_DIR / "words" / f"{letter.lower()}.mp3"
@@ -232,7 +294,7 @@ async def generate_all_edge():
     await section_pause("sentences")
 
     # 4. Full sentences
-    print("📝 Generating sentences...")
+    print("💬 Generating sentences...")
     for item in LETTERS_DATA:
         letter = item["letter"]
         filepath = AUDIO_DIR / "sentences" / f"{letter.lower()}.mp3"
@@ -248,7 +310,7 @@ async def generate_all_edge():
     await section_pause("celebrations")
 
     # 5. Celebrations
-    print("📝 Generating celebrations...")
+    print("🎉 Generating celebrations...")
     for item in CELEBRATIONS:
         filepath = AUDIO_DIR / "celebrations" / f"{item['id']}.mp3"
         if file_exists(filepath):
@@ -263,7 +325,7 @@ async def generate_all_edge():
     await section_pause("instructions")
 
     # 6. Instructions
-    print("📝 Generating instructions...")
+    print("🗣 Generating instructions...")
     for item in INSTRUCTIONS:
         filepath = AUDIO_DIR / "instructions" / f"{item['id']}.mp3"
         if file_exists(filepath):
@@ -278,7 +340,7 @@ async def generate_all_edge():
     await section_pause("number names")
 
     # 7. Number names
-    print("📝 Generating number names...")
+    print("🔢 Generating number names...")
     for item in NUMBERS_DATA_AUDIO:
         num = item["num"]
         filepath = AUDIO_DIR / "numbers" / "names" / f"{num}.mp3"
@@ -294,7 +356,7 @@ async def generate_all_edge():
     await section_pause("number sentences")
 
     # 8. Number sentences
-    print("📝 Generating number sentences...")
+    print("💬 Generating number sentences...")
     for item in NUMBERS_DATA_AUDIO:
         num = item["num"]
         filepath = AUDIO_DIR / "numbers" / "sentences" / f"{num}.mp3"
@@ -310,7 +372,7 @@ async def generate_all_edge():
     await section_pause("counting sequences")
 
     # 9. Counting sequences
-    print("📝 Generating counting sequences...")
+    print("🔢 Generating counting sequences...")
     for item in COUNTING_SEQUENCES:
         filepath = AUDIO_DIR / "numbers" / "counting" / f"{item['id']}.mp3"
         if file_exists(filepath):
@@ -325,9 +387,133 @@ async def generate_all_edge():
     await section_pause("number instructions")
 
     # 10. Number instructions
-    print("📝 Generating number instructions...")
+    print("🗣 Generating number instructions...")
     for item in NUMBERS_INSTRUCTIONS:
         filepath = AUDIO_DIR / "numbers" / "instructions" / f"{item['id']}.mp3"
+        if file_exists(filepath):
+            print(f"   ⏭️  {item['text']} (exists)")
+            skipped += 1
+            total += 1
+            continue
+        await generate_edge_tts(item["text"], filepath, voice, rate_normal, pitch)
+        total += 1
+        print(f"   ✅ {item['text']}")
+
+    await section_pause("vocabulary - color words")
+
+    # ========================================
+    # 11. VOCABULARY - Colors
+    # ========================================
+    print("🎨 Generating color words...")
+    for item in COLORS_AUDIO:
+        filepath = AUDIO_DIR / "vocabulary" / "colors" / "words" / f"{item['id']}.mp3"
+        if file_exists(filepath):
+            print(f"   ⏭️  {item['word']} (exists)")
+            skipped += 1
+            total += 1
+            continue
+        await generate_edge_tts(item["word"], filepath, voice, rate_normal, pitch)
+        total += 1
+        print(f"   ✅ {item['word']}")
+
+    await section_pause("color sentences")
+
+    print("🎨 Generating color sentences...")
+    for item in COLORS_AUDIO:
+        filepath = AUDIO_DIR / "vocabulary" / "colors" / "sentences" / f"{item['id']}.mp3"
+        if file_exists(filepath):
+            print(f"   ⏭️  {item['sentence']} (exists)")
+            skipped += 1
+            total += 1
+            continue
+        await generate_edge_tts(item["sentence"], filepath, voice, rate_normal, pitch)
+        total += 1
+        print(f"   ✅ {item['sentence']}")
+
+    await section_pause("vocabulary - shape words")
+
+    # ========================================
+    # 12. VOCABULARY - Shapes
+    # ========================================
+    print("🔷 Generating shape words...")
+    for item in SHAPES_AUDIO:
+        filepath = AUDIO_DIR / "vocabulary" / "shapes" / "words" / f"{item['id']}.mp3"
+        if file_exists(filepath):
+            print(f"   ⏭️  {item['word']} (exists)")
+            skipped += 1
+            total += 1
+            continue
+        await generate_edge_tts(item["word"], filepath, voice, rate_normal, pitch)
+        total += 1
+        print(f"   ✅ {item['word']}")
+
+    await section_pause("shape sentences")
+
+    print("🔷 Generating shape sentences...")
+    for item in SHAPES_AUDIO:
+        filepath = AUDIO_DIR / "vocabulary" / "shapes" / "sentences" / f"{item['id']}.mp3"
+        if file_exists(filepath):
+            print(f"   ⏭️  {item['sentence']} (exists)")
+            skipped += 1
+            total += 1
+            continue
+        await generate_edge_tts(item["sentence"], filepath, voice, rate_normal, pitch)
+        total += 1
+        print(f"   ✅ {item['sentence']}")
+
+    await section_pause("vocabulary - animal words")
+
+    # ========================================
+    # 13. VOCABULARY - Animals
+    # ========================================
+    print("🐾 Generating animal words...")
+    for item in ANIMALS_AUDIO:
+        filepath = AUDIO_DIR / "vocabulary" / "animals" / "words" / f"{item['id']}.mp3"
+        if file_exists(filepath):
+            print(f"   ⏭️  {item['word']} (exists)")
+            skipped += 1
+            total += 1
+            continue
+        await generate_edge_tts(item["word"], filepath, voice, rate_normal, pitch)
+        total += 1
+        print(f"   ✅ {item['word']}")
+
+    await section_pause("animal sounds")
+
+    print("🐾 Generating animal sounds...")
+    for item in ANIMALS_AUDIO:
+        filepath = AUDIO_DIR / "vocabulary" / "animals" / "sounds" / f"{item['id']}.mp3"
+        if file_exists(filepath):
+            print(f"   ⏭️  {item['sound']} (exists)")
+            skipped += 1
+            total += 1
+            continue
+        await generate_edge_tts(item["sound"], filepath, voice, "-5%", "+12Hz")
+        total += 1
+        print(f"   ✅ {item['sound']}")
+
+    await section_pause("animal sentences")
+
+    print("🐾 Generating animal sentences...")
+    for item in ANIMALS_AUDIO:
+        filepath = AUDIO_DIR / "vocabulary" / "animals" / "sentences" / f"{item['id']}.mp3"
+        if file_exists(filepath):
+            print(f"   ⏭️  {item['sentence']} (exists)")
+            skipped += 1
+            total += 1
+            continue
+        await generate_edge_tts(item["sentence"], filepath, voice, rate_normal, pitch)
+        total += 1
+        print(f"   ✅ {item['sentence']}")
+
+    await section_pause("vocabulary instructions")
+
+    # ========================================
+    # 14. VOCABULARY - Instructions
+    # ========================================
+    print("🗣 Generating vocabulary instructions...")
+    for item in VOCAB_INSTRUCTIONS:
+        filepath = AUDIO_DIR / "vocabulary" / "instructions" / f"{item['id']}.mp3"
         if file_exists(filepath):
             print(f"   ⏭️  {item['text']} (exists)")
             skipped += 1
@@ -342,7 +528,13 @@ async def generate_all_edge():
 
 def generate_audio_manifest():
     manifest = {"letters": {}, "celebrations": [], "instructions": [],
-                "numbers": {}, "counting": {}, "number_instructions": []}
+                "numbers": {}, "counting": {}, "number_instructions": [],
+                "vocabulary": {
+                    "colors": {},
+                    "shapes": {},
+                    "animals": {},
+                    "instructions": []
+                }}
 
     for item in LETTERS_DATA:
         letter = item["letter"].lower()
@@ -378,6 +570,35 @@ def generate_audio_manifest():
             "path": f"audio/numbers/instructions/{item['id']}.mp3"
         })
 
+    # Vocabulary - Colors
+    for item in COLORS_AUDIO:
+        manifest["vocabulary"]["colors"][item["id"]] = {
+            "word": f"audio/vocabulary/colors/words/{item['id']}.mp3",
+            "sentence": f"audio/vocabulary/colors/sentences/{item['id']}.mp3",
+        }
+
+    # Vocabulary - Shapes
+    for item in SHAPES_AUDIO:
+        manifest["vocabulary"]["shapes"][item["id"]] = {
+            "word": f"audio/vocabulary/shapes/words/{item['id']}.mp3",
+            "sentence": f"audio/vocabulary/shapes/sentences/{item['id']}.mp3",
+        }
+
+    # Vocabulary - Animals
+    for item in ANIMALS_AUDIO:
+        manifest["vocabulary"]["animals"][item["id"]] = {
+            "word": f"audio/vocabulary/animals/words/{item['id']}.mp3",
+            "sound": f"audio/vocabulary/animals/sounds/{item['id']}.mp3",
+            "sentence": f"audio/vocabulary/animals/sentences/{item['id']}.mp3",
+        }
+
+    # Vocabulary - Instructions
+    for item in VOCAB_INSTRUCTIONS:
+        manifest["vocabulary"]["instructions"].append({
+            "id": item["id"],
+            "path": f"audio/vocabulary/instructions/{item['id']}.mp3"
+        })
+
     manifest_path = AUDIO_DIR / "manifest.json"
     with open(manifest_path, 'w') as f:
         json.dump(manifest, f, indent=2)
@@ -392,7 +613,7 @@ def main():
     setup_dirs()
 
     if args.method == 'edge':
-        print("\n🌟 Using Edge TTS (Microsoft Ana Neural)")
+        print("\n🎤 Using Edge TTS (Microsoft Ana Neural)")
         print("   With retry logic and rate limit protection\n")
         asyncio.run(generate_all_edge())
 

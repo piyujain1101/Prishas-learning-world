@@ -447,6 +447,119 @@ const AudioManager = {
             'keep_practicing': 'Keep practicing, Prisha! You can do it!'
         };
         Speech.speak(fallback[id] || id, 0.9, 1.1);
+    },
+    // =============================================
+    // VOCABULARY PLAYBACK METHODS
+    // =============================================
+
+    // --- Play vocabulary word (color name, shape name, animal name) ---
+    playVocabWord: function(type, id) {
+        var self = this;
+        id = id.toLowerCase();
+        if (this.isLoaded && this.audioManifest.vocabulary &&
+            this.audioManifest.vocabulary[type] &&
+            this.audioManifest.vocabulary[type][id]) {
+            return this.play(this.audioManifest.vocabulary[type][id].word)
+                .catch(function() {
+                    console.warn('MP3 failed for vocab word ' + type + '/' + id + ', using TTS');
+                    self._speakVocabFallback(id);
+                });
+        }
+        this._speakVocabFallback(id);
+        return Promise.resolve();
+    },
+
+    // --- Play vocabulary sentence ---
+    playVocabSentence: function(type, id) {
+        var self = this;
+        id = id.toLowerCase();
+        if (this.isLoaded && this.audioManifest.vocabulary &&
+            this.audioManifest.vocabulary[type] &&
+            this.audioManifest.vocabulary[type][id]) {
+            return this.play(this.audioManifest.vocabulary[type][id].sentence)
+                .catch(function() {
+                    console.warn('MP3 failed for vocab sentence ' + type + '/' + id + ', using TTS');
+                    self._speakVocabFallback(id);
+                });
+        }
+        this._speakVocabFallback(id);
+        return Promise.resolve();
+    },
+
+    // --- Play animal sound ("Meow!", "Woof!", etc.) ---
+    playAnimalSound: function(id) {
+        var self = this;
+        id = id.toLowerCase();
+        if (this.isLoaded && this.audioManifest.vocabulary &&
+            this.audioManifest.vocabulary.animals &&
+            this.audioManifest.vocabulary.animals[id]) {
+            return this.play(this.audioManifest.vocabulary.animals[id].sound)
+                .catch(function() {
+                    console.warn('MP3 failed for animal sound ' + id + ', using TTS');
+                    Speech.speak(id, 0.8, 1.1);
+                });
+        }
+        Speech.speak(id, 0.8, 1.1);
+        return Promise.resolve();
+    },
+
+    // --- Play vocabulary instruction ---
+    playVocabInstruction: function(id) {
+        var self = this;
+        if (this.isLoaded && this.audioManifest.vocabulary &&
+            this.audioManifest.vocabulary.instructions) {
+            var instruction = null;
+            for (var i = 0; i < this.audioManifest.vocabulary.instructions.length; i++) {
+                if (this.audioManifest.vocabulary.instructions[i].id === id) {
+                    instruction = this.audioManifest.vocabulary.instructions[i];
+                    break;
+                }
+            }
+            if (instruction) {
+                return this.play(instruction.path)
+                    .catch(function() {
+                        console.warn('Vocab instruction MP3 failed for ' + id);
+                        self._speakVocabInstructionFallback(id);
+                    });
+            }
+        }
+        this._speakVocabInstructionFallback(id);
+        return Promise.resolve();
+    },
+
+    // --- Preload vocabulary audio for a category ---
+    preloadVocabCategory: function(type) {
+        if (!this.isLoaded || !this.audioManifest.vocabulary ||
+            !this.audioManifest.vocabulary[type]) return;
+        var category = this.audioManifest.vocabulary[type];
+        var ids = Object.keys(category);
+        for (var i = 0; i < Math.min(ids.length, 5); i++) {
+            var item = category[ids[i]];
+            if (item.word) this.preload(item.word);
+            if (item.sentence) this.preload(item.sentence);
+            if (item.sound) this.preload(item.sound);
+        }
+    },
+
+    // --- Vocab TTS Fallbacks ---
+    _speakVocabFallback: function(id) {
+        // Capitalize first letter
+        var word = id.charAt(0).toUpperCase() + id.slice(1);
+        Speech.speak(word, 0.8, 1.1);
+    },
+
+    _speakVocabInstructionFallback: function(id) {
+        var fallback = {
+            'lets_learn_colors': "Let's learn colors, Prisha!",
+            'lets_learn_shapes': "Let's learn shapes, Prisha!",
+            'lets_learn_animals': "Let's learn animals, Prisha!",
+            'find_the_color': 'Find the right color, Prisha!',
+            'find_the_shape': 'Find the right shape, Prisha!',
+            'what_animal_sound': 'What animal makes this sound, Prisha?',
+            'this_is': 'This is',
+            'keep_practicing_vocab': "Keep practicing, Prisha! You're learning so many words!"
+        };
+        Speech.speak(fallback[id] || id, 0.9, 1.1);
     }
 };
 

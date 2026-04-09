@@ -49,7 +49,7 @@
                 </div>
 
                 <div class="phonics-option-card" onclick="startShapeQuiz()">
-                    <div class="option-icon">⭕</div>
+                    <div class="option-icon">⭐</div>
                     <div class="option-title">Shape Quiz</div>
                     <div class="option-desc">Find the right shape!</div>
                     <div class="option-progress">Fun!</div>
@@ -76,13 +76,13 @@
             <div class="explorer-progress-bar">
                 <div class="progress-fill" id="vocab-progress-fill"></div>
             </div>
-            <div class="explorer-counter" id="vocab-counter">1 of 10</div>
+            <div class="explorer-counter" id="vocab-counter"></div>
 
             <div class="vocab-card-container">
                 <div class="vocab-card" id="vocab-card">
-                    <div class="vocab-visual" id="vocab-visual">🔴</div>
-                    <div class="vocab-word" id="vocab-word">Red</div>
-                    <div class="vocab-hint" id="vocab-hint">This is the color red!</div>
+                    <div class="vocab-visual" id="vocab-visual"></div>
+                    <div class="vocab-word" id="vocab-word"></div>
+                    <div class="vocab-hint" id="vocab-hint"></div>
                 </div>
             </div>
 
@@ -99,15 +99,15 @@
 
             <div class="dino-says" id="vocab-dino-says">
                 <span class="dino-says-icon">🦕</span>
-                <span class="dino-says-text" id="vocab-dino-text">Tap to hear the word!</span>
+                <span class="dino-says-text" id="vocab-dino-text"></span>
             </div>
 
             <div class="nav-buttons">
-                <button class="nav-btn nav-prev" id="vocab-btn-prev" onclick="prevVocabCard()">◀️ Prev</button>
+                <button class="nav-btn nav-prev" id="vocab-btn-prev" onclick="prevVocabCard()">⏪ Prev</button>
                 <button class="nav-btn nav-next" id="vocab-btn-next" onclick="nextVocabCard()">Next ▶️</button>
             </div>
 
-            <button class="back-to-menu" onclick="showVocabMenu()">📋 Back to Word World</button>
+            <button class="back-to-menu" onclick="showVocabMenu()">🏠 Back to Word World</button>
         </div>
 
         <!-- Quiz Screen (shared) -->
@@ -116,12 +116,12 @@
                 <div class="game-progress-bar">
                     <div class="game-progress-fill" id="vquiz-progress-fill"></div>
                 </div>
-                <div class="game-round-text" id="vquiz-round-text">Round 1 of 10</div>
+                <div class="game-round-text" id="vquiz-round-text"></div>
             </div>
 
             <div class="game-prompt">
                 <div class="prompt-dino">🦕</div>
-                <div class="prompt-text" id="vquiz-prompt">Find the red one!</div>
+                <div class="prompt-text" id="vquiz-prompt"></div>
             </div>
 
             <!-- Quiz visual area (changes per quiz type) -->
@@ -142,15 +142,15 @@
         <div id="vocab-results" class="screen">
             <div class="stars-bg"></div>
             <div class="results-content">
-                <div class="results-mascot" id="vocab-results-mascot">🦕</div>
-                <h1 class="results-title" id="vocab-results-title">Great Job!</h1>
+                <div class="results-mascot" id="vocab-results-mascot"></div>
+                <h1 class="results-title" id="vocab-results-title"></h1>
                 <div class="results-score">
                     <div class="results-stars-display" id="vocab-results-stars"></div>
                     <p class="results-text" id="vocab-results-text"></p>
                 </div>
                 <div class="results-buttons">
-                    <button class="big-button btn-primary" id="vocab-play-again-btn">Play Again! 🔄</button>
-                    <button class="big-button btn-secondary" onclick="showVocabMenu()">Back to Word World 📋</button>
+                    <button class="big-button btn-primary" id="vocab-play-again-btn">Play Again! 🎮</button>
+                    <button class="big-button btn-secondary" onclick="showVocabMenu()">Back to Word World 🏠</button>
                 </div>
             </div>
         </div>

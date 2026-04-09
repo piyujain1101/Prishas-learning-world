@@ -330,5 +330,194 @@
       "id": "keep_practicing",
       "path": "audio/numbers/instructions/keep_practicing.mp3"
     }
-  ]
+  ],
+  "vocabulary": {
+    "colors": {
+      "red": {
+        "word": "audio/vocabulary/colors/words/red.mp3",
+        "sentence": "audio/vocabulary/colors/sentences/red.mp3"
+      },
+      "blue": {
+        "word": "audio/vocabulary/colors/words/blue.mp3",
+        "sentence": "audio/vocabulary/colors/sentences/blue.mp3"
+      },
+      "yellow": {
+        "word": "audio/vocabulary/colors/words/yellow.mp3",
+        "sentence": "audio/vocabulary/colors/sentences/yellow.mp3"
+      },
+      "green": {
+        "word": "audio/vocabulary/colors/words/green.mp3",
+        "sentence": "audio/vocabulary/colors/sentences/green.mp3"
+      },
+      "orange": {
+        "word": "audio/vocabulary/colors/words/orange.mp3",
+        "sentence": "audio/vocabulary/colors/sentences/orange.mp3"
+      },
+      "purple": {
+        "word": "audio/vocabulary/colors/words/purple.mp3",
+        "sentence": "audio/vocabulary/colors/sentences/purple.mp3"
+      },
+      "pink": {
+        "word": "audio/vocabulary/colors/words/pink.mp3",
+        "sentence": "audio/vocabulary/colors/sentences/pink.mp3"
+      },
+      "brown": {
+        "word": "audio/vocabulary/colors/words/brown.mp3",
+        "sentence": "audio/vocabulary/colors/sentences/brown.mp3"
+      },
+      "black": {
+        "word": "audio/vocabulary/colors/words/black.mp3",
+        "sentence": "audio/vocabulary/colors/sentences/black.mp3"
+      },
+      "white": {
+        "word": "audio/vocabulary/colors/words/white.mp3",
+        "sentence": "audio/vocabulary/colors/sentences/white.mp3"
+      }
+    },
+    "shapes": {
+      "circle": {
+        "word": "audio/vocabulary/shapes/words/circle.mp3",
+        "sentence": "audio/vocabulary/shapes/sentences/circle.mp3"
+      },
+      "square": {
+        "word": "audio/vocabulary/shapes/words/square.mp3",
+        "sentence": "audio/vocabulary/shapes/sentences/square.mp3"
+      },
+      "triangle": {
+        "word": "audio/vocabulary/shapes/words/triangle.mp3",
+        "sentence": "audio/vocabulary/shapes/sentences/triangle.mp3"
+      },
+      "star": {
+        "word": "audio/vocabulary/shapes/words/star.mp3",
+        "sentence": "audio/vocabulary/shapes/sentences/star.mp3"
+      },
+      "heart": {
+        "word": "audio/vocabulary/shapes/words/heart.mp3",
+        "sentence": "audio/vocabulary/shapes/sentences/heart.mp3"
+      },
+      "diamond": {
+        "word": "audio/vocabulary/shapes/words/diamond.mp3",
+        "sentence": "audio/vocabulary/shapes/sentences/diamond.mp3"
+      },
+      "rectangle": {
+        "word": "audio/vocabulary/shapes/words/rectangle.mp3",
+        "sentence": "audio/vocabulary/shapes/sentences/rectangle.mp3"
+      },
+      "oval": {
+        "word": "audio/vocabulary/shapes/words/oval.mp3",
+        "sentence": "audio/vocabulary/shapes/sentences/oval.mp3"
+      }
+    },
+    "animals": {
+      "cat": {
+        "word": "audio/vocabulary/animals/words/cat.mp3",
+        "sound": "audio/vocabulary/animals/sounds/cat.mp3",
+        "sentence": "audio/vocabulary/animals/sentences/cat.mp3"
+      },
+      "dog": {
+        "word": "audio/vocabulary/animals/words/dog.mp3",
+        "sound": "audio/vocabulary/animals/sounds/dog.mp3",
+        "sentence": "audio/vocabulary/animals/sentences/dog.mp3"
+      },
+      "cow": {
+        "word": "audio/vocabulary/animals/words/cow.mp3",
+        "sound": "audio/vocabulary/animals/sounds/cow.mp3",
+        "sentence": "audio/vocabulary/animals/sentences/cow.mp3"
+      },
+      "duck": {
+        "word": "audio/vocabulary/animals/words/duck.mp3",
+        "sound": "audio/vocabulary/animals/sounds/duck.mp3",
+        "sentence": "audio/vocabulary/animals/sentences/duck.mp3"
+      },
+      "pig": {
+        "word": "audio/vocabulary/animals/words/pig.mp3",
+        "sound": "audio/vocabulary/animals/sounds/pig.mp3",
+        "sentence": "audio/vocabulary/animals/sentences/pig.mp3"
+      },
+      "sheep": {
+        "word": "audio/vocabulary/animals/words/sheep.mp3",
+        "sound": "audio/vocabulary/animals/sounds/sheep.mp3",
+        "sentence": "audio/vocabulary/animals/sentences/sheep.mp3"
+      },
+      "horse": {
+        "word": "audio/vocabulary/animals/words/horse.mp3",
+        "sound": "audio/vocabulary/animals/sounds/horse.mp3",
+        "sentence": "audio/vocabulary/animals/sentences/horse.mp3"
+      },
+      "lion": {
+        "word": "audio/vocabulary/animals/words/lion.mp3",
+        "sound": "audio/vocabulary/animals/sounds/lion.mp3",
+        "sentence": "audio/vocabulary/animals/sentences/lion.mp3"
+      },
+      "frog": {
+        "word": "audio/vocabulary/animals/words/frog.mp3",
+        "sound": "audio/vocabulary/animals/sounds/frog.mp3",
+        "sentence": "audio/vocabulary/animals/sentences/frog.mp3"
+      },
+      "chicken": {
+        "word": "audio/vocabulary/animals/words/chicken.mp3",
+        "sound": "audio/vocabulary/animals/sounds/chicken.mp3",
+        "sentence": "audio/vocabulary/animals/sentences/chicken.mp3"
+      },
+      "bird": {
+        "word": "audio/vocabulary/animals/words/bird.mp3",
+        "sound": "audio/vocabulary/animals/sounds/bird.mp3",
+        "sentence": "audio/vocabulary/animals/sentences/bird.mp3"
+      },
+      "monkey": {
+        "word": "audio/vocabulary/animals/words/monkey.mp3",
+        "sound": "audio/vocabulary/animals/sounds/monkey.mp3",
+        "sentence": "audio/vocabulary/animals/sentences/monkey.mp3"
+      },
+      "elephant": {
+        "word": "audio/vocabulary/animals/words/elephant.mp3",
+        "sound": "audio/vocabulary/animals/sounds/elephant.mp3",
+        "sentence": "audio/vocabulary/animals/sentences/elephant.mp3"
+      },
+      "snake": {
+        "word": "audio/vocabulary/animals/words/snake.mp3",
+        "sound": "audio/vocabulary/animals/sounds/snake.mp3",
+        "sentence": "audio/vocabulary/animals/sentences/snake.mp3"
+      },
+      "bee": {
+        "word": "audio/vocabulary/animals/words/bee.mp3",
+        "sound": "audio/vocabulary/animals/sounds/bee.mp3",
+        "sentence": "audio/vocabulary/animals/sentences/bee.mp3"
+      }
+    },
+    "instructions": [
+      {
+        "id": "lets_learn_colors",
+        "path": "audio/vocabulary/instructions/lets_learn_colors.mp3"
+      },
+      {
+        "id": "lets_learn_shapes",
+        "path": "audio/vocabulary/instructions/lets_learn_shapes.mp3"
+      },
+      {
+        "id": "lets_learn_animals",
+        "path": "audio/vocabulary/instructions/lets_learn_animals.mp3"
+      },
+      {
+        "id": "find_the_color",
+        "path": "audio/vocabulary/instructions/find_the_color.mp3"
+      },
+      {
+        "id": "find_the_shape",
+        "path": "audio/vocabulary/instructions/find_the_shape.mp3"
+      },
+      {
+        "id": "what_animal_sound",
+        "path": "audio/vocabulary/instructions/what_animal_sound.mp3"
+      },
+      {
+        "id": "this_is",
+        "path": "audio/vocabulary/instructions/this_is.mp3"
+      },
+      {
+        "id": "keep_practicing_vocab",
+        "path": "audio/vocabulary/instructions/keep_practicing_vocab.mp3"
+      }
+    ]
+  }
 }
