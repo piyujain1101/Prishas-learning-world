@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#6C5CE7">
+    <title>Letter Match - Prisha's Learning World 🦕</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/phonics.css">
+    <link rel="stylesheet" href="css/matching.css">
+</head>
+<body>
+    <!-- Back Button -->
+    <button class="back-button" onclick="navigateTo('phonics.html')">🏠</button>
+
+    <!-- Star Counter -->
+    <div class="star-counter" id="star-counter">⭐ 0</div>
+
+    <div id="app">
+        <!-- Game Intro Screen -->
+        <div id="match-intro" class="screen active">
+            <div class="stars-bg"></div>
+
+            <div class="intro-content">
+                <div class="intro-mascot">🦕</div>
+                <h1 class="intro-title">Letter Match!</h1>
+                <p class="intro-desc">
+                    Every uppercase letter has a<br>
+                    <strong>lowercase friend!</strong><br>
+                    Can you find them?
+                </p>
+
+                <div class="intro-example">
+                    <div class="example-pair">
+                        <span class="example-upper">A</span>
+                        <span class="example-arrow">→</span>
+                        <span class="example-lower">a</span>
+                    </div>
+                    <div class="example-pair">
+                        <span class="example-upper">B</span>
+                        <span class="example-arrow">→</span>
+                        <span class="example-lower">b</span>
+                    </div>
+                </div>
+
+                <button class="big-button btn-primary" onclick="startGame()">
+                    Let's Play! 🎮
+                </button>
+
+                <div class="intro-difficulty">
+                    <p class="diff-label">Choose difficulty:</p>
+                    <div class="diff-buttons">
+                        <button class="diff-btn active" id="diff-easy" onclick="setDifficulty('easy')">
+                            🌟 Easy<br><small>3 choices</small>
+                        </button>
+                        <button class="diff-btn" id="diff-medium" onclick="setDifficulty('medium')">
+                            ⭐ Medium<br><small>4 choices</small>
+                        </button>
+                        <button class="diff-btn" id="diff-hard" onclick="setDifficulty('hard')">
+                            🏆 Hard<br><small>5 choices</small>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Game Play Screen -->
+        <div id="match-game" class="screen">
+            <!-- Round Progress -->
+            <div class="game-progress">
+                <div class="game-progress-bar">
+                    <div class="game-progress-fill" id="game-progress-fill"></div>
+                </div>
+                <div class="game-round-text" id="game-round-text">Round 1 of 10</div>
+            </div>
+
+            <!-- Dino Prompt -->
+            <div class="game-prompt">
+                <div class="prompt-dino">🦕</div>
+                <div class="prompt-text" id="prompt-text">Find the lowercase friend!</div>
+            </div>
+
+            <!-- Uppercase Letter Display -->
+            <div class="target-letter-container">
+                <div class="target-letter" id="target-letter">B</div>
+                <div class="target-label">Find my lowercase friend!</div>
+            </div>
+
+            <!-- Answer Choices -->
+            <div class="choices-container" id="choices-container">
+                <!-- Choices will be dynamically generated -->
+            </div>
+
+            <!-- Feedback Area -->
+            <div class="feedback-area" id="feedback-area"></div>
+
+            <!-- Score Display -->
+            <div class="game-score">
+                <span class="score-correct" id="score-correct">✅ 0</span>
+                <span class="score-wrong" id="score-wrong">❌ 0</span>
+            </div>
+        </div>
+
+        <!-- Game Results Screen -->
+        <div id="match-results" class="screen">
+            <div class="stars-bg"></div>
+
+            <div class="results-content">
+                <div class="results-mascot" id="results-mascot">🦕</div>
+                <h1 class="results-title" id="results-title">Great Job!</h1>
+                <div class="results-score" id="results-score">
+                    <div class="results-stars-display" id="results-stars-display"></div>
+                    <p class="results-text" id="results-text"></p>
+                </div>
+
+                <!-- Show which letters were tricky -->
+                <div class="results-review" id="results-review"></div>
+
+                <div class="results-buttons">
+                    <button class="big-button btn-primary" onclick="startGame()">
+                        Play Again! 🔄
+                    </button>
+                    <button class="big-button btn-secondary" onclick="navigateTo('phonics.html')">
+                        Back to Phonics 📋
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/speech.js"></script>
+    <script src="js/matching.js"></script>
+</body>
+</html>

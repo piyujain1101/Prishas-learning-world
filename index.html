@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#6C5CE7">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="images/icon-192.png">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦕</text></svg>">
+    <title>Prisha's Learning World 🦕</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Loading Screen -->
+        <div id="loading-screen" class="loading-screen">
+            <div class="loading-dino">🦕</div>
+            <div class="loading-text">Loading...</div>
+            <div class="loading-bar">
+                <div class="loading-fill"></div>
+            </div>
+        </div>
+
+        <!-- Home Screen -->
+        <div id="home-screen" class="screen">
+            <div class="stars-bg"></div>
+
+            <!-- Screen Time Banner -->
+            <div class="timer-banner" id="timer-banner">
+                <span class="timer-icon">⏱️</span>
+                <span class="timer-text" id="timer-text">20:00</span>
+            </div>
+
+            <div class="welcome-section">
+                <div class="mascot-container">
+                    <div class="dino-mascot" id="dino">🦕</div>
+                </div>
+                <h1 class="app-title">
+                    <span class="letter-pop" style="--delay: 0.1s; color: #FF6B6B;">P</span>
+                    <span class="letter-pop" style="--delay: 0.2s; color: #FFA502;">r</span>
+                    <span class="letter-pop" style="--delay: 0.3s; color: #FFD93D;">i</span>
+                    <span class="letter-pop" style="--delay: 0.4s; color: #6BCB77;">s</span>
+                    <span class="letter-pop" style="--delay: 0.5s; color: #4D96FF;">h</span>
+                    <span class="letter-pop" style="--delay: 0.6s; color: #9B59B6;">a</span>
+                    <span class="letter-pop" style="--delay: 0.7s; color: #FF6B6B;">'</span>
+                    <span class="letter-pop" style="--delay: 0.8s; color: #FFA502;">s</span>
+                </h1>
+                <h2 class="subtitle">Learning World 🌍</h2>
+                <p class="greeting" id="greeting">Hi Prisha! Ready to learn?</p>
+            </div>
+
+            <div class="modules-grid">
+                <!-- Phonics Module - Active -->
+                <div class="module-card active-module" onclick="navigateTo('phonics.html')">
+                    <div class="module-icon">🔤</div>
+                    <div class="module-name">Phonics</div>
+                    <div class="module-stars" id="phonics-stars">⭐ 0</div>
+                </div>
+
+                <!-- Numbers Module - Active -->
+                <div class="module-card active-module" onclick="navigateTo('numbers.html')">
+                    <div class="module-icon">🔢</div>
+                    <div class="module-name">Numbers</div>
+                    <div class="module-stars" id="numbers-stars">⭐ 0</div>
+                </div>
+
+                <!-- Vocabulary Module - Coming Soon -->
+                <div class="module-card locked-module">
+                    <div class="module-icon">📖</div>
+                    <div class="module-name">Words</div>
+                    <div class="module-badge">Coming Soon!</div>
+                </div>
+
+                <!-- Games Module - Coming Soon -->
+                <div class="module-card locked-module">
+                    <div class="module-icon">🎮</div>
+                    <div class="module-name">Games</div>
+                    <div class="module-badge">Coming Soon!</div>
+                </div>
+            </div>
+
+            <!-- Sticker Collection Preview -->
+            <div class="sticker-preview" onclick="showStickers()">
+                <span class="sticker-preview-label">🦕 My Stickers:</span>
+                <span class="sticker-preview-count" id="sticker-count">0</span>
+                <span class="sticker-preview-arrow">→</span>
+            </div>
+
+            <div class="total-stars-bar">
+                <span>🌟 Total Stars: <strong id="total-stars">0</strong></span>
+            </div>
+
+            <!-- Parent Lock Button -->
+            <button class="parent-btn" onclick="showParentLock()">
+                🔒 Parent
+            </button>
+        </div>
+
+        <!-- Sticker Collection Screen -->
+        <div id="sticker-screen" class="screen">
+            <div class="stars-bg"></div>
+            <button class="back-button" onclick="hideStickers()">🏠</button>
+
+            <div class="sticker-header">
+                <h1 class="sticker-title">🦕 My Sticker Collection!</h1>
+                <p class="sticker-subtitle" id="sticker-subtitle">You have 0 stickers!</p>
+            </div>
+
+            <div class="sticker-grid" id="sticker-grid">
+                <!-- Generated dynamically -->
+            </div>
+        </div>
+
+        <!-- Parent Control Panel -->
+        <div id="parent-overlay" class="parent-overlay" style="display:none;">
+            <div class="parent-panel">
+                <div class="parent-header">
+                    <h2>🔒 Parent Controls</h2>
+                    <button class="parent-close-btn" onclick="hideParentPanel()">✕</button>
+                </div>
+
+                <div class="parent-lock-screen" id="parent-lock-screen">
+                    <p class="lock-question" id="lock-question">What is 7 + 5?</p>
+                    <input type="number" class="lock-input" id="lock-input" placeholder="Answer">
+                    <button class="lock-submit-btn" onclick="checkParentLock()">Unlock</button>
+                    <p class="lock-error" id="lock-error"></p>
+                </div>
+
+                <div class="parent-controls" id="parent-controls" style="display:none;">
+                    <!-- Screen Time -->
+                    <div class="control-section">
+                        <h3>⏱️ Screen Time</h3>
+                        <div class="control-row">
+                            <label>Session Limit:</label>
+                            <select id="time-limit" onchange="saveParentSettings()">
+                                <option value="10">10 minutes</option>
+                                <option value="15">15 minutes</option>
+                                <option value="20" selected>20 minutes</option>
+                                <option value="30">30 minutes</option>
+                                <option value="0">No limit</option>
+                            </select>
+                        </div>
+                        <div class="control-row">
+                            <label>Time used today:</label>
+                            <span id="time-used-today">0 minutes</span>
+                        </div>
+                    </div>
+
+                    <!-- Volume -->
+                    <div class="control-section">
+                        <h3>🔊 Volume</h3>
+                        <div class="control-row">
+                            <input type="range" id="volume-slider" min="0" max="100" value="100" oninput="changeVolume(this.value)">
+                            <span id="volume-display">100%</span>
+                        </div>
+                    </div>
+
+                    <!-- Progress -->
+                    <div class="control-section">
+                        <h3>📊 Progress</h3>
+                        <div class="control-row">
+                            <label>Phonics Stars:</label>
+                            <span id="parent-phonics-stars">0</span>
+                        </div>
+                        <div class="control-row">
+                            <label>Numbers Stars:</label>
+                            <span id="parent-numbers-stars">0</span>
+                        </div>
+                        <div class="control-row">
+                            <label>Letters Explored:</label>
+                            <span id="parent-letters-explored">0 / 26</span>
+                        </div>
+                        <div class="control-row">
+                            <label>Total Stickers:</label>
+                            <span id="parent-stickers">0</span>
+                        </div>
+                    </div>
+
+                    <!-- Reset -->
+                    <div class="control-section">
+                        <h3>🔄 Reset</h3>
+                        <button class="reset-btn" onclick="confirmReset()">
+                            Reset All Progress
+                        </button>
+                        <p class="reset-warning">This cannot be undone!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Time's Up Screen -->
+        <div id="times-up-screen" class="screen" style="display:none;">
+            <div class="times-up-content">
+                <div class="times-up-dino">🦕😴</div>
+                <h1 class="times-up-title">Time for a Break!</h1>
+                <p class="times-up-text">
+                    Great learning today, Prisha!<br>
+                    Dino needs a nap. Come back later!
+                </p>
+                <div class="times-up-stars">
+                    🌟 You earned <strong id="times-up-stars-count">0</strong> stars today!
+                </div>
+                <button class="parent-btn" onclick="showParentLock()" style="margin-top:20px;">
+                    🔒 Parent Override
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/speech.js"></script>
+    <script src="js/home.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js')
+                .then(function() { console.log('SW registered'); })
+                .catch(function(err) { console.log('SW failed:', err); });
+        }
+    </script>
+</body>
+</html>

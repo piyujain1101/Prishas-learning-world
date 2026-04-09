@@ -1,0 +1,334 @@
+{
+  "letters": {
+    "a": {
+      "name": "audio/letters/a.mp3",
+      "phonics": "audio/phonics/a.mp3",
+      "word": "audio/words/a.mp3",
+      "sentence": "audio/sentences/a.mp3"
+    },
+    "b": {
+      "name": "audio/letters/b.mp3",
+      "phonics": "audio/phonics/b.mp3",
+      "word": "audio/words/b.mp3",
+      "sentence": "audio/sentences/b.mp3"
+    },
+    "c": {
+      "name": "audio/letters/c.mp3",
+      "phonics": "audio/phonics/c.mp3",
+      "word": "audio/words/c.mp3",
+      "sentence": "audio/sentences/c.mp3"
+    },
+    "d": {
+      "name": "audio/letters/d.mp3",
+      "phonics": "audio/phonics/d.mp3",
+      "word": "audio/words/d.mp3",
+      "sentence": "audio/sentences/d.mp3"
+    },
+    "e": {
+      "name": "audio/letters/e.mp3",
+      "phonics": "audio/phonics/e.mp3",
+      "word": "audio/words/e.mp3",
+      "sentence": "audio/sentences/e.mp3"
+    },
+    "f": {
+      "name": "audio/letters/f.mp3",
+      "phonics": "audio/phonics/f.mp3",
+      "word": "audio/words/f.mp3",
+      "sentence": "audio/sentences/f.mp3"
+    },
+    "g": {
+      "name": "audio/letters/g.mp3",
+      "phonics": "audio/phonics/g.mp3",
+      "word": "audio/words/g.mp3",
+      "sentence": "audio/sentences/g.mp3"
+    },
+    "h": {
+      "name": "audio/letters/h.mp3",
+      "phonics": "audio/phonics/h.mp3",
+      "word": "audio/words/h.mp3",
+      "sentence": "audio/sentences/h.mp3"
+    },
+    "i": {
+      "name": "audio/letters/i.mp3",
+      "phonics": "audio/phonics/i.mp3",
+      "word": "audio/words/i.mp3",
+      "sentence": "audio/sentences/i.mp3"
+    },
+    "j": {
+      "name": "audio/letters/j.mp3",
+      "phonics": "audio/phonics/j.mp3",
+      "word": "audio/words/j.mp3",
+      "sentence": "audio/sentences/j.mp3"
+    },
+    "k": {
+      "name": "audio/letters/k.mp3",
+      "phonics": "audio/phonics/k.mp3",
+      "word": "audio/words/k.mp3",
+      "sentence": "audio/sentences/k.mp3"
+    },
+    "l": {
+      "name": "audio/letters/l.mp3",
+      "phonics": "audio/phonics/l.mp3",
+      "word": "audio/words/l.mp3",
+      "sentence": "audio/sentences/l.mp3"
+    },
+    "m": {
+      "name": "audio/letters/m.mp3",
+      "phonics": "audio/phonics/m.mp3",
+      "word": "audio/words/m.mp3",
+      "sentence": "audio/sentences/m.mp3"
+    },
+    "n": {
+      "name": "audio/letters/n.mp3",
+      "phonics": "audio/phonics/n.mp3",
+      "word": "audio/words/n.mp3",
+      "sentence": "audio/sentences/n.mp3"
+    },
+    "o": {
+      "name": "audio/letters/o.mp3",
+      "phonics": "audio/phonics/o.mp3",
+      "word": "audio/words/o.mp3",
+      "sentence": "audio/sentences/o.mp3"
+    },
+    "p": {
+      "name": "audio/letters/p.mp3",
+      "phonics": "audio/phonics/p.mp3",
+      "word": "audio/words/p.mp3",
+      "sentence": "audio/sentences/p.mp3"
+    },
+    "q": {
+      "name": "audio/letters/q.mp3",
+      "phonics": "audio/phonics/q.mp3",
+      "word": "audio/words/q.mp3",
+      "sentence": "audio/sentences/q.mp3"
+    },
+    "r": {
+      "name": "audio/letters/r.mp3",
+      "phonics": "audio/phonics/r.mp3",
+      "word": "audio/words/r.mp3",
+      "sentence": "audio/sentences/r.mp3"
+    },
+    "s": {
+      "name": "audio/letters/s.mp3",
+      "phonics": "audio/phonics/s.mp3",
+      "word": "audio/words/s.mp3",
+      "sentence": "audio/sentences/s.mp3"
+    },
+    "t": {
+      "name": "audio/letters/t.mp3",
+      "phonics": "audio/phonics/t.mp3",
+      "word": "audio/words/t.mp3",
+      "sentence": "audio/sentences/t.mp3"
+    },
+    "u": {
+      "name": "audio/letters/u.mp3",
+      "phonics": "audio/phonics/u.mp3",
+      "word": "audio/words/u.mp3",
+      "sentence": "audio/sentences/u.mp3"
+    },
+    "v": {
+      "name": "audio/letters/v.mp3",
+      "phonics": "audio/phonics/v.mp3",
+      "word": "audio/words/v.mp3",
+      "sentence": "audio/sentences/v.mp3"
+    },
+    "w": {
+      "name": "audio/letters/w.mp3",
+      "phonics": "audio/phonics/w.mp3",
+      "word": "audio/words/w.mp3",
+      "sentence": "audio/sentences/w.mp3"
+    },
+    "x": {
+      "name": "audio/letters/x.mp3",
+      "phonics": "audio/phonics/x.mp3",
+      "word": "audio/words/x.mp3",
+      "sentence": "audio/sentences/x.mp3"
+    },
+    "y": {
+      "name": "audio/letters/y.mp3",
+      "phonics": "audio/phonics/y.mp3",
+      "word": "audio/words/y.mp3",
+      "sentence": "audio/sentences/y.mp3"
+    },
+    "z": {
+      "name": "audio/letters/z.mp3",
+      "phonics": "audio/phonics/z.mp3",
+      "word": "audio/words/z.mp3",
+      "sentence": "audio/sentences/z.mp3"
+    }
+  },
+  "celebrations": [
+    "audio/celebrations/great_job.mp3",
+    "audio/celebrations/amazing.mp3",
+    "audio/celebrations/wonderful.mp3",
+    "audio/celebrations/you_did_it.mp3",
+    "audio/celebrations/super_star.mp3",
+    "audio/celebrations/yay.mp3",
+    "audio/celebrations/keep_going.mp3",
+    "audio/celebrations/well_done.mp3",
+    "audio/celebrations/fantastic.mp3",
+    "audio/celebrations/proud.mp3"
+  ],
+  "instructions": [
+    {
+      "id": "welcome",
+      "path": "audio/instructions/welcome.mp3"
+    },
+    {
+      "id": "lets_learn",
+      "path": "audio/instructions/lets_learn.mp3"
+    },
+    {
+      "id": "find_lowercase",
+      "path": "audio/instructions/find_lowercase.mp3"
+    },
+    {
+      "id": "what_sound",
+      "path": "audio/instructions/what_sound.mp3"
+    },
+    {
+      "id": "tap_to_hear",
+      "path": "audio/instructions/tap_to_hear.mp3"
+    },
+    {
+      "id": "try_again",
+      "path": "audio/instructions/try_again.mp3"
+    },
+    {
+      "id": "all_done",
+      "path": "audio/instructions/all_done.mp3"
+    },
+    {
+      "id": "pick_letter",
+      "path": "audio/instructions/pick_letter.mp3"
+    },
+    {
+      "id": "listen_carefully",
+      "path": "audio/instructions/listen_carefully.mp3"
+    },
+    {
+      "id": "roar",
+      "path": "audio/instructions/roar.mp3"
+    }
+  ],
+  "numbers": {
+    "1": {
+      "name": "audio/numbers/names/1.mp3",
+      "sentence": "audio/numbers/sentences/1.mp3"
+    },
+    "2": {
+      "name": "audio/numbers/names/2.mp3",
+      "sentence": "audio/numbers/sentences/2.mp3"
+    },
+    "3": {
+      "name": "audio/numbers/names/3.mp3",
+      "sentence": "audio/numbers/sentences/3.mp3"
+    },
+    "4": {
+      "name": "audio/numbers/names/4.mp3",
+      "sentence": "audio/numbers/sentences/4.mp3"
+    },
+    "5": {
+      "name": "audio/numbers/names/5.mp3",
+      "sentence": "audio/numbers/sentences/5.mp3"
+    },
+    "6": {
+      "name": "audio/numbers/names/6.mp3",
+      "sentence": "audio/numbers/sentences/6.mp3"
+    },
+    "7": {
+      "name": "audio/numbers/names/7.mp3",
+      "sentence": "audio/numbers/sentences/7.mp3"
+    },
+    "8": {
+      "name": "audio/numbers/names/8.mp3",
+      "sentence": "audio/numbers/sentences/8.mp3"
+    },
+    "9": {
+      "name": "audio/numbers/names/9.mp3",
+      "sentence": "audio/numbers/sentences/9.mp3"
+    },
+    "10": {
+      "name": "audio/numbers/names/10.mp3",
+      "sentence": "audio/numbers/sentences/10.mp3"
+    },
+    "11": {
+      "name": "audio/numbers/names/11.mp3",
+      "sentence": "audio/numbers/sentences/11.mp3"
+    },
+    "12": {
+      "name": "audio/numbers/names/12.mp3",
+      "sentence": "audio/numbers/sentences/12.mp3"
+    },
+    "13": {
+      "name": "audio/numbers/names/13.mp3",
+      "sentence": "audio/numbers/sentences/13.mp3"
+    },
+    "14": {
+      "name": "audio/numbers/names/14.mp3",
+      "sentence": "audio/numbers/sentences/14.mp3"
+    },
+    "15": {
+      "name": "audio/numbers/names/15.mp3",
+      "sentence": "audio/numbers/sentences/15.mp3"
+    },
+    "16": {
+      "name": "audio/numbers/names/16.mp3",
+      "sentence": "audio/numbers/sentences/16.mp3"
+    },
+    "17": {
+      "name": "audio/numbers/names/17.mp3",
+      "sentence": "audio/numbers/sentences/17.mp3"
+    },
+    "18": {
+      "name": "audio/numbers/names/18.mp3",
+      "sentence": "audio/numbers/sentences/18.mp3"
+    },
+    "19": {
+      "name": "audio/numbers/names/19.mp3",
+      "sentence": "audio/numbers/sentences/19.mp3"
+    },
+    "20": {
+      "name": "audio/numbers/names/20.mp3",
+      "sentence": "audio/numbers/sentences/20.mp3"
+    }
+  },
+  "counting": {
+    "1": "audio/numbers/counting/count_1.mp3",
+    "2": "audio/numbers/counting/count_2.mp3",
+    "3": "audio/numbers/counting/count_3.mp3",
+    "4": "audio/numbers/counting/count_4.mp3",
+    "5": "audio/numbers/counting/count_5.mp3",
+    "6": "audio/numbers/counting/count_6.mp3",
+    "7": "audio/numbers/counting/count_7.mp3",
+    "8": "audio/numbers/counting/count_8.mp3",
+    "9": "audio/numbers/counting/count_9.mp3",
+    "10": "audio/numbers/counting/count_10.mp3"
+  },
+  "number_instructions": [
+    {
+      "id": "lets_count",
+      "path": "audio/numbers/instructions/lets_count.mp3"
+    },
+    {
+      "id": "count_animals",
+      "path": "audio/numbers/instructions/count_animals.mp3"
+    },
+    {
+      "id": "how_many",
+      "path": "audio/numbers/instructions/how_many.mp3"
+    },
+    {
+      "id": "match_number",
+      "path": "audio/numbers/instructions/match_number.mp3"
+    },
+    {
+      "id": "all_numbers_done",
+      "path": "audio/numbers/instructions/all_numbers_done.mp3"
+    },
+    {
+      "id": "keep_practicing",
+      "path": "audio/numbers/instructions/keep_practicing.mp3"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#6C5CE7">
+    <title>Phonics - Prisha's Learning World 🦕</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/phonics.css">
+</head>
+<body>
+    <!-- Back Button -->
+    <button class="back-button" onclick="navigateTo('index.html')">🏠</button>
+
+    <!-- Star Counter -->
+    <div class="star-counter" id="star-counter">⭐ 0</div>
+
+    <div id="app">
+        <!-- Phonics Menu Screen -->
+        <div id="phonics-menu" class="screen active">
+            <div class="stars-bg"></div>
+
+            <div class="phonics-header">
+                <div class="dino-small">🦕</div>
+                <h1 class="phonics-title">Phonics Fun!</h1>
+                <p class="phonics-subtitle">Let's learn letters with Dino!</p>
+            </div>
+
+            <div class="phonics-options">
+                <div class="phonics-option-card" onclick="startLetterExplorer()">
+                    <div class="option-icon">🔤</div>
+                    <div class="option-title">Letter Explorer</div>
+                    <div class="option-desc">Learn all 26 letters!</div>
+                    <div class="option-progress" id="explorer-progress">0 / 26 explored</div>
+                </div>
+
+                <div class="phonics-option-card" onclick="navigateTo('matching.html')">
+                    <div class="option-icon">🔗</div>
+                    <div class="option-title">Letter Match</div>
+                    <div class="option-desc">Match uppercase & lowercase!</div>
+                    <div class="option-progress">New!</div>
+                </div>
+
+                <div class="phonics-option-card" onclick="navigateTo('sound-safari.html')">
+                    <div class="option-icon">🦕</div>
+                    <div class="option-title">Sound Safari</div>
+                    <div class="option-desc">Find the right letter sound!</div>
+                    <div class="option-progress">New!</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Letter Explorer Screen -->
+        <div id="letter-explorer" class="screen">
+            <div class="explorer-progress-bar">
+                <div class="progress-fill" id="progress-fill"></div>
+            </div>
+            <div class="explorer-counter" id="explorer-counter">Letter 1 of 26</div>
+
+            <!-- Swipeable Letter Card -->
+            <div class="letter-card-container" id="letter-card-container">
+                <div class="letter-card" id="letter-card">
+                    <div class="letter-display">
+                        <span class="letter-upper" id="letter-upper">A</span>
+                        <span class="letter-lower" id="letter-lower">a</span>
+                    </div>
+                    <div class="letter-image" id="letter-image">🍎</div>
+                    <div class="letter-word" id="letter-word">Apple</div>
+                </div>
+            </div>
+
+            <!-- Sound Buttons -->
+            <div class="sound-buttons">
+                <button class="sound-btn" id="btn-letter-name" onclick="playLetterName()">
+                    <span class="sound-btn-icon">🔤</span>
+                    <span class="sound-btn-label">Letter</span>
+                </button>
+                <button class="sound-btn" id="btn-phonics-sound" onclick="playPhonicsSound()">
+                    <span class="sound-btn-icon">🔊</span>
+                    <span class="sound-btn-label">Sound</span>
+                </button>
+                <button class="sound-btn" id="btn-word" onclick="playWord()">
+                    <span class="sound-btn-icon">🗣️</span>
+                    <span class="sound-btn-label">Word</span>
+                </button>
+            </div>
+
+            <!-- Dino encouragement -->
+            <div class="dino-says" id="dino-says">
+                <span class="dino-says-icon">🦕</span>
+                <span class="dino-says-text" id="dino-says-text">Tap the buttons to hear the sounds!</span>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="nav-buttons">
+                <button class="nav-btn nav-prev" id="btn-prev" onclick="prevLetter()">
+                    ◀️ Prev
+                </button>
+                <button class="nav-btn nav-next" id="btn-next" onclick="nextLetter()">
+                    Next ▶️
+                </button>
+            </div>
+
+            <!-- Dot indicators -->
+            <div class="dot-indicators" id="dot-indicators"></div>
+
+            <!-- Back to Phonics Menu -->
+            <button class="back-to-menu" onclick="showPhonicsMenu()">
+                📋 Back to Phonics Menu
+            </button>
+        </div>
+    </div>
+
+        <script src="js/app.js"></script>
+        <script src="js/speech.js"></script>
+        <script src="js/phonics.js"></script>
+</body>
+</html>

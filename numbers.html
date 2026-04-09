@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#6C5CE7">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦕</text></svg>">
+    <title>Numbers - Prisha's Learning World 🦕</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/phonics.css">
+    <link rel="stylesheet" href="css/numbers.css">
+</head>
+<body>
+    <button class="back-button" onclick="navigateTo('index.html')">🏠</button>
+    <div class="star-counter" id="star-counter">⭐ 0</div>
+
+    <div id="app">
+        <!-- Numbers Menu -->
+        <div id="numbers-menu" class="screen active">
+            <div class="stars-bg"></div>
+
+            <div class="phonics-header">
+                <div class="dino-small">🦕</div>
+                <h1 class="phonics-title">Number Fun!</h1>
+                <p class="phonics-subtitle">Let's count with Dino!</p>
+            </div>
+
+            <div class="phonics-options">
+                <div class="phonics-option-card" onclick="startNumberExplorer()">
+                    <div class="option-icon">🔢</div>
+                    <div class="option-title">Number Explorer</div>
+                    <div class="option-desc">Learn numbers 1-20!</div>
+                    <div class="option-progress" id="num-explorer-progress">0 / 20 explored</div>
+                </div>
+
+                <div class="phonics-option-card" onclick="startCountingGame()">
+                    <div class="option-icon">🐵</div>
+                    <div class="option-title">Count & Tap</div>
+                    <div class="option-desc">Count the animals!</div>
+                    <div class="option-progress">Fun!</div>
+                </div>
+
+                <div class="phonics-option-card" onclick="startNumberMatch()">
+                    <div class="option-icon">🎯</div>
+                    <div class="option-title">Number Match</div>
+                    <div class="option-desc">Match numbers to groups!</div>
+                    <div class="option-progress">New!</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Number Explorer -->
+        <div id="number-explorer" class="screen">
+            <div class="explorer-progress-bar">
+                <div class="progress-fill" id="num-progress-fill"></div>
+            </div>
+            <div class="explorer-counter" id="num-counter">Number 1 of 20</div>
+
+            <div class="number-card-container">
+                <div class="number-card" id="number-card">
+                    <div class="number-display" id="number-display">1</div>
+                    <div class="number-word" id="number-word">One</div>
+                    <div class="number-objects" id="number-objects">🦕</div>
+                    <div class="number-label" id="number-label">1 Dinosaur</div>
+                </div>
+            </div>
+
+            <div class="sound-buttons">
+                <button class="sound-btn" id="btn-num-name" onclick="playNumberName()">
+                    <span class="sound-btn-icon">🔊</span>
+                    <span class="sound-btn-label">Number</span>
+                </button>
+                <button class="sound-btn" id="btn-num-count" onclick="playCountUp()">
+                    <span class="sound-btn-icon">👆</span>
+                    <span class="sound-btn-label">Count</span>
+                </button>
+            </div>
+
+            <div class="dino-says" id="num-dino-says">
+                <span class="dino-says-icon">🦕</span>
+                <span class="dino-says-text" id="num-dino-text">Tap to hear the number!</span>
+            </div>
+
+            <div class="nav-buttons">
+                <button class="nav-btn nav-prev" id="num-btn-prev" onclick="prevNumber()">◀️ Prev</button>
+                <button class="nav-btn nav-next" id="num-btn-next" onclick="nextNumber()">Next ▶️</button>
+            </div>
+
+            <button class="back-to-menu" onclick="showNumbersMenu()">📋 Back to Numbers Menu</button>
+        </div>
+
+        <!-- Count & Tap Game -->
+        <div id="counting-game" class="screen">
+            <div class="game-progress">
+                <div class="game-progress-bar">
+                    <div class="game-progress-fill" id="count-progress-fill"></div>
+                </div>
+                <div class="game-round-text" id="count-round-text">Round 1 of 10</div>
+            </div>
+
+            <div class="game-prompt">
+                <div class="prompt-dino">🦕</div>
+                <div class="prompt-text" id="count-prompt">How many do you see?</div>
+            </div>
+
+            <div class="counting-area" id="counting-area">
+                <!-- Animals displayed here -->
+            </div>
+
+            <div class="counting-choices" id="counting-choices">
+                <!-- Number choices here -->
+            </div>
+
+            <div class="feedback-area" id="count-feedback"></div>
+
+            <div class="game-score">
+                <span class="score-correct" id="count-score-correct">✅ 0</span>
+                <span class="score-wrong" id="count-score-wrong">❌ 0</span>
+            </div>
+        </div>
+
+        <!-- Number Match Game -->
+        <div id="number-match" class="screen">
+            <div class="game-progress">
+                <div class="game-progress-bar">
+                    <div class="game-progress-fill" id="nmatch-progress-fill"></div>
+                </div>
+                <div class="game-round-text" id="nmatch-round-text">Round 1 of 10</div>
+            </div>
+
+            <div class="game-prompt">
+                <div class="prompt-dino">🦕</div>
+                <div class="prompt-text" id="nmatch-prompt">Which group has this many?</div>
+            </div>
+
+            <div class="nmatch-number" id="nmatch-number">3</div>
+
+            <div class="nmatch-choices" id="nmatch-choices">
+                <!-- Groups of objects -->
+            </div>
+
+            <div class="feedback-area" id="nmatch-feedback"></div>
+
+            <div class="game-score">
+                <span class="score-correct" id="nmatch-score-correct">✅ 0</span>
+                <span class="score-wrong" id="nmatch-score-wrong">❌ 0</span>
+            </div>
+        </div>
+
+        <!-- Number Results -->
+        <div id="number-results" class="screen">
+            <div class="stars-bg"></div>
+            <div class="results-content">
+                <div class="results-mascot" id="num-results-mascot">🦕</div>
+                <h1 class="results-title" id="num-results-title">Great Job!</h1>
+                <div class="results-score">
+                    <div class="results-stars-display" id="num-results-stars"></div>
+                    <p class="results-text" id="num-results-text"></p>
+                </div>
+                <div class="results-buttons">
+                    <button class="big-button btn-primary" id="num-play-again-btn">Play Again! 🔄</button>
+                    <button class="big-button btn-secondary" onclick="showNumbersMenu()">Back to Numbers 📋</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/speech.js"></script>
+    <script src="js/numbers.js"></script>
+</body>
+</html>

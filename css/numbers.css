@@ -1,0 +1,203 @@
+/* ========================================
+   Numbers Module Styles
+   ======================================== */
+
+/* --- Number Card --- */
+.number-card-container {
+    width: 100%;
+    max-width: 320px;
+    margin-top: 20px;
+}
+
+.number-card {
+    background: white;
+    border-radius: 30px;
+    padding: 25px 20px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+    animation: cardSlideIn 0.4s ease;
+    border-top: 5px solid #FFD93D;
+}
+
+.number-display {
+    font-size: 100px;
+    font-weight: bold;
+    color: #6C5CE7;
+    line-height: 1;
+    text-shadow: 3px 3px 0px rgba(108,92,231,0.2);
+}
+
+.number-word {
+    font-size: 28px;
+    font-weight: bold;
+    color: #FF6B6B;
+    margin: 5px 0;
+}
+
+.number-objects {
+    font-size: 40px;
+    margin: 10px 0;
+    letter-spacing: 5px;
+    line-height: 1.4;
+    min-height: 50px;
+}
+
+.number-label {
+    font-size: 18px;
+    color: #636e72;
+}
+
+/* --- Counting Game --- */
+.counting-area {
+    background: rgba(255,255,255,0.15);
+    border-radius: 25px;
+    padding: 20px;
+    margin: 20px 0;
+    min-height: 150px;
+    max-width: 350px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    backdrop-filter: blur(5px);
+}
+
+.count-animal {
+    font-size: 45px;
+    animation: animalPop 0.3s ease backwards;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.count-animal:active {
+    transform: scale(1.3);
+}
+
+.count-animal.counted {
+    filter: brightness(1.3);
+    transform: scale(1.1);
+}
+
+@keyframes animalPop {
+    0% { transform: scale(0); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.counting-choices {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 400px;
+    margin-top: 10px;
+}
+
+.count-choice-btn {
+    width: 70px;
+    height: 70px;
+    border: 4px solid white;
+    background: white;
+    border-radius: 50%;
+    font-size: 32px;
+    font-weight: bold;
+    color: #6C5CE7;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.count-choice-btn:active {
+    transform: scale(0.92);
+}
+
+.count-choice-btn.correct {
+    background: #6BCB77;
+    border-color: #4CAF50;
+    color: white;
+    animation: correctBounce 0.5s ease;
+}
+
+.count-choice-btn.wrong {
+    background: #FF6B6B;
+    border-color: #e74c3c;
+    color: white;
+    animation: wrongShake 0.5s ease;
+}
+
+.count-choice-btn.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.count-choice-btn.hint {
+    border-color: #FFD93D;
+    box-shadow: 0 0 20px rgba(255,217,61,0.5);
+}
+
+/* --- Number Match Game --- */
+.nmatch-number {
+    font-size: 80px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 3px 3px 0 rgba(0,0,0,0.2);
+    text-align: center;
+    margin: 15px 0;
+    animation: targetPop 0.5s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+
+.nmatch-choices {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 350px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.nmatch-choice-btn {
+    background: rgba(255,255,255,0.9);
+    border: 4px solid white;
+    border-radius: 20px;
+    padding: 15px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 5px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: all 0.2s;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nmatch-choice-btn:active {
+    transform: scale(0.97);
+}
+
+.nmatch-choice-btn.correct {
+    background: #6BCB77;
+    border-color: #4CAF50;
+    animation: correctBounce 0.5s ease;
+}
+
+.nmatch-choice-btn.wrong {
+    background: #FF6B6B;
+    border-color: #e74c3c;
+    animation: wrongShake 0.5s ease;
+}
+
+.nmatch-choice-btn.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.nmatch-choice-btn.hint {
+    border-color: #FFD93D;
+    box-shadow: 0 0 20px rgba(255,217,61,0.5);
+}
