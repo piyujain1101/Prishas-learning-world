@@ -1,6 +1,6 @@
 /* ========================================
    Home Screen Logic
-   Parent Controls, Timer, Stickers
+   Parent Controls, Timer, Stickers, Name Entry
    ======================================== */
 
 // --- Sticker Collection ---
@@ -26,6 +26,157 @@ var STICKER_COLLECTION = [
     { emoji: '👑', name: 'Crown', cost: 100 },
     { emoji: '🏆', name: 'Trophy', cost: 120 }
 ];
+
+// --- Letter-pop colors for the animated title ---
+var TITLE_COLORS = ['#FF6B6B', '#FFA502', '#FFD93D', '#6BCB77', '#4D96FF', '#9B59B6', '#FF6B6B', '#FFA502', '#FFD93D', '#6BCB77', '#4D96FF', '#9B59B6', '#FF6B6B', '#FFA502', '#FFD93D', '#6BCB77', '#4D96FF', '#9B59B6', '#FF6B6B', '#FFA502'];
+
+// ========================================
+// NAME ENTRY
+// ========================================
+
+function initNameEntry() {
+    if (ChildName.isSet()) {
+        // Name already set — skip to loading screen
+        showLoadingThenHome();
+    } else {
+        // First visit — show name entry
+        showNameEntryScreen();
+    }
+}
+
+function showNameEntryScreen() {
+    var screens = document.querySelectorAll('.screen');
+    for (var i = 0; i < screens.length; i++) {
+        screens[i].classList.remove('active');
+    }
+    document.getElementById('name-entry-screen').classList.add('active');
+
+    // Focus the input
+    setTimeout(function() {
+        var input = document.getElementById('child-name-input');
+        if (input) input.focus();
+    }, 500);
+}
+
+function submitChildName() {
+    var input = document.getElementById('child-name-input');
+    var name = (input.value || '').trim();
+
+    if (!name) {
+        input.style.borderColor = '#FF6B6B';
+        input.setAttribute('placeholder', 'Please type a name!');
+        input.focus();
+        return;
+    }
+
+    // Capitalize first letter
+    name = name.charAt(0).toUpperCase() + name.slice(1);
+
+    ChildName.set(name);
+    showLoadingThenHome();
+}
+
+function showLoadingThenHome() {
+    // Hide all screens
+    var screens = document.querySelectorAll('.screen');
+    for (var i = 0; i < screens.length; i++) {
+        screens[i].classList.remove('active');
+    }
+
+    // Show loading screen
+    var loadingScreen = document.getElementById('loading-screen');
+    loadingScreen.style.display = '';
+    loadingScreen.classList.remove('hidden');
+
+    // Update the page title
+    var name = ChildName.get();
+    document.title = ChildName.possessive() + ' Learning World 🦕';
+
+    // Build dynamic title
+    buildAnimatedTitle(name);
+
+    // Update greeting
+    updateGreeting();
+
+    // After loading animation, show home
+    setTimeout(function() {
+        loadingScreen.classList.add('hidden');
+
+        setTimeout(function() {
+            loadingScreen.style.display = 'none';
+            document.getElementById('home-screen').classList.add('active');
+        }, 500);
+    }, 1800);
+}
+
+// ========================================
+// DYNAMIC ANIMATED TITLE
+// ========================================
+
+function buildAnimatedTitle(name) {
+    var titleEl = document.getElementById('app-title');
+    if (!titleEl) return;
+
+    // Build: "Name's" with letter-pop animation
+    var possessive = ChildName.possessive();
+    titleEl.innerHTML = '';
+
+    for (var i = 0; i < possessive.length; i++) {
+        var span = document.createElement('span');
+        span.className = 'letter-pop';
+        span.textContent = possessive.charAt(i);
+        var delay = (i + 1) * 0.1;
+        span.style.setProperty('--delay', delay + 's');
+        span.style.color = TITLE_COLORS[i % TITLE_COLORS.length];
+        titleEl.appendChild(span);
+    }
+}
+
+// ========================================
+// GREETING
+// ========================================
+
+function updateGreeting() {
+    var greeting = document.getElementById('greeting');
+    if (!greeting) return;
+
+    var name = ChildName.get() || 'friend';
+    var hour = new Date().getHours();
+    var timeGreeting = 'Hi';
+    if (hour < 12) timeGreeting = 'Good morning';
+    else if (hour < 17) timeGreeting = 'Good afternoon';
+    else timeGreeting = 'Good evening';
+    greeting.textContent = timeGreeting + ', ' + name + '! Ready to learn? 🦕';
+}
+
+// ========================================
+// CHILD NAME FROM PARENT CONTROLS
+// ========================================
+
+function saveChildNameFromParent() {
+    var input = document.getElementById('parent-child-name');
+    var name = (input.value || '').trim();
+    var status = document.getElementById('name-save-status');
+
+    if (!name) {
+        status.textContent = '⚠️ Enter a name';
+        status.style.color = '#FF6B6B';
+        return;
+    }
+
+    // Capitalize first letter
+    name = name.charAt(0).toUpperCase() + name.slice(1);
+    ChildName.set(name);
+
+    // Update UI immediately
+    document.title = ChildName.possessive() + ' Learning World 🦕';
+    buildAnimatedTitle(name);
+    updateGreeting();
+
+    status.textContent = '✅ Saved!';
+    status.style.color = '#6BCB77';
+    setTimeout(function() { status.textContent = ''; }, 2000);
+}
 
 // --- Sticker Functions ---
 function getStickerCount() {
@@ -157,6 +308,8 @@ function updateTimer() {
 }
 
 function showTimesUp() {
+    var name = ChildName.get() || 'friend';
+
     // Hide all screens
     var screens = document.querySelectorAll('.screen');
     for (var i = 0; i < screens.length; i++) {
@@ -168,11 +321,17 @@ function showTimesUp() {
     timesUp.style.display = 'flex';
     timesUp.classList.add('active');
 
+    // Update times up text with name
+    var timesUpText = document.getElementById('times-up-text');
+    if (timesUpText) {
+        timesUpText.innerHTML = 'Great learning today, ' + name + '!<br>Dino needs a nap. Come back later!';
+    }
+
     document.getElementById('times-up-stars-count').textContent = Rewards.getTotalStars();
 
     AudioManager.stopAll();
     setTimeout(function() {
-        Speech.speak('Great learning today, Prisha! Time for a break. Come back later!', 0.9, 1.1);
+        Speech.speak('Great learning today, ' + name + '! Time for a break. Come back later!', 0.9, 1.1);
     }, 500);
 }
 
@@ -228,6 +387,14 @@ function loadParentSettings() {
 
     var used = localStorage.getItem('time_used_today') || '0';
     document.getElementById('time-used-today').textContent = used + ' minutes';
+
+    // Load child name into parent input
+    var nameInput = document.getElementById('parent-child-name');
+    if (nameInput) {
+        nameInput.value = ChildName.get();
+    }
+    var nameStatus = document.getElementById('name-save-status');
+    if (nameStatus) nameStatus.textContent = '';
 }
 
 function saveParentSettings() {
@@ -265,7 +432,8 @@ function updateParentProgress() {
 }
 
 function confirmReset() {
-    if (confirm('Are you sure you want to reset ALL of Prisha\'s progress? This cannot be undone.')) {
+    var name = ChildName.get();
+    if (confirm('Are you sure you want to reset ALL of ' + (name || 'your child') + '\'s progress? This cannot be undone.')) {
         Rewards.reset();
         localStorage.removeItem('phonics_visited');
         localStorage.removeItem('phonics_currentIndex');
@@ -298,32 +466,10 @@ if (typeof AudioManager !== 'undefined' && !AudioManager.setVolume) {
 
 // --- Initialize Home ---
 document.addEventListener('DOMContentLoaded', function() {
-    // Loading screen
-    setTimeout(function() {
-        var loadingScreen = document.getElementById('loading-screen');
-        loadingScreen.classList.add('hidden');
-
-        setTimeout(function() {
-            loadingScreen.style.display = 'none';
-            document.getElementById('home-screen').classList.add('active');
-        }, 500);
-    }, 1800);
-
     // Update UI
     Rewards.updateUI();
     updateStickerPreview();
     initVolume();
-
-    // Greeting
-    var greeting = document.getElementById('greeting');
-    if (greeting) {
-        var hour = new Date().getHours();
-        var timeGreeting = 'Hi';
-        if (hour < 12) timeGreeting = 'Good morning';
-        else if (hour < 17) timeGreeting = 'Good afternoon';
-        else timeGreeting = 'Good evening';
-        greeting.textContent = timeGreeting + ', Prisha! Ready to learn? 🦕';
-    }
 
     // Update numbers stars
     var numbersStars = document.getElementById('numbers-stars');
@@ -331,15 +477,29 @@ document.addEventListener('DOMContentLoaded', function() {
         numbersStars.textContent = '⭐ ' + Rewards.getStars('numbers');
     }
 
-    // Dino interaction
+    var vocabStars = document.getElementById('vocabulary-stars');
+    if (vocabStars) {
+        vocabStars.textContent = '⭐ ' + Rewards.getStars('vocabulary');
+    }
+
+    var gamesStars = document.getElementById('games-stars');
+    if (gamesStars) {
+        gamesStars.textContent = '⭐ ' + Rewards.getStars('games');
+    }
+
+    // Check if name is set — show name entry or loading
+    initNameEntry();
+
+    // Dino interaction (set up but only works once home-screen is active)
     var dino = document.getElementById('dino');
     if (dino) {
         dino.addEventListener('click', function() {
+            var name = ChildName.get() || 'friend';
             var dinoSays = [
-                'Hi Prisha! Lets learn!',
+                'Hi ' + name + '! Lets learn!',
                 'Roar! I am Dino!',
                 'Pick a game to play!',
-                'You are awesome, Prisha!',
+                'You are awesome, ' + name + '!',
                 'Lets have fun!'
             ];
             var msg = dinoSays[Math.floor(Math.random() * dinoSays.length)];
@@ -349,7 +509,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Start timer
+    // Start timer (will run after home screen is shown)
     initTimer();
 
     // Lock input enter key
@@ -361,8 +521,14 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
-    var vocabStars = document.getElementById('vocabulary-stars');
-    if (vocabStars) {
-        vocabStars.textContent = '⭐ ' + Rewards.getStars('vocabulary');
+
+    // Name entry input enter key
+    var nameInput = document.getElementById('child-name-input');
+    if (nameInput) {
+        nameInput.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter') {
+                submitChildName();
+            }
+        });
     }
 });

@@ -1,4 +1,4 @@
-var CACHE_NAME = 'prisha-learn-v4';
+var CACHE_NAME = 'learning-world-v5';
 var urlsToCache = [
     './',
     './index.html',

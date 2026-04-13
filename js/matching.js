@@ -87,7 +87,6 @@ function startGame() {
     AudioManager.stopAll();
 
     // Wait for instruction to finish before starting the game
-    // "Find the lowercase friend" is about 2.5 seconds long
     AudioManager.playInstruction('find_lowercase');
 
     setTimeout(function() {
@@ -139,7 +138,7 @@ function nextRound() {
 
     generateChoices(correctLetter);
 
-    // Play ONLY the letter name — no stopAll here, just play after small delay
+    // Play ONLY the letter name
     setTimeout(function() {
         AudioManager.playLetterName(correctLetter);
     }, 500);
@@ -258,7 +257,7 @@ function handleChoice(selectedLetter, buttonElement) {
             AudioManager.playInstruction('try_again');
         }, 200);
 
-        // After try-again audio, let Prisha tap the correct one
+        // After try-again audio, let child tap the correct one
         setTimeout(function() {
             gameState.isAnswered = false;
 
@@ -309,6 +308,7 @@ function showResults() {
 
     showScreen('match-results');
 
+    var name = ChildName.get() || 'friend';
     var score = gameState.correctCount;
     var total = gameState.totalRounds;
     var percentage = Math.round((score / total) * 100);
@@ -330,16 +330,16 @@ function showResults() {
     var mascotEl = document.getElementById('results-mascot');
 
     if (percentage >= 90) {
-        titleEl.textContent = 'SUPERSTAR, Prisha!';
+        titleEl.textContent = 'SUPERSTAR, ' + name + '!';
         mascotEl.textContent = '🦕🎉';
     } else if (percentage >= 70) {
-        titleEl.textContent = 'Great Job, Prisha!';
+        titleEl.textContent = 'Great Job, ' + name + '!';
         mascotEl.textContent = '🦕⭐';
     } else if (percentage >= 50) {
-        titleEl.textContent = 'Good Try, Prisha!';
+        titleEl.textContent = 'Good Try, ' + name + '!';
         mascotEl.textContent = '🦕👍';
     } else {
-        titleEl.textContent = 'Keep Practicing, Prisha!';
+        titleEl.textContent = 'Keep Practicing, ' + name + '!';
         mascotEl.textContent = '🦕💪';
     }
 

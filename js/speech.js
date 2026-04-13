@@ -1,5 +1,5 @@
 /* ========================================
-   Audio Manager for Prisha's Learning World
+   Audio Manager for Learning World
    ========================================
    High-quality MP3 playback with TTS fallback.
 
@@ -286,14 +286,15 @@ const AudioManager = {
             }
         }
         // Fallback text map
+        var n = (typeof ChildName !== 'undefined' && ChildName.get()) ? ChildName.get() : 'friend';
         const fallbackText = {
-            'welcome': "Hi Prisha! Welcome to your learning world!",
-            'lets_learn': "Let's learn letters, Prisha!",
+            'welcome': "Hi " + n + "! Welcome to your learning world!",
+            'lets_learn': "Let's learn letters, " + n + "!",
             'find_lowercase': "Find the lowercase friend!",
             'what_sound': "What letter makes this sound?",
             'tap_to_hear': "Tap the buttons to hear the sounds!",
-            'try_again': "Oops! Try again, Prisha!",
-            'all_done': "Wow Prisha! You explored all 26 letters! You are a superstar!",
+            'try_again': "Oops! Try again, " + n + "!",
+            'all_done': "Wow " + n + "! You explored all 26 letters! You are a superstar!",
             'pick_letter': "Pick the right letter!",
             'listen_carefully': "Listen carefully!",
             'roar': "Roar! I'm Dino! Let's have fun!"
@@ -438,13 +439,14 @@ const AudioManager = {
     },
 
     _speakNumInstructionFallback: function(id) {
+        var n = (typeof ChildName !== 'undefined' && ChildName.get()) ? ChildName.get() : 'friend';
         var fallback = {
-            'lets_count': 'Lets explore numbers, Prisha!',
-            'count_animals': 'Count the animals, Prisha!',
+            'lets_count': 'Lets explore numbers, ' + n + '!',
+            'count_animals': 'Count the animals, ' + n + '!',
             'how_many': 'How many do you see?',
-            'match_number': 'Match the number to the right group, Prisha!',
-            'all_numbers_done': 'Wow Prisha! You explored all 20 numbers! Amazing!',
-            'keep_practicing': 'Keep practicing, Prisha! You can do it!'
+            'match_number': 'Match the number to the right group, ' + n + '!',
+            'all_numbers_done': 'Wow ' + n + '! You explored all 20 numbers! Amazing!',
+            'keep_practicing': 'Keep practicing, ' + n + '! You can do it!'
         };
         Speech.speak(fallback[id] || id, 0.9, 1.1);
     },
@@ -549,15 +551,16 @@ const AudioManager = {
     },
 
     _speakVocabInstructionFallback: function(id) {
+        var n = (typeof ChildName !== 'undefined' && ChildName.get()) ? ChildName.get() : 'friend';
         var fallback = {
-            'lets_learn_colors': "Let's learn colors, Prisha!",
-            'lets_learn_shapes': "Let's learn shapes, Prisha!",
-            'lets_learn_animals': "Let's learn animals, Prisha!",
-            'find_the_color': 'Find the right color, Prisha!',
-            'find_the_shape': 'Find the right shape, Prisha!',
-            'what_animal_sound': 'What animal makes this sound, Prisha?',
+            'lets_learn_colors': "Let's learn colors, " + n + "!",
+            'lets_learn_shapes': "Let's learn shapes, " + n + "!",
+            'lets_learn_animals': "Let's learn animals, " + n + "!",
+            'find_the_color': "Find the right color, " + n + "!",
+            'find_the_shape': "Find the right shape, " + n + "!",
+            'what_animal_sound': "What animal makes this sound, " + n + "?",
             'this_is': 'This is',
-            'keep_practicing_vocab': "Keep practicing, Prisha! You're learning so many words!"
+            'keep_practicing_vocab': "Keep practicing, " + n + "! You're learning so many words!"
         };
         Speech.speak(fallback[id] || id, 0.9, 1.1);
     },
@@ -621,11 +624,12 @@ playGameExplanation: function(text) {
     },
     // --- Game instruction TTS fallbacks ---
     _speakGameInstructionFallback: function(id) {
+        var n = (typeof ChildName !== 'undefined' && ChildName.get()) ? ChildName.get() : 'friend';
         var fallback = {
-            'find_the_different': "Find the one that's different, Prisha!",
+            'find_the_different': "Find the one that's different, " + n + "!",
             'which_one_different': 'Which one is different?',
-            'great_thinking': 'Great thinking, Prisha!',
-            'keep_trying': 'Keep trying, Prisha! You can do it!',
+            'great_thinking': 'Great thinking, ' + n + '!',
+            'keep_trying': 'Keep trying, ' + n + '! You can do it!',
             'odd_one_out_intro': "One of these doesn't belong. Can you find it?"
         };
         Speech.speak(fallback[id] || id, 0.9, 1.1);

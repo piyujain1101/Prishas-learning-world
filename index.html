@@ -9,14 +9,44 @@
     <link rel="manifest" href="manifest.json">
     <link rel="apple-touch-icon" href="images/icon-192.png">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦕</text></svg>">
-    <title>Prisha's Learning World 🦕</title>
+    <title>Learning World 🦕</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
     <div id="app">
+        <!-- Welcome / Name Entry Screen (shown on first visit) -->
+        <div id="name-entry-screen" class="screen">
+            <div class="stars-bg"></div>
+
+            <div class="name-entry-content">
+                <div class="name-entry-dino">🦕</div>
+                <h1 class="name-entry-title">Hi there!</h1>
+                <p class="name-entry-subtitle">I'm Dino! What's your name?</p>
+
+                <div class="name-entry-form">
+                    <input
+                        type="text"
+                        id="child-name-input"
+                        class="name-entry-input"
+                        placeholder="Type your name here..."
+                        maxlength="20"
+                        autocomplete="off"
+                        autofocus
+                    >
+                    <button class="big-button btn-primary name-entry-btn" id="name-entry-submit" onclick="submitChildName()">
+                        Let's Go! 🚀
+                    </button>
+                </div>
+
+                <p class="name-entry-note">
+                    Parents: You can change this anytime<br>from the 🔒 Parent controls.
+                </p>
+            </div>
+        </div>
+
         <!-- Loading Screen -->
-        <div id="loading-screen" class="loading-screen">
+        <div id="loading-screen" class="loading-screen" style="display:none;">
             <div class="loading-dino">🦕</div>
             <div class="loading-text">Loading...</div>
             <div class="loading-bar">
@@ -38,18 +68,11 @@
                 <div class="mascot-container">
                     <div class="dino-mascot" id="dino">🦕</div>
                 </div>
-                <h1 class="app-title">
-                    <span class="letter-pop" style="--delay: 0.1s; color: #FF6B6B;">P</span>
-                    <span class="letter-pop" style="--delay: 0.2s; color: #FFA502;">r</span>
-                    <span class="letter-pop" style="--delay: 0.3s; color: #FFD93D;">i</span>
-                    <span class="letter-pop" style="--delay: 0.4s; color: #6BCB77;">s</span>
-                    <span class="letter-pop" style="--delay: 0.5s; color: #4D96FF;">h</span>
-                    <span class="letter-pop" style="--delay: 0.6s; color: #9B59B6;">a</span>
-                    <span class="letter-pop" style="--delay: 0.7s; color: #FF6B6B;">'</span>
-                    <span class="letter-pop" style="--delay: 0.8s; color: #FFA502;">s</span>
+                <h1 class="app-title" id="app-title">
+                    <!-- Dynamically generated letter-pop spans -->
                 </h1>
                 <h2 class="subtitle">Learning World 🌍</h2>
-                <p class="greeting" id="greeting">Hi Prisha! Ready to learn?</p>
+                <p class="greeting" id="greeting"></p>
             </div>
 
             <div class="modules-grid">
@@ -130,6 +153,19 @@
                 </div>
 
                 <div class="parent-controls" id="parent-controls" style="display:none;">
+                    <!-- Child Name -->
+                    <div class="control-section">
+                        <h3>👤 Child's Name</h3>
+                        <div class="control-row">
+                            <label>Name:</label>
+                            <input type="text" id="parent-child-name" class="parent-name-input" maxlength="20" placeholder="Enter name">
+                        </div>
+                        <div class="control-row">
+                            <button class="save-name-btn" onclick="saveChildNameFromParent()">Save Name</button>
+                            <span id="name-save-status" class="name-save-status"></span>
+                        </div>
+                    </div>
+
                     <!-- Screen Time -->
                     <div class="control-section">
                         <h3>⏱️ Screen Time</h3>
@@ -196,8 +232,8 @@
             <div class="times-up-content">
                 <div class="times-up-dino">🦕😴</div>
                 <h1 class="times-up-title">Time for a Break!</h1>
-                <p class="times-up-text">
-                    Great learning today, Prisha!<br>
+                <p class="times-up-text" id="times-up-text">
+                    Great learning today!<br>
                     Dino needs a nap. Come back later!
                 </p>
                 <div class="times-up-stars">

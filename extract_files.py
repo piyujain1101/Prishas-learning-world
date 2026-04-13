@@ -10,7 +10,7 @@ INCLUDE_EXTENSIONS = {'.html', '.css', '.js', '.json', '.py', '.md', '.sh'}
 INCLUDE_NAMES = {'.gitignore'}
 
 print("PROJECT_DIR:", PROJECT_DIR)
-print("=== Prisha's Learning World - Project Files ===\n")
+print("=== Learning World - Project Files ===\n")
 
 for root, dirs, files in os.walk(PROJECT_DIR):
     # This MUST happen before sorted() consumes the walk

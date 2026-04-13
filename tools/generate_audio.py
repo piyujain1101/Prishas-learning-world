@@ -1,6 +1,6 @@
 """
 ========================================
-Audio Generator for Prisha's Learning World
+Audio Generator for Learning World
 ========================================
 pip install edge-tts
 python generate_audio.py --method edge
@@ -18,10 +18,10 @@ from pathlib import Path
 # ========================================
 
 GAME_INSTRUCTIONS = [
-    {"id": "find_the_different", "text": "Find the one that's different, Prisha!"},
+    {"id": "find_the_different", "text": "Find the one that's different!"},
     {"id": "which_one_different", "text": "Which one is different?"},
-    {"id": "great_thinking", "text": "Great thinking, Prisha!"},
-    {"id": "keep_trying", "text": "Keep trying, Prisha! You can do it!"},
+    {"id": "great_thinking", "text": "Great thinking!"},
+    {"id": "keep_trying", "text": "Keep trying! You can do it!"},
     {"id": "odd_one_out_intro", "text": "One of these doesn't belong. Can you find it?"},
 ]
 
@@ -79,26 +79,26 @@ LETTERS_DATA = [
 ]
 
 CELEBRATIONS = [
-    {"id": "great_job", "text": "Great job, Prisha!"},
-    {"id": "amazing", "text": "You're amazing, Prisha!"},
-    {"id": "wonderful", "text": "Wonderful, Prisha!"},
-    {"id": "you_did_it", "text": "You did it, Prisha!"},
-    {"id": "super_star", "text": "Super star, Prisha!"},
-    {"id": "yay", "text": "Yay, Prisha!"},
-    {"id": "keep_going", "text": "Keep going, Prisha! You're doing great!"},
-    {"id": "well_done", "text": "Well done, Prisha!"},
-    {"id": "fantastic", "text": "Fantastic, Prisha!"},
-    {"id": "proud", "text": "I'm so proud of you, Prisha!"},
+    {"id": "great_job", "text": "Great job!"},
+    {"id": "amazing", "text": "You're amazing!"},
+    {"id": "wonderful", "text": "Wonderful!"},
+    {"id": "you_did_it", "text": "You did it!"},
+    {"id": "super_star", "text": "Super star!"},
+    {"id": "yay", "text": "Yay!"},
+    {"id": "keep_going", "text": "Keep going! You're doing great!"},
+    {"id": "well_done", "text": "Well done!"},
+    {"id": "fantastic", "text": "Fantastic!"},
+    {"id": "proud", "text": "I'm so proud of you!"},
 ]
 
 INSTRUCTIONS = [
-    {"id": "welcome", "text": "Hi Prisha! Welcome to your learning world!"},
-    {"id": "lets_learn", "text": "Let's learn letters, Prisha!"},
+    {"id": "welcome", "text": "Hi ! Welcome to your learning world!"},
+    {"id": "lets_learn", "text": "Let's learn letters!"},
     {"id": "find_lowercase", "text": "Find the lowercase friend!"},
     {"id": "what_sound", "text": "What letter makes this sound?"},
     {"id": "tap_to_hear", "text": "Tap the buttons to hear the sounds!"},
-    {"id": "try_again", "text": "Oops! Try again, Prisha!"},
-    {"id": "all_done", "text": "Wow Prisha! You explored all 26 letters! You are a superstar!"},
+    {"id": "try_again", "text": "Oops! Try again!"},
+    {"id": "all_done", "text": "Wow ! You explored all 26 letters! You are a superstar!"},
     {"id": "pick_letter", "text": "Pick the right letter!"},
     {"id": "listen_carefully", "text": "Listen carefully!"},
     {"id": "roar", "text": "Roar! I'm Dino! Let's have fun!"},
@@ -128,12 +128,12 @@ NUMBERS_DATA_AUDIO = [
 ]
 
 NUMBERS_INSTRUCTIONS = [
-    {"id": "lets_count", "text": "Let's explore numbers, Prisha!"},
-    {"id": "count_animals", "text": "Count the animals, Prisha!"},
+    {"id": "lets_count", "text": "Let's explore numbers!"},
+    {"id": "count_animals", "text": "Count the animals!"},
     {"id": "how_many", "text": "How many do you see?"},
-    {"id": "match_number", "text": "Match the number to the right group, Prisha!"},
-    {"id": "all_numbers_done", "text": "Wow Prisha! You explored all 20 numbers! Amazing!"},
-    {"id": "keep_practicing", "text": "Keep practicing, Prisha! You can do it!"},
+    {"id": "match_number", "text": "Match the number to the right group!"},
+    {"id": "all_numbers_done", "text": "Wow ! You explored all 20 numbers! Amazing!"},
+    {"id": "keep_practicing", "text": "Keep practicing! You can do it!"},
 ]
 
 COUNTING_SEQUENCES = []
@@ -191,14 +191,14 @@ ANIMALS_AUDIO = [
 ]
 
 VOCAB_INSTRUCTIONS = [
-    {"id": "lets_learn_colors",  "text": "Let's learn colors, Prisha!"},
-    {"id": "lets_learn_shapes",  "text": "Let's learn shapes, Prisha!"},
-    {"id": "lets_learn_animals", "text": "Let's learn animals, Prisha!"},
-    {"id": "find_the_color",     "text": "Find the right color, Prisha!"},
-    {"id": "find_the_shape",     "text": "Find the right shape, Prisha!"},
-    {"id": "what_animal_sound",  "text": "What animal makes this sound, Prisha?"},
+    {"id": "lets_learn_colors",  "text": "Let's learn colors!"},
+    {"id": "lets_learn_shapes",  "text": "Let's learn shapes!"},
+    {"id": "lets_learn_animals", "text": "Let's learn animals!"},
+    {"id": "find_the_color",     "text": "Find the right color!"},
+    {"id": "find_the_shape",     "text": "Find the right shape!"},
+    {"id": "what_animal_sound",  "text": "What animal makes this sound?"},
     {"id": "this_is",            "text": "This is"},
-    {"id": "keep_practicing_vocab", "text": "Keep practicing, Prisha! You're learning so many words!"},
+    {"id": "keep_practicing_vocab", "text": "Keep practicing! You're learning so many words!"},
 ]
 
 AUDIO_DIR = Path("../audio")
@@ -681,7 +681,7 @@ def generate_audio_manifest():
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Generate audio for Prisha's Learning World")
+    parser = argparse.ArgumentParser(description="Generate audio for 's Learning World")
     parser.add_argument('--method', choices=['edge', 'macos'], default='edge')
     args = parser.parse_args()
 

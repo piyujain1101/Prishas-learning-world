@@ -709,9 +709,11 @@ function showOooResults() {
     var title = document.getElementById('ooo-results-title');
     var mascot = document.getElementById('ooo-results-mascot');
 
-    if (pct >= 90) { title.textContent = 'SUPERSTAR, Prisha!'; mascot.textContent = '🦕🏆'; }
-    else if (pct >= 70) { title.textContent = 'Great Job, Prisha!'; mascot.textContent = '🦕⭐'; }
-    else if (pct >= 50) { title.textContent = 'Good Try, Prisha!'; mascot.textContent = '🦕😊'; }
+    var name = ChildName.get() || 'friend';
+
+    if (pct >= 90) { title.textContent = 'SUPERSTAR, ' + name + '!'; mascot.textContent = '🦕🏆'; }
+    else if (pct >= 70) { title.textContent = 'Great Job, ' + name + '!'; mascot.textContent = '🦕⭐'; }
+    else if (pct >= 50) { title.textContent = 'Good Try, ' + name + '!'; mascot.textContent = '🦕😊'; }
     else { title.textContent = 'Keep Practicing!'; mascot.textContent = '🦕💪'; }
 
     document.getElementById('ooo-results-text').innerHTML =

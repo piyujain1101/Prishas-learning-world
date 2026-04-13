@@ -1,7 +1,7 @@
 {
-    "name": "Prisha's Learning World",
-    "short_name": "Prisha Learn",
-    "description": "A fun learning app for Prisha! 🦕",
+    "name": "Learning World 🦕",
+    "short_name": "Learn World",
+    "description": "A fun learning app for kids! 🦕",
     "start_url": "./index.html",
     "display": "standalone",
     "background_color": "#6C5CE7",

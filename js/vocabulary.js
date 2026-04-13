@@ -241,8 +241,8 @@ function showVocabCard(index) {
         if (vocabState.visited.size % 5 === 0 && vocabState.visited.size > 0) {
             vocabDelay(function() {
                 launchConfetti();
-                showCelebration('🎉', vocabState.visited.size + ' Words Learned!', 'Keep going, Prisha!');
-            }, 800);
+                var cName = ChildName.get() || 'friend';
+                showCelebration('🎉', vocabState.visited.size + ' Words Learned!', 'Keep going, ' + cName + '!');            }, 800);
         }
     }
 
@@ -277,8 +277,8 @@ function nextVocabCard() {
         AudioManager.stopAll();
         launchConfetti();
         AudioManager.playCelebration();
-        showCelebration('🎉🦕', 'Amazing, Prisha!', 'You learned all ' + data.length + ' words!', function() { showVocabMenu(); });
-        return;
+        var cName = ChildName.get() || 'friend';
+        showCelebration('🎉🦕', 'Amazing, ' + cName + '!', 'You learned all ' + data.length + ' words!', function() { showVocabMenu(); });        return;
     }
     vocabState.direction = 'next';
     vocabState.currentIndex++;
@@ -717,9 +717,11 @@ function showVocabResults() {
     var title = document.getElementById('vocab-results-title');
     var mascot = document.getElementById('vocab-results-mascot');
 
-    if (pct >= 90) { title.textContent = 'SUPERSTAR, Prisha!'; mascot.textContent = '🦕🏆'; }
-    else if (pct >= 70) { title.textContent = 'Great Job, Prisha!'; mascot.textContent = '🦕⭐'; }
-    else if (pct >= 50) { title.textContent = 'Good Try, Prisha!'; mascot.textContent = '🦕😊'; }
+    var name = ChildName.get() || 'friend';
+
+    if (pct >= 90) { title.textContent = 'SUPERSTAR, ' + name + '!'; mascot.textContent = '🦕🏆'; }
+    else if (pct >= 70) { title.textContent = 'Great Job, ' + name + '!'; mascot.textContent = '🦕⭐'; }
+    else if (pct >= 50) { title.textContent = 'Good Try, ' + name + '!'; mascot.textContent = '🦕😊'; }
     else { title.textContent = 'Keep Practicing!'; mascot.textContent = '🦕💪'; }
 
     document.getElementById('vocab-results-text').innerHTML = 'You got <strong>' + score + ' out of ' + total + '</strong> correct!';

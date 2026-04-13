@@ -93,6 +93,7 @@ function saveNumProgress() {
 function showNumber(index) {
     var data = NUMBERS_DATA[index];
     var card = document.getElementById('number-card');
+    var name = ChildName.get() || 'friend';
 
     AudioManager.stopAll();
 
@@ -121,7 +122,7 @@ function showNumber(index) {
         if (visitedNums.size % 5 === 0 && visitedNums.size > 0) {
             setTimeout(function() {
                 launchConfetti();
-                showCelebration('🌟', visitedNums.size + ' Numbers Explored!', 'Keep going, Prisha!');
+                showCelebration('🌟', visitedNums.size + ' Numbers Explored!', 'Keep going, ' + name + '!');
             }, 800);
         }
     }
@@ -154,10 +155,11 @@ function getObjectName(emoji, count) {
 }
 
 function nextNumber() {
+    var name = ChildName.get() || 'friend';
     if (numIndex >= 19) {
         launchConfetti();
         AudioManager.playNumberInstruction('all_numbers_done');
-        showCelebration('🏆🦕', 'Amazing, Prisha!', 'You explored all 20 numbers!', function() { showNumbersMenu(); });
+        showCelebration('🏆🦕', 'Amazing, ' + name + '!', 'You explored all 20 numbers!', function() { showNumbersMenu(); });
         return;
     }
     numDirection = 'next';
@@ -314,7 +316,7 @@ function handleCountChoice(selected, btnEl) {
             AudioManager.playInstruction('try_again');
         }, 200);
 
-        // After try-again audio, let Prisha tap the correct one
+        // After try-again audio, let child tap the correct one
         setTimeout(function() {
             countState.isAnswered = false;
 
@@ -491,7 +493,7 @@ function handleNMatchChoice(selected, btnEl) {
             AudioManager.playInstruction('try_again');
         }, 200);
 
-        // After try-again audio, let Prisha tap the correct one
+        // After try-again audio, let child tap the correct one
         setTimeout(function() {
             countState.isAnswered = false;
 
@@ -550,6 +552,7 @@ function showNumResults() {
     AudioManager.stopAll();
     showNumScreen('number-results');
 
+    var name = ChildName.get() || 'friend';
     var score = countState.correctCount;
     var total = countState.totalRounds;
     var pct = Math.round((score / total) * 100);
@@ -565,9 +568,9 @@ function showNumResults() {
     var title = document.getElementById('num-results-title');
     var mascot = document.getElementById('num-results-mascot');
 
-    if (pct >= 90) { title.textContent = 'SUPERSTAR, Prisha!'; mascot.textContent = '🦕🎉'; }
-    else if (pct >= 70) { title.textContent = 'Great Job, Prisha!'; mascot.textContent = '🦕⭐'; }
-    else if (pct >= 50) { title.textContent = 'Good Try, Prisha!'; mascot.textContent = '🦕👍'; }
+    if (pct >= 90) { title.textContent = 'SUPERSTAR, ' + name + '!'; mascot.textContent = '🦕🎉'; }
+    else if (pct >= 70) { title.textContent = 'Great Job, ' + name + '!'; mascot.textContent = '🦕⭐'; }
+    else if (pct >= 50) { title.textContent = 'Good Try, ' + name + '!'; mascot.textContent = '🦕👍'; }
     else { title.textContent = 'Keep Practicing!'; mascot.textContent = '🦕💪'; }
 
     document.getElementById('num-results-text').innerHTML = 'You got <strong>' + score + ' out of ' + total + '</strong> correct!';

@@ -27,7 +27,7 @@ var LETTERS = [
     { upper: 'M', lower: 'm', word: 'Moon',       emoji: '🌙', theme: 'theme-purple', dinoTip: 'M says "mah" like Moon!' },
     { upper: 'N', lower: 'n', word: 'Nest',       emoji: '🪺', theme: 'theme-nature', dinoTip: 'N says "nah" like Nest!' },
     { upper: 'O', lower: 'o', word: 'Octopus',    emoji: '🐙', theme: 'theme-warm',   dinoTip: 'O says "awe" like Octopus!' },
-    { upper: 'P', lower: 'p', word: 'Penguin',    emoji: '🐧', theme: 'theme-cool',   dinoTip: 'P says "pah" like Penguin! P is for Prisha too!' },
+    { upper: 'P', lower: 'p', word: 'Penguin',    emoji: '🐧', theme: 'theme-cool',   dinoTip: 'P says "pah" like Penguin!' },
     { upper: 'Q', lower: 'q', word: 'Queen',      emoji: '👑', theme: 'theme-sun',    dinoTip: 'Q says "kwah" like Queen!' },
     { upper: 'R', lower: 'r', word: 'Rainbow',    emoji: '🌈', theme: 'theme-warm',   dinoTip: 'R says "rah" like Rainbow!' },
     { upper: 'S', lower: 's', word: 'Star',       emoji: '⭐', theme: 'theme-sun',    dinoTip: 'S says "sah" like Star!' },
@@ -118,6 +118,7 @@ function buildDotIndicators() {
 function showLetter(index) {
     const letter = LETTERS[index];
     const card = document.getElementById('letter-card');
+    const name = ChildName.get() || 'friend';
 
     // Stop any playing audio
     AudioManager.stopAll();
@@ -172,7 +173,7 @@ function showLetter(index) {
                 showCelebration(
                     '🌟',
                     `${visitedLetters.size} Letters Explored!`,
-                    'Keep going, Prisha! You\'re doing great!'
+                    'Keep going, ' + name + '! You\'re doing great!'
                 );
             }, 800);
         }
@@ -227,14 +228,15 @@ function updateStarCounter() {
 
 // --- Navigation ---
 function nextLetter() {
+    var name = ChildName.get() || 'friend';
     if (currentIndex >= 25) {
         // Finished all letters!
         launchConfetti();
         AudioManager.playInstruction('all_done');
         showCelebration(
             '🏆🦕',
-            'Amazing, Prisha!',
-            `You explored all 26 letters! You earned ${Rewards.getStars('phonics')} stars!`,
+            'Amazing, ' + name + '!',
+            'You explored all 26 letters! You earned ' + Rewards.getStars('phonics') + ' stars!',
             () => showPhonicsMenu()
         );
         return;

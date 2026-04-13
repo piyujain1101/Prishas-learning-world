@@ -1,6 +1,29 @@
 /* ========================================
-   Prisha's Learning World - Core App Logic
+   Learning World - Core App Logic
    ======================================== */
+
+// --- Child Name Manager (localStorage) ---
+const ChildName = {
+    _key: 'child_name',
+    get() {
+        return localStorage.getItem(this._key) || '';
+    },
+    set(name) {
+        name = (name || '').trim();
+        if (name) {
+            localStorage.setItem(this._key, name);
+        }
+    },
+    isSet() {
+        return !!this.get();
+    },
+    // Returns possessive form: "Prisha's" or "Kai's"
+    possessive() {
+        var name = this.get();
+        if (!name) return '';
+        return name.endsWith('s') ? name + "'" : name + "'s";
+    }
+};
 
 // --- Rewards / Stars System (localStorage) ---
 const Rewards = {
@@ -23,7 +46,9 @@ const Rewards = {
         if (totalStars) totalStars.textContent = this.getTotalStars();
     },
     reset() {
+        var childName = ChildName.get(); // preserve child name
         localStorage.clear();
+        if (childName) ChildName.set(childName); // restore child name
         this.updateUI();
     }
 };
@@ -86,7 +111,8 @@ const Speech = {
     var sound = phonicsMap[letter.toLowerCase()] || letter;
     this.speak(sound, 0.65, 1.0);
 },
-    celebrate(name = 'Prisha') {
+    celebrate() {
+        var name = ChildName.get() || 'friend';
         const phrases = [
             `Great job, ${name}!`,
             `You're amazing, ${name}!`,
@@ -119,11 +145,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const dino = document.getElementById('dino');
     if (dino) {
         dino.addEventListener('click', () => {
+            var name = ChildName.get() || 'friend';
             const dinoSays = [
-                "Hi Prisha! Let's learn!",
+                "Hi " + name + "! Let's learn!",
                 "Roar! I'm Dino!",
                 "Tap Phonics to start!",
-                "You're awesome, Prisha!",
+                "You're awesome, " + name + "!",
                 "Let's have fun!"
             ];
             const msg = dinoSays[Math.floor(Math.random() * dinoSays.length)];
@@ -143,12 +170,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // Greeting based on time of day
     const greeting = document.getElementById('greeting');
     if (greeting) {
+        var name = ChildName.get() || 'friend';
         const hour = new Date().getHours();
         let timeGreeting = 'Hi';
         if (hour < 12) timeGreeting = 'Good morning';
         else if (hour < 17) timeGreeting = 'Good afternoon';
         else timeGreeting = 'Good evening';
-        greeting.textContent = `${timeGreeting}, Prisha! Ready to learn? 🦕`;
+        greeting.textContent = `${timeGreeting}, ${name}! Ready to learn? 🦕`;
     }
 });
 
