@@ -81,7 +81,7 @@ var SAFARI_SIMILAR = {
 
 var safariState = {
     difficulty: 'easy',
-    totalRounds: 10,
+    totalRounds: 25,
     currentRound: 0,
     correctCount: 0,
     wrongCount: 0,

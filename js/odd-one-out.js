@@ -296,7 +296,7 @@ var OOO_PUZZLES = [
         odd: { emoji: '🌙', label: 'Moon' },
         explanation: 'Moon is different from all the stars!'
     },
-    {
+{
         category: 'same',
         prompt: 'Which one is different?',
         items: [
@@ -308,6 +308,61 @@ var OOO_PUZZLES = [
         ],
         odd: { emoji: '🐶', label: 'Dog' },
         explanation: 'Dog is different from all the cats!'
+    },
+
+    // --- NEW PUZZLES ---
+
+    {
+        category: 'fruits',
+        prompt: 'Which one is NOT a fruit?',
+        items: [
+            { emoji: '🍓', label: 'Strawberry' },
+            { emoji: '🍑', label: 'Peach' },
+            { emoji: '🥭', label: 'Mango' },
+            { emoji: '🍒', label: 'Cherry' },
+            { emoji: '🍋', label: 'Lemon' }
+        ],
+        odd: { emoji: '🎸', label: 'Guitar' },
+        explanation: 'Guitar is an instrument, not a fruit!'
+    },
+    {
+        category: 'animals',
+        prompt: 'Which one is NOT an animal?',
+        items: [
+            { emoji: '🐸', label: 'Frog' },
+            { emoji: '🐢', label: 'Turtle' },
+            { emoji: '🐍', label: 'Snake' },
+            { emoji: '🦎', label: 'Lizard' },
+            { emoji: '🐊', label: 'Crocodile' }
+        ],
+        odd: { emoji: '🌺', label: 'Flower' },
+        explanation: 'Flower is a plant, not an animal!'
+    },
+    {
+        category: 'same',
+        prompt: 'Which one is different?',
+        items: [
+            { emoji: '🍌', label: 'Banana' },
+            { emoji: '🍌', label: 'Banana' },
+            { emoji: '🍌', label: 'Banana' },
+            { emoji: '🍌', label: 'Banana' },
+            { emoji: '🍌', label: 'Banana' }
+        ],
+        odd: { emoji: '🥕', label: 'Carrot' },
+        explanation: 'Carrot is different from all the bananas!'
+    },
+    {
+        category: 'food',
+        prompt: 'Which one is NOT food?',
+        items: [
+            { emoji: '🥞', label: 'Pancakes' },
+            { emoji: '🧇', label: 'Waffle' },
+            { emoji: '🍪', label: 'Cookie' },
+            { emoji: '🎂', label: 'Cake' },
+            { emoji: '🍰', label: 'Pie' }
+        ],
+        odd: { emoji: '📚', label: 'Books' },
+        explanation: 'Books are for reading, not eating!'
     }
 ];
 
@@ -317,7 +372,7 @@ var OOO_PUZZLES = [
 
 var oooState = {
     difficulty: 'easy',
-    totalRounds: 10,
+    totalRounds: 25,
     currentRound: 0,
     correctCount: 0,
     wrongCount: 0,

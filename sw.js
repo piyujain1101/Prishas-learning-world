@@ -1,4 +1,4 @@
-var CACHE_NAME = 'learning-world-v5';
+var CACHE_NAME = 'learning-world-v6';
 var urlsToCache = [
     './',
     './index.html',

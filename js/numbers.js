@@ -33,12 +33,13 @@ var numDirection = 'next';
 
 var countState = {
     currentRound: 0,
-    totalRounds: 10,
+    totalRounds: 20,
     correctCount: 0,
     wrongCount: 0,
     currentAnswer: 0,
     isAnswered: false,
-    lastGame: 'counting'
+    lastGame: 'counting',
+    usedNumbers: []
 };
 
 // --- Screen Management ---
@@ -195,10 +196,12 @@ function playCountUp() {
 // ========================================
 function startCountingGame() {
     countState.currentRound = 0;
+    countState.totalRounds = 20;
     countState.correctCount = 0;
     countState.wrongCount = 0;
     countState.isAnswered = false;
     countState.lastGame = 'counting';
+    countState.usedNumbers = [];
 
     document.getElementById('count-score-correct').textContent = '✅ 0';
     document.getElementById('count-score-wrong').textContent = '❌ 0';
@@ -219,7 +222,21 @@ function nextCountRound() {
         return;
     }
 
-    var correctNum = Math.floor(Math.random() * 10) + 1;
+// No-repeat: cycle through 1-10 twice
+    var available = [];
+    for (var av = 1; av <= 10; av++) {
+        var usedCount = 0;
+        for (var uc = 0; uc < countState.usedNumbers.length; uc++) {
+            if (countState.usedNumbers[uc] === av) usedCount++;
+        }
+        if (usedCount < 2) available.push(av);
+    }
+    if (available.length === 0) {
+        countState.usedNumbers = [];
+        for (var rf = 1; rf <= 10; rf++) available.push(rf);
+    }
+    var correctNum = available[Math.floor(Math.random() * available.length)];
+    countState.usedNumbers.push(correctNum);
     countState.currentAnswer = correctNum;
 
     var animal = COUNTING_ANIMALS[Math.floor(Math.random() * COUNTING_ANIMALS.length)];
@@ -373,10 +390,12 @@ function handleCountChoice(selected, btnEl) {
 // ========================================
 function startNumberMatch() {
     countState.currentRound = 0;
+    countState.totalRounds = 20;
     countState.correctCount = 0;
     countState.wrongCount = 0;
     countState.isAnswered = false;
     countState.lastGame = 'match';
+    countState.usedNumbers = [];
 
     document.getElementById('nmatch-score-correct').textContent = '✅ 0';
     document.getElementById('nmatch-score-wrong').textContent = '❌ 0';
@@ -396,8 +415,21 @@ function nextNMatchRound() {
         showNumResults();
         return;
     }
-
-    var targetNum = Math.floor(Math.random() * 8) + 1;
+// No-repeat: cycle through 1-10 twice
+    var available = [];
+    for (var av = 1; av <= 10; av++) {
+        var usedCount = 0;
+        for (var uc = 0; uc < countState.usedNumbers.length; uc++) {
+            if (countState.usedNumbers[uc] === av) usedCount++;
+        }
+        if (usedCount < 2) available.push(av);
+    }
+    if (available.length === 0) {
+        countState.usedNumbers = [];
+        for (var rf = 1; rf <= 10; rf++) available.push(rf);
+    }
+    var targetNum = available[Math.floor(Math.random() * available.length)];
+    countState.usedNumbers.push(targetNum);
     countState.currentAnswer = targetNum;
 
     document.getElementById('nmatch-round-text').textContent = 'Round ' + countState.currentRound + ' of ' + countState.totalRounds;
@@ -411,7 +443,7 @@ function nextNMatchRound() {
 
     var choiceNums = [targetNum];
     while (choiceNums.length < 3) {
-        var r = Math.floor(Math.random() * 8) + 1;
+        var r = Math.floor(Math.random() * 10) + 1;
         if (choiceNums.indexOf(r) === -1) {
             choiceNums.push(r);
         }

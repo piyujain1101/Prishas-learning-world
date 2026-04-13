@@ -372,6 +372,26 @@
       "white": {
         "word": "audio/vocabulary/colors/words/white.mp3",
         "sentence": "audio/vocabulary/colors/sentences/white.mp3"
+      },
+      "gray": {
+        "word": "audio/vocabulary/colors/words/gray.mp3",
+        "sentence": "audio/vocabulary/colors/sentences/gray.mp3"
+      },
+      "gold": {
+        "word": "audio/vocabulary/colors/words/gold.mp3",
+        "sentence": "audio/vocabulary/colors/sentences/gold.mp3"
+      },
+      "peach": {
+        "word": "audio/vocabulary/colors/words/peach.mp3",
+        "sentence": "audio/vocabulary/colors/sentences/peach.mp3"
+      },
+      "aqua": {
+        "word": "audio/vocabulary/colors/words/aqua.mp3",
+        "sentence": "audio/vocabulary/colors/sentences/aqua.mp3"
+      },
+      "lime": {
+        "word": "audio/vocabulary/colors/words/lime.mp3",
+        "sentence": "audio/vocabulary/colors/sentences/lime.mp3"
       }
     },
     "shapes": {
@@ -406,6 +426,34 @@
       "oval": {
         "word": "audio/vocabulary/shapes/words/oval.mp3",
         "sentence": "audio/vocabulary/shapes/sentences/oval.mp3"
+      },
+      "crescent": {
+        "word": "audio/vocabulary/shapes/words/crescent.mp3",
+        "sentence": "audio/vocabulary/shapes/sentences/crescent.mp3"
+      },
+      "arrow": {
+        "word": "audio/vocabulary/shapes/words/arrow.mp3",
+        "sentence": "audio/vocabulary/shapes/sentences/arrow.mp3"
+      },
+      "cross": {
+        "word": "audio/vocabulary/shapes/words/cross.mp3",
+        "sentence": "audio/vocabulary/shapes/sentences/cross.mp3"
+      },
+      "hexagon": {
+        "word": "audio/vocabulary/shapes/words/hexagon.mp3",
+        "sentence": "audio/vocabulary/shapes/sentences/hexagon.mp3"
+      },
+      "cloud": {
+        "word": "audio/vocabulary/shapes/words/cloud.mp3",
+        "sentence": "audio/vocabulary/shapes/sentences/cloud.mp3"
+      },
+      "lightning": {
+        "word": "audio/vocabulary/shapes/words/lightning.mp3",
+        "sentence": "audio/vocabulary/shapes/sentences/lightning.mp3"
+      },
+      "drop": {
+        "word": "audio/vocabulary/shapes/words/drop.mp3",
+        "sentence": "audio/vocabulary/shapes/sentences/drop.mp3"
       }
     },
     "animals": {
@@ -483,6 +531,51 @@
         "word": "audio/vocabulary/animals/words/bee.mp3",
         "sound": "audio/vocabulary/animals/sounds/bee.mp3",
         "sentence": "audio/vocabulary/animals/sentences/bee.mp3"
+      },
+      "owl": {
+        "word": "audio/vocabulary/animals/words/owl.mp3",
+        "sound": "audio/vocabulary/animals/sounds/owl.mp3",
+        "sentence": "audio/vocabulary/animals/sentences/owl.mp3"
+      },
+      "bear": {
+        "word": "audio/vocabulary/animals/words/bear.mp3",
+        "sound": "audio/vocabulary/animals/sounds/bear.mp3",
+        "sentence": "audio/vocabulary/animals/sentences/bear.mp3"
+      },
+      "mouse": {
+        "word": "audio/vocabulary/animals/words/mouse.mp3",
+        "sound": "audio/vocabulary/animals/sounds/mouse.mp3",
+        "sentence": "audio/vocabulary/animals/sentences/mouse.mp3"
+      },
+      "donkey": {
+        "word": "audio/vocabulary/animals/words/donkey.mp3",
+        "sound": "audio/vocabulary/animals/sounds/donkey.mp3",
+        "sentence": "audio/vocabulary/animals/sentences/donkey.mp3"
+      },
+      "rooster": {
+        "word": "audio/vocabulary/animals/words/rooster.mp3",
+        "sound": "audio/vocabulary/animals/sounds/rooster.mp3",
+        "sentence": "audio/vocabulary/animals/sentences/rooster.mp3"
+      },
+      "whale": {
+        "word": "audio/vocabulary/animals/words/whale.mp3",
+        "sound": "audio/vocabulary/animals/sounds/whale.mp3",
+        "sentence": "audio/vocabulary/animals/sentences/whale.mp3"
+      },
+      "tiger": {
+        "word": "audio/vocabulary/animals/words/tiger.mp3",
+        "sound": "audio/vocabulary/animals/sounds/tiger.mp3",
+        "sentence": "audio/vocabulary/animals/sentences/tiger.mp3"
+      },
+      "penguin": {
+        "word": "audio/vocabulary/animals/words/penguin.mp3",
+        "sound": "audio/vocabulary/animals/sounds/penguin.mp3",
+        "sentence": "audio/vocabulary/animals/sentences/penguin.mp3"
+      },
+      "goat": {
+        "word": "audio/vocabulary/animals/words/goat.mp3",
+        "sound": "audio/vocabulary/animals/sounds/goat.mp3",
+        "sentence": "audio/vocabulary/animals/sentences/goat.mp3"
       }
     },
     "instructions": [

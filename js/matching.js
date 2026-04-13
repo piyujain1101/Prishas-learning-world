@@ -33,7 +33,7 @@ var SIMILAR_LETTERS = {
 
 var gameState = {
     difficulty: 'easy',
-    totalRounds: 10,
+    totalRounds: 25,
     currentRound: 0,
     correctCount: 0,
     wrongCount: 0,

@@ -14,7 +14,12 @@ var COLORS_DATA = [
     { name: 'Pink',   id: 'pink',   hex: '#FF69B4', emoji: '🩷', objects: '🌸🦩🎀',  sentence: 'Pink like a flamingo!' },
     { name: 'Brown',  id: 'brown',  hex: '#8B4513', emoji: '🤎', objects: '🐻🍫🪵',  sentence: 'Brown like a bear!' },
     { name: 'Black',  id: 'black',  hex: '#000000', emoji: '⚫', objects: '🐱‍👤🐱🤎', sentence: 'Black like the night!' },
-    { name: 'White',  id: 'white',  hex: '#FFFFFF', emoji: '⚪', objects: '☁️🐑☁️',  sentence: 'White like a cloud!' }
+    { name: 'White',  id: 'white',  hex: '#FFFFFF', emoji: '⚪', objects: '☁️🐑☁️',  sentence: 'White like a cloud!' },
+    { name: 'Gray',   id: 'gray',   hex: '#808080', emoji: '🩶', objects: '🐘🌫️🪨',  sentence: 'Gray like an elephant!' },
+    { name: 'Gold',   id: 'gold',   hex: '#FFD700', emoji: '🥇', objects: '🏆👑⭐',  sentence: 'Gold like a trophy!' },
+    { name: 'Peach',  id: 'peach',  hex: '#FFCBA4', emoji: '🍑', objects: '🍑🌅🧁',  sentence: 'Peach like a peach fruit!' },
+    { name: 'Aqua',   id: 'aqua',   hex: '#00CED1', emoji: '💎', objects: '🌊🐬💎',  sentence: 'Aqua like the sea!' },
+    { name: 'Lime',   id: 'lime',   hex: '#32CD32', emoji: '🍈', objects: '🍈🐸🌿',  sentence: 'Lime like a lime fruit!' }
 ];
 
 var SHAPES_DATA = [
@@ -25,7 +30,14 @@ var SHAPES_DATA = [
     { name: 'Heart',     id: 'heart',     emoji: '❤️', svg: 'heart',     sentence: 'A heart means love!' },
     { name: 'Diamond',   id: 'diamond',   emoji: '💎', svg: 'diamond',   sentence: 'A diamond has 4 pointy sides!' },
     { name: 'Rectangle', id: 'rectangle', emoji: '📋', svg: 'rectangle', sentence: 'A rectangle is like a long square!' },
-    { name: 'Oval',      id: 'oval',      emoji: '🥚', svg: 'oval',      sentence: 'An oval is like a stretched circle!' }
+    { name: 'Oval',      id: 'oval',      emoji: '🥚', svg: 'oval',      sentence: 'An oval is like a stretched circle!' },
+    { name: 'Crescent',  id: 'crescent',  emoji: '🌙', svg: 'crescent',  sentence: 'A crescent is shaped like the moon!' },
+    { name: 'Arrow',     id: 'arrow',     emoji: '➡️', svg: 'arrow',     sentence: 'An arrow points the way!' },
+    { name: 'Cross',     id: 'cross',     emoji: '✚', svg: 'cross',     sentence: 'A cross has four arms!' },
+    { name: 'Hexagon',   id: 'hexagon',   emoji: '⬡', svg: 'hexagon',   sentence: 'A hexagon has 6 sides!' },
+    { name: 'Cloud',     id: 'cloud',     emoji: '☁️', svg: 'cloud',     sentence: 'A cloud is fluffy and round!' },
+    { name: 'Lightning', id: 'lightning', emoji: '⚡', svg: 'lightning', sentence: 'Lightning is a zigzag shape!' },
+    { name: 'Drop',      id: 'drop',      emoji: '💧', svg: 'drop',      sentence: 'A drop is shaped like a raindrop!' }
 ];
 
 var ANIMALS_DATA = [
@@ -43,7 +55,16 @@ var ANIMALS_DATA = [
     { name: 'Monkey',  id: 'monkey',   emoji: '🐵', sound: 'Ooh ooh!', sentence: 'A monkey says ooh ooh ah ah!' },
     { name: 'Elephant',id: 'elephant', emoji: '🐘', sound: 'Trumpet!', sentence: 'An elephant makes a trumpet sound!' },
     { name: 'Snake',   id: 'snake',    emoji: '🐍', sound: 'Hiss!',    sentence: 'A snake says hiss!' },
-    { name: 'Bee',     id: 'bee',      emoji: '🐝', sound: 'Buzz!',    sentence: 'A bee says buzz!' }
+    { name: 'Bee',      id: 'bee',      emoji: '🐝', sound: 'Buzz!',      sentence: 'A bee says buzz!' },
+    { name: 'Owl',      id: 'owl',      emoji: '🦉', sound: 'Hoot!',      sentence: 'An owl says hoot!' },
+    { name: 'Bear',     id: 'bear',     emoji: '🐻', sound: 'Growl!',     sentence: 'A bear says growl!' },
+    { name: 'Mouse',    id: 'mouse',    emoji: '🐭', sound: 'Squeak!',    sentence: 'A mouse says squeak!' },
+    { name: 'Donkey',   id: 'donkey',   emoji: '🫏', sound: 'Hee-haw!',   sentence: 'A donkey says hee-haw!' },
+    { name: 'Rooster',  id: 'rooster',  emoji: '🐓', sound: 'Cock-a-doodle-doo!', sentence: 'A rooster says cock-a-doodle-doo!' },
+    { name: 'Whale',    id: 'whale',    emoji: '🐳', sound: 'Wooo!',      sentence: 'A whale sings wooo!' },
+    { name: 'Tiger',    id: 'tiger',    emoji: '🐯', sound: 'Grrr!',      sentence: 'A tiger says grrr!' },
+    { name: 'Penguin',  id: 'penguin',  emoji: '🐧', sound: 'Honk!',      sentence: 'A penguin says honk!' },
+    { name: 'Goat',     id: 'goat',     emoji: '🐐', sound: 'Maa!',       sentence: 'A goat says maa!' }
 ];
 
 // --- STATE ---
@@ -299,6 +320,7 @@ function prevVocabCard() {
 function startColorQuiz() {
     vocabState.quizType = 'color';
     vocabState.quizRound = 0;
+    vocabState.quizTotal = COLORS_DATA.length;
     vocabState.quizCorrect = 0;
     vocabState.quizWrong = 0;
     vocabState.quizAnswered = false;
@@ -328,6 +350,7 @@ function startColorQuiz() {
 function startShapeQuiz() {
     vocabState.quizType = 'shape';
     vocabState.quizRound = 0;
+    vocabState.quizTotal = SHAPES_DATA.length;
     vocabState.quizCorrect = 0;
     vocabState.quizWrong = 0;
     vocabState.quizAnswered = false;
@@ -357,6 +380,7 @@ function startShapeQuiz() {
 function startAnimalQuiz() {
     vocabState.quizType = 'animal';
     vocabState.quizRound = 0;
+    vocabState.quizTotal = ANIMALS_DATA.length;
     vocabState.quizCorrect = 0;
     vocabState.quizWrong = 0;
     vocabState.quizAnswered = false;

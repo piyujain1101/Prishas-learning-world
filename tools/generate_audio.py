@@ -158,7 +158,12 @@ COLORS_AUDIO = [
     {"id": "pink",   "word": "Pink",   "sentence": "Pink! Pink like a flamingo!"},
     {"id": "brown",  "word": "Brown",  "sentence": "Brown! Brown like a bear!"},
     {"id": "black",  "word": "Black",  "sentence": "Black! Black like the night!"},
-    {"id": "white",  "word": "White",  "sentence": "White! White like a cloud!"},
+    {"id": "white", "word": "White", "sentence": "White! White like a cloud!"},
+    {"id": "gray", "word": "Gray", "sentence": "Gray! Gray like an elephant!"},
+    {"id": "gold", "word": "Gold", "sentence": "Gold! Gold like a trophy!"},
+    {"id": "peach", "word": "Peach", "sentence": "Peach! Peach like a peach fruit!"},
+    {"id": "aqua", "word": "Aqua", "sentence": "Aqua! Aqua like the sea!"},
+    {"id": "lime", "word": "Lime", "sentence": "Lime! Lime like a lime fruit!"},
 ]
 
 SHAPES_AUDIO = [
@@ -169,7 +174,14 @@ SHAPES_AUDIO = [
     {"id": "heart",     "word": "Heart",     "sentence": "Heart! A heart means love!"},
     {"id": "diamond",   "word": "Diamond",   "sentence": "Diamond! A diamond has 4 pointy sides!"},
     {"id": "rectangle", "word": "Rectangle", "sentence": "Rectangle! A rectangle is like a long square!"},
-    {"id": "oval",      "word": "Oval",      "sentence": "Oval! An oval is like a stretched circle!"},
+    {"id": "oval", "word": "Oval", "sentence": "Oval! An oval is like a stretched circle!"},
+    {"id": "crescent", "word": "Crescent", "sentence": "Crescent! A crescent is shaped like the moon!"},
+    {"id": "arrow", "word": "Arrow", "sentence": "Arrow! An arrow points the way!"},
+    {"id": "cross", "word": "Cross", "sentence": "Cross! A cross has four arms!"},
+    {"id": "hexagon", "word": "Hexagon", "sentence": "Hexagon! A hexagon has 6 sides!"},
+    {"id": "cloud", "word": "Cloud", "sentence": "Cloud! A cloud is fluffy and round!"},
+    {"id": "lightning", "word": "Lightning", "sentence": "Lightning! Lightning is a zigzag shape!"},
+    {"id": "drop", "word": "Drop", "sentence": "Drop! A drop is shaped like a raindrop!"},
 ]
 
 ANIMALS_AUDIO = [
@@ -187,7 +199,17 @@ ANIMALS_AUDIO = [
     {"id": "monkey",   "word": "Monkey",   "sound": "Ooh ooh!", "sentence": "Monkey! A monkey says ooh ooh ah ah!"},
     {"id": "elephant", "word": "Elephant", "sound": "Trumpet!", "sentence": "Elephant! An elephant makes a trumpet sound!"},
     {"id": "snake",    "word": "Snake",    "sound": "Hiss!",    "sentence": "Snake! A snake says hiss!"},
-    {"id": "bee",      "word": "Bee",      "sound": "Buzz!",    "sentence": "Bee! A bee says buzz!"},
+    {"id": "bee", "word": "Bee", "sound": "Buzz!", "sentence": "Bee! A bee says buzz!"},
+    {"id": "owl", "word": "Owl", "sound": "Hoot!", "sentence": "Owl! An owl says hoot!"},
+    {"id": "bear", "word": "Bear", "sound": "Growl!", "sentence": "Bear! A bear says growl!"},
+    {"id": "mouse", "word": "Mouse", "sound": "Squeak!", "sentence": "Mouse! A mouse says squeak!"},
+    {"id": "donkey", "word": "Donkey", "sound": "Hee-haw!", "sentence": "Donkey! A donkey says hee-haw!"},
+    {"id": "rooster", "word": "Rooster", "sound": "Cock-a-doodle-doo!",
+     "sentence": "Rooster! A rooster says cock-a-doodle-doo!"},
+    {"id": "whale", "word": "Whale", "sound": "Wooo!", "sentence": "Whale! A whale sings wooo!"},
+    {"id": "tiger", "word": "Tiger", "sound": "Grrr!", "sentence": "Tiger! A tiger says grrr!"},
+    {"id": "penguin", "word": "Penguin", "sound": "Honk!", "sentence": "Penguin! A penguin says honk!"},
+    {"id": "goat", "word": "Goat", "sound": "Maa!", "sentence": "Goat! A goat says maa!"},
 ]
 
 VOCAB_INSTRUCTIONS = [
