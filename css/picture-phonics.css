@@ -1,0 +1,671 @@
+/* css/picture-phonics.css */
+/* ========================================
+   Picture Phonics Game Styles
+   Fun animations for toddlers!
+   ======================================== */
+
+/* ========================================
+   INTRO SCREEN DEMO
+   ======================================== */
+
+.pp-demo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.pp-demo-picture {
+    width: 80px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    backdrop-filter: blur(5px);
+    animation: gentleBounce 2s ease-in-out infinite;
+}
+
+.pp-demo-arrow {
+    font-size: 28px;
+    color: #FFD93D;
+    animation: arrowPulse 1.5s ease-in-out infinite;
+}
+
+@keyframes arrowPulse {
+    0%, 100% { transform: translateX(0); opacity: 0.7; }
+    50% { transform: translateX(5px); opacity: 1; }
+}
+
+.pp-demo-letter {
+    background: white;
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: #6C5CE7;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.pp-demo-label {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 20px;
+}
+
+/* ========================================
+   PROGRESS CATERPILLAR
+   ======================================== */
+
+.pp-progress-area {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.pp-caterpillar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    min-height: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 4px;
+}
+
+.pp-cat-segment {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+}
+
+.pp-cat-segment.head {
+    width: 28px;
+    height: 28px;
+    font-size: 16px;
+    background: #6BCB77;
+    box-shadow: 0 2px 8px rgba(107, 203, 119, 0.4);
+}
+
+.pp-cat-segment.correct {
+    background: #6BCB77;
+    transform: scale(1.1);
+    animation: segmentPop 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.pp-cat-segment.wrong {
+    background: #FF6B6B;
+    animation: segmentPop 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.pp-cat-segment.current {
+    background: rgba(255, 255, 255, 0.5);
+    animation: segmentPulse 1.5s ease-in-out infinite;
+}
+
+@keyframes segmentPop {
+    0% { transform: scale(0.5); }
+    60% { transform: scale(1.3); }
+    100% { transform: scale(1.1); }
+}
+
+@keyframes segmentPulse {
+    0%, 100% { transform: scale(1); opacity: 0.5; }
+    50% { transform: scale(1.15); opacity: 0.8; }
+}
+
+/* ========================================
+   DINO CHEERLEADER
+   ======================================== */
+
+.pp-dino-cheerleader {
+    font-size: 40px;
+    animation: dinoWiggle 2s ease-in-out infinite;
+    transition: transform 0.3s ease;
+}
+
+.pp-dino-cheerleader.celebrating {
+    animation: dinoCelebrate 0.6s ease;
+}
+
+.pp-dino-cheerleader.excited {
+    animation: dinoExcited 0.8s ease-in-out infinite;
+}
+
+.pp-dino-cheerleader.thinking {
+    animation: dinoThink 2s ease-in-out infinite;
+}
+
+@keyframes dinoCelebrate {
+    0% { transform: translateY(0) rotate(0deg); }
+    25% { transform: translateY(-20px) rotate(-10deg); }
+    50% { transform: translateY(-10px) rotate(10deg); }
+    75% { transform: translateY(-15px) rotate(-5deg); }
+    100% { transform: translateY(0) rotate(0deg); }
+}
+
+@keyframes dinoExcited {
+    0%, 100% { transform: scale(1) rotate(0deg); }
+    25% { transform: scale(1.15) rotate(-5deg); }
+    50% { transform: scale(1) rotate(5deg); }
+    75% { transform: scale(1.1) rotate(-3deg); }
+}
+
+@keyframes dinoThink {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(-8deg); }
+    75% { transform: rotate(8deg); }
+}
+
+/* ========================================
+   COMBO COUNTER
+   ======================================== */
+
+.pp-combo {
+    min-height: 30px;
+    text-align: center;
+    margin-top: 2px;
+}
+
+.pp-combo-text {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFD93D;
+    background: rgba(255, 165, 2, 0.25);
+    padding: 4px 16px;
+    border-radius: 15px;
+    animation: comboAppear 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.pp-combo-text.fire {
+    color: #FF6B6B;
+    background: rgba(255, 107, 107, 0.25);
+    animation: comboFire 0.6s ease-in-out infinite;
+    font-size: 18px;
+}
+
+.pp-combo-text.super {
+    color: #FFD93D;
+    background: rgba(255, 217, 61, 0.3);
+    animation: comboSuper 0.5s ease-in-out infinite;
+    font-size: 20px;
+    text-shadow: 0 0 10px rgba(255, 217, 61, 0.5);
+}
+
+@keyframes comboAppear {
+    0% { transform: scale(0) rotate(-10deg); opacity: 0; }
+    100% { transform: scale(1) rotate(0deg); opacity: 1; }
+}
+
+@keyframes comboFire {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+}
+
+@keyframes comboSuper {
+    0%, 100% { transform: scale(1) rotate(-1deg); }
+    50% { transform: scale(1.1) rotate(1deg); }
+}
+
+/* ========================================
+   PICTURE DISPLAY AREA
+   ======================================== */
+
+.pp-picture-area {
+    position: relative;
+    margin: 15px 0 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* --- Sparkle Ring --- */
+.pp-sparkle-ring {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.pp-sparkle {
+    position: absolute;
+    font-size: 16px;
+    opacity: 0.6;
+    animation: sparkleOrbit 4s linear infinite;
+}
+
+.pp-sparkle.s1 { animation-delay: 0s; }
+.pp-sparkle.s2 { animation-delay: 0.67s; }
+.pp-sparkle.s3 { animation-delay: 1.33s; }
+.pp-sparkle.s4 { animation-delay: 2s; }
+.pp-sparkle.s5 { animation-delay: 2.67s; }
+.pp-sparkle.s6 { animation-delay: 3.33s; }
+
+@keyframes sparkleOrbit {
+    0% {
+        top: 0%;
+        left: 50%;
+        opacity: 0.3;
+        transform: scale(0.6) translate(-50%, 0);
+    }
+    16.6% {
+        top: 15%;
+        left: 93%;
+        opacity: 0.8;
+        transform: scale(1) translate(-50%, 0);
+    }
+    33.3% {
+        top: 70%;
+        left: 93%;
+        opacity: 0.5;
+        transform: scale(0.8) translate(-50%, 0);
+    }
+    50% {
+        top: 95%;
+        left: 50%;
+        opacity: 0.3;
+        transform: scale(0.6) translate(-50%, 0);
+    }
+    66.6% {
+        top: 70%;
+        left: 7%;
+        opacity: 0.7;
+        transform: scale(0.9) translate(-50%, 0);
+    }
+    83.3% {
+        top: 15%;
+        left: 7%;
+        opacity: 0.9;
+        transform: scale(1.1) translate(-50%, 0);
+    }
+    100% {
+        top: 0%;
+        left: 50%;
+        opacity: 0.3;
+        transform: scale(0.6) translate(-50%, 0);
+    }
+}
+
+/* --- Picture Emoji --- */
+.pp-picture {
+    font-size: 110px;
+    line-height: 1;
+    z-index: 1;
+    position: relative;
+    animation: pictureAppear 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.pp-picture.wobble {
+    animation: pictureWobble 3s ease-in-out infinite;
+}
+
+.pp-picture.celebrate {
+    animation: pictureCelebrate 0.8s ease !important;
+}
+
+.pp-picture.sad {
+    animation: pictureSad 0.5s ease;
+}
+
+@keyframes pictureAppear {
+    0% { transform: scale(0) rotate(-20deg); opacity: 0; }
+    60% { transform: scale(1.15) rotate(5deg); opacity: 1; }
+    80% { transform: scale(0.95) rotate(-2deg); }
+    100% { transform: scale(1) rotate(0deg); }
+}
+
+@keyframes pictureWobble {
+    0%, 100% { transform: rotate(0deg) scale(1); }
+    15% { transform: rotate(-3deg) scale(1.02); }
+    30% { transform: rotate(2deg) scale(0.98); }
+    45% { transform: rotate(-2deg) scale(1.01); }
+    60% { transform: rotate(1deg) scale(1); }
+}
+
+@keyframes pictureCelebrate {
+    0% { transform: scale(1) rotate(0deg); }
+    15% { transform: scale(1.2) rotate(-10deg); }
+    30% { transform: scale(1.1) rotate(10deg); }
+    45% { transform: scale(1.25) rotate(-5deg); }
+    60% { transform: scale(1.15) rotate(5deg); }
+    80% { transform: scale(1.05) rotate(-2deg); }
+    100% { transform: scale(1) rotate(0deg); }
+}
+
+@keyframes pictureSad {
+    0%, 100% { transform: translateY(0); }
+    25% { transform: translateY(5px) rotate(-3deg); }
+    50% { transform: translateY(3px) rotate(2deg); }
+    75% { transform: translateY(5px) rotate(-1deg); }
+}
+
+/* --- Picture Word --- */
+.pp-picture-word {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-top: 5px;
+    z-index: 1;
+    opacity: 0;
+    animation: wordFadeIn 0.5s ease 0.4s forwards;
+}
+
+@keyframes wordFadeIn {
+    0% { opacity: 0; transform: translateY(10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* ========================================
+   HEAR IT AGAIN BUTTON
+   ======================================== */
+
+.pp-hear-btn {
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+    backdrop-filter: blur(5px);
+    margin-bottom: 10px;
+}
+
+.pp-hear-btn:active {
+    transform: scale(0.92);
+    background: rgba(255, 255, 255, 0.35);
+}
+
+.pp-hear-btn.playing {
+    background: rgba(255, 217, 61, 0.3);
+    border-color: #FFD93D;
+}
+
+/* ========================================
+   LETTER CHOICE BUTTONS
+   ======================================== */
+
+.pp-choices {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 420px;
+    margin-top: 5px;
+}
+
+.pp-choice-btn {
+    min-width: 85px;
+    height: 75px;
+    border: 4px solid white;
+    background: white;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    transition: all 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    padding: 8px 12px;
+    opacity: 0;
+    transform: translateY(40px);
+}
+
+/* Staggered fly-in animation */
+.pp-choice-btn.fly-in {
+    animation: choiceFlyIn 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+}
+
+.pp-choice-btn:nth-child(1).fly-in { animation-delay: 0.1s; }
+.pp-choice-btn:nth-child(2).fly-in { animation-delay: 0.2s; }
+.pp-choice-btn:nth-child(3).fly-in { animation-delay: 0.3s; }
+.pp-choice-btn:nth-child(4).fly-in { animation-delay: 0.4s; }
+.pp-choice-btn:nth-child(5).fly-in { animation-delay: 0.5s; }
+
+@keyframes choiceFlyIn {
+    0% { opacity: 0; transform: translateY(40px) scale(0.8); }
+    60% { opacity: 1; transform: translateY(-5px) scale(1.05); }
+    100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.pp-choice-upper {
+    font-size: 28px;
+    font-weight: bold;
+    color: #6C5CE7;
+    line-height: 1;
+}
+
+.pp-choice-lower {
+    font-size: 20px;
+    font-weight: bold;
+    color: #FF6B6B;
+    line-height: 1;
+}
+
+.pp-choice-btn:active {
+    transform: scale(0.92) !important;
+}
+
+/* --- States --- */
+.pp-choice-btn.correct {
+    background: #6BCB77;
+    border-color: #4CAF50;
+    color: white;
+    animation: correctBounce 0.5s ease !important;
+    box-shadow: 0 0 25px rgba(107, 203, 119, 0.5);
+    opacity: 1 !important;
+    transform: none !important;
+}
+
+.pp-choice-btn.correct .pp-choice-upper,
+.pp-choice-btn.correct .pp-choice-lower {
+    color: white;
+}
+
+.pp-choice-btn.wrong {
+    background: #FF6B6B;
+    border-color: #e74c3c;
+    color: white;
+    animation: wrongShake 0.5s ease !important;
+    opacity: 1 !important;
+    transform: none !important;
+}
+
+.pp-choice-btn.wrong .pp-choice-upper,
+.pp-choice-btn.wrong .pp-choice-lower {
+    color: white;
+}
+
+.pp-choice-btn.disabled {
+    pointer-events: none;
+    opacity: 0.5 !important;
+    transform: none !important;
+}
+
+.pp-choice-btn.hint {
+    border-color: #FFD93D;
+    box-shadow: 0 0 25px rgba(255, 217, 61, 0.5);
+    animation: hintPulse 1s ease-in-out infinite !important;
+    opacity: 1 !important;
+    transform: none !important;
+}
+
+/* ========================================
+   STAR TRAIL EFFECT (on correct answer)
+   ======================================== */
+
+.pp-star-trail {
+    position: fixed;
+    pointer-events: none;
+    z-index: 300;
+    font-size: 20px;
+    animation: starTrail 0.8s ease-out forwards;
+}
+
+@keyframes starTrail {
+    0% {
+        opacity: 1;
+        transform: translate(0, 0) scale(1);
+    }
+    50% {
+        opacity: 0.8;
+        transform: translate(var(--tx, 50px), var(--ty, -100px)) scale(1.2);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(var(--fx, 100px), var(--fy, -200px)) scale(0.3);
+    }
+}
+
+/* ========================================
+   TEACHING MOMENT OVERRIDE
+   ======================================== */
+
+#pp-teaching {
+    min-height: 45px;
+    margin-top: 5px;
+    text-align: center;
+    max-width: 380px;
+}
+
+#pp-teaching .teaching-msg {
+    font-size: 16px;
+    line-height: 1.4;
+    padding: 10px 20px;
+}
+
+#pp-teaching .teaching-letter {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* ========================================
+   CORRECT ANSWER STAR BURST
+   ======================================== */
+
+.pp-starburst {
+    position: absolute;
+    pointer-events: none;
+    z-index: 5;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pp-burst-star {
+    position: absolute;
+    font-size: 18px;
+    animation: burstOut 0.8s ease-out forwards;
+    opacity: 0;
+}
+
+@keyframes burstOut {
+    0% {
+        opacity: 1;
+        transform: translate(0, 0) scale(0.5);
+    }
+    40% {
+        opacity: 1;
+        transform: translate(var(--bx, 30px), var(--by, -30px)) scale(1.2);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(calc(var(--bx, 30px) * 2), calc(var(--by, -30px) * 2)) scale(0.3);
+    }
+}
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+
+@media (max-width: 360px) {
+    .pp-picture {
+        font-size: 85px;
+    }
+    .pp-picture-word {
+        font-size: 20px;
+    }
+    .pp-choice-btn {
+        min-width: 72px;
+        height: 65px;
+    }
+    .pp-choice-upper {
+        font-size: 24px;
+    }
+    .pp-choice-lower {
+        font-size: 17px;
+    }
+    .pp-demo-picture,
+    .pp-demo-letter {
+        width: 65px;
+        height: 65px;
+        font-size: 40px;
+    }
+    .pp-demo-letter {
+        font-size: 26px;
+    }
+    .pp-sparkle-ring {
+        width: 140px;
+        height: 140px;
+    }
+}
+
+@media (max-height: 700px) {
+    .pp-picture-area {
+        margin: 10px 0 5px 0;
+    }
+    .pp-picture {
+        font-size: 90px;
+    }
+    .pp-choice-btn {
+        min-width: 78px;
+        height: 68px;
+    }
+    .game-prompt {
+        margin-top: 8px;
+    }
+    .pp-sparkle-ring {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-height: 600px) {
+    .pp-picture {
+        font-size: 75px;
+    }
+    .pp-picture-word {
+        font-size: 18px;
+    }
+    .pp-picture-area {
+        margin: 5px 0;
+    }
+    .pp-sparkle-ring {
+        width: 130px;
+        height: 130px;
+    }
+}

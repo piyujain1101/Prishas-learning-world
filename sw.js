@@ -1,10 +1,12 @@
-var CACHE_NAME = 'learning-world-v6';
+/* sw.js */
+var CACHE_NAME = 'learning-world-v7';
 var urlsToCache = [
     './',
     './index.html',
     './phonics.html',
     './matching.html',
     './sound-safari.html',
+    './picture-phonics.html',
     './numbers.html',
     './vocabulary.html',
     './games.html',
@@ -14,6 +16,7 @@ var urlsToCache = [
     './css/phonics.css',
     './css/matching.css',
     './css/sound-safari.css',
+    './css/picture-phonics.css',
     './css/numbers.css',
     './css/vocabulary.css',
     './css/odd-one-out.css',
@@ -23,6 +26,7 @@ var urlsToCache = [
     './js/phonics.js',
     './js/matching.js',
     './js/sound-safari.js',
+    './js/picture-phonics.js',
     './js/numbers.js',
     './js/vocabulary.js',
     './js/odd-one-out.js',

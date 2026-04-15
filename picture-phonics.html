@@ -1,0 +1,151 @@
+<!-- picture-phonics.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#6C5CE7">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦕</text></svg>">
+    <title>Picture Phonics - Learning World 🦕</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/phonics.css">
+    <link rel="stylesheet" href="css/matching.css">
+    <link rel="stylesheet" href="css/picture-phonics.css">
+</head>
+<body>
+    <!-- Back Button -->
+    <button class="back-button" onclick="navigateTo('phonics.html')">🏠</button>
+
+    <!-- Star Counter -->
+    <div class="star-counter" id="star-counter">⭐ 0</div>
+
+    <div id="app">
+        <!-- Intro Screen -->
+        <div id="pp-intro" class="screen active">
+            <div class="stars-bg"></div>
+
+            <div class="intro-content">
+                <div class="intro-mascot">🦕</div>
+                <h1 class="intro-title">Picture Phonics!</h1>
+                <p class="intro-desc">
+                    See the picture and find<br>
+                    <strong>what letter it starts with!</strong>
+                </p>
+
+                <div class="pp-demo">
+                    <div class="pp-demo-picture">🍎</div>
+                    <div class="pp-demo-arrow">→</div>
+                    <div class="pp-demo-letter">Aa</div>
+                </div>
+                <p class="pp-demo-label">Apple starts with Aa!</p>
+
+                <button class="big-button btn-primary" onclick="startPicturePhonics()">
+                    Let's Play! 🎮
+                </button>
+
+                <div class="intro-difficulty">
+                    <p class="diff-label">Choose difficulty:</p>
+                    <div class="diff-buttons">
+                        <button class="diff-btn active" id="pp-diff-easy" onclick="setPpDifficulty('easy')">
+                            🌟 Easy<br><small>3 choices</small>
+                        </button>
+                        <button class="diff-btn" id="pp-diff-medium" onclick="setPpDifficulty('medium')">
+                            ⭐ Medium<br><small>4 choices</small>
+                        </button>
+                        <button class="diff-btn" id="pp-diff-hard" onclick="setPpDifficulty('hard')">
+                            🏆 Hard<br><small>5 choices</small>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Game Screen -->
+        <div id="pp-game" class="screen">
+            <!-- Progress Caterpillar -->
+            <div class="pp-progress-area">
+                <div class="pp-caterpillar" id="pp-caterpillar">
+                    <!-- Caterpillar segments generated dynamically -->
+                </div>
+                <div class="game-round-text" id="pp-round-text"></div>
+            </div>
+
+            <!-- Dino Prompt -->
+            <div class="game-prompt">
+                <div class="pp-dino-cheerleader" id="pp-dino">🦕</div>
+                <div class="prompt-text" id="pp-prompt-text"></div>
+            </div>
+
+            <!-- Combo Counter -->
+            <div class="pp-combo" id="pp-combo"></div>
+
+            <!-- Picture Display Area -->
+            <div class="pp-picture-area" id="pp-picture-area">
+                <div class="pp-sparkle-ring" id="pp-sparkle-ring">
+                    <div class="pp-sparkle s1">✨</div>
+                    <div class="pp-sparkle s2">⭐</div>
+                    <div class="pp-sparkle s3">✨</div>
+                    <div class="pp-sparkle s4">🌟</div>
+                    <div class="pp-sparkle s5">✨</div>
+                    <div class="pp-sparkle s6">⭐</div>
+                </div>
+                <div class="pp-picture" id="pp-picture"></div>
+                <div class="pp-picture-word" id="pp-picture-word"></div>
+            </div>
+
+            <!-- Sound Button -->
+            <button class="pp-hear-btn" id="pp-hear-btn" onclick="replayPictureWord()">
+                🔊 Hear it again
+            </button>
+
+            <!-- Letter Choices -->
+            <div class="pp-choices" id="pp-choices">
+                <!-- Generated dynamically -->
+            </div>
+
+            <!-- Feedback Area -->
+            <div class="feedback-area" id="pp-feedback"></div>
+
+            <!-- Teaching Moment -->
+            <div class="teaching-moment" id="pp-teaching"></div>
+
+            <!-- Score -->
+            <div class="game-score">
+                <span class="score-correct" id="pp-score-correct">✅ 0</span>
+                <span class="score-wrong" id="pp-score-wrong">❌ 0</span>
+            </div>
+        </div>
+
+        <!-- Results Screen -->
+        <div id="pp-results" class="screen">
+            <div class="stars-bg"></div>
+
+            <div class="results-content">
+                <div class="results-mascot" id="pp-results-mascot"></div>
+                <h1 class="results-title" id="pp-results-title"></h1>
+                <div class="results-score">
+                    <div class="results-stars-display" id="pp-results-stars"></div>
+                    <p class="results-text" id="pp-results-text"></p>
+                </div>
+
+                <div class="results-review" id="pp-results-review"></div>
+
+                <div class="results-buttons">
+                    <button class="big-button btn-primary" onclick="startPicturePhonics()">
+                        Play Again! 🎮
+                    </button>
+                    <button class="big-button btn-secondary" onclick="navigateTo('phonics.html')">
+                        Back to Phonics 📋
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/speech.js"></script>
+    <script src="js/picture-phonics.js"></script>
+</body>
+</html>
