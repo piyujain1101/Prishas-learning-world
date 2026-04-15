@@ -3,188 +3,197 @@
     "a": {
       "name": "audio/letters/a.mp3",
       "phonics": "audio/phonics/a.mp3",
-      "word": "audio/words/a.mp3",
-      "sentence": "audio/sentences/a.mp3"
+      "sentence": "audio/sentences/a.mp3",
+      "word": "audio/words/a.mp3"
     },
     "b": {
       "name": "audio/letters/b.mp3",
       "phonics": "audio/phonics/b.mp3",
-      "word": "audio/words/b.mp3",
-      "sentence": "audio/sentences/b.mp3"
+      "sentence": "audio/sentences/b.mp3",
+      "word": "audio/words/b.mp3"
     },
     "c": {
       "name": "audio/letters/c.mp3",
       "phonics": "audio/phonics/c.mp3",
-      "word": "audio/words/c.mp3",
-      "sentence": "audio/sentences/c.mp3"
+      "sentence": "audio/sentences/c.mp3",
+      "word": "audio/words/c.mp3"
     },
     "d": {
       "name": "audio/letters/d.mp3",
       "phonics": "audio/phonics/d.mp3",
-      "word": "audio/words/d.mp3",
-      "sentence": "audio/sentences/d.mp3"
+      "sentence": "audio/sentences/d.mp3",
+      "word": "audio/words/d.mp3"
     },
     "e": {
       "name": "audio/letters/e.mp3",
       "phonics": "audio/phonics/e.mp3",
-      "word": "audio/words/e.mp3",
-      "sentence": "audio/sentences/e.mp3"
+      "sentence": "audio/sentences/e.mp3",
+      "word": "audio/words/e.mp3"
     },
     "f": {
       "name": "audio/letters/f.mp3",
       "phonics": "audio/phonics/f.mp3",
-      "word": "audio/words/f.mp3",
-      "sentence": "audio/sentences/f.mp3"
+      "sentence": "audio/sentences/f.mp3",
+      "word": "audio/words/f.mp3"
     },
     "g": {
       "name": "audio/letters/g.mp3",
       "phonics": "audio/phonics/g.mp3",
-      "word": "audio/words/g.mp3",
-      "sentence": "audio/sentences/g.mp3"
+      "sentence": "audio/sentences/g.mp3",
+      "word": "audio/words/g.mp3"
     },
     "h": {
       "name": "audio/letters/h.mp3",
       "phonics": "audio/phonics/h.mp3",
-      "word": "audio/words/h.mp3",
-      "sentence": "audio/sentences/h.mp3"
+      "sentence": "audio/sentences/h.mp3",
+      "word": "audio/words/h.mp3"
     },
     "i": {
       "name": "audio/letters/i.mp3",
       "phonics": "audio/phonics/i.mp3",
-      "word": "audio/words/i.mp3",
-      "sentence": "audio/sentences/i.mp3"
+      "sentence": "audio/sentences/i.mp3",
+      "word": "audio/words/i.mp3"
     },
     "j": {
       "name": "audio/letters/j.mp3",
       "phonics": "audio/phonics/j.mp3",
-      "word": "audio/words/j.mp3",
-      "sentence": "audio/sentences/j.mp3"
+      "sentence": "audio/sentences/j.mp3",
+      "word": "audio/words/j.mp3"
     },
     "k": {
       "name": "audio/letters/k.mp3",
       "phonics": "audio/phonics/k.mp3",
-      "word": "audio/words/k.mp3",
-      "sentence": "audio/sentences/k.mp3"
+      "sentence": "audio/sentences/k.mp3",
+      "word": "audio/words/k.mp3"
     },
     "l": {
       "name": "audio/letters/l.mp3",
       "phonics": "audio/phonics/l.mp3",
-      "word": "audio/words/l.mp3",
-      "sentence": "audio/sentences/l.mp3"
+      "sentence": "audio/sentences/l.mp3",
+      "word": "audio/words/l.mp3"
     },
     "m": {
       "name": "audio/letters/m.mp3",
       "phonics": "audio/phonics/m.mp3",
-      "word": "audio/words/m.mp3",
-      "sentence": "audio/sentences/m.mp3"
+      "sentence": "audio/sentences/m.mp3",
+      "word": "audio/words/m.mp3"
     },
     "n": {
       "name": "audio/letters/n.mp3",
       "phonics": "audio/phonics/n.mp3",
-      "word": "audio/words/n.mp3",
-      "sentence": "audio/sentences/n.mp3"
+      "sentence": "audio/sentences/n.mp3",
+      "word": "audio/words/n.mp3"
     },
     "o": {
       "name": "audio/letters/o.mp3",
       "phonics": "audio/phonics/o.mp3",
-      "word": "audio/words/o.mp3",
-      "sentence": "audio/sentences/o.mp3"
+      "sentence": "audio/sentences/o.mp3",
+      "word": "audio/words/o.mp3"
     },
     "p": {
       "name": "audio/letters/p.mp3",
       "phonics": "audio/phonics/p.mp3",
-      "word": "audio/words/p.mp3",
-      "sentence": "audio/sentences/p.mp3"
+      "sentence": "audio/sentences/p.mp3",
+      "word": "audio/words/p.mp3"
     },
     "q": {
       "name": "audio/letters/q.mp3",
       "phonics": "audio/phonics/q.mp3",
-      "word": "audio/words/q.mp3",
-      "sentence": "audio/sentences/q.mp3"
+      "sentence": "audio/sentences/q.mp3",
+      "word": "audio/words/q.mp3"
     },
     "r": {
       "name": "audio/letters/r.mp3",
       "phonics": "audio/phonics/r.mp3",
-      "word": "audio/words/r.mp3",
-      "sentence": "audio/sentences/r.mp3"
+      "sentence": "audio/sentences/r.mp3",
+      "word": "audio/words/r.mp3"
     },
     "s": {
       "name": "audio/letters/s.mp3",
       "phonics": "audio/phonics/s.mp3",
-      "word": "audio/words/s.mp3",
-      "sentence": "audio/sentences/s.mp3"
+      "sentence": "audio/sentences/s.mp3",
+      "word": "audio/words/s.mp3"
     },
     "t": {
       "name": "audio/letters/t.mp3",
       "phonics": "audio/phonics/t.mp3",
-      "word": "audio/words/t.mp3",
-      "sentence": "audio/sentences/t.mp3"
+      "sentence": "audio/sentences/t.mp3",
+      "word": "audio/words/t.mp3"
     },
     "u": {
       "name": "audio/letters/u.mp3",
       "phonics": "audio/phonics/u.mp3",
-      "word": "audio/words/u.mp3",
-      "sentence": "audio/sentences/u.mp3"
+      "sentence": "audio/sentences/u.mp3",
+      "word": "audio/words/u.mp3"
     },
     "v": {
       "name": "audio/letters/v.mp3",
       "phonics": "audio/phonics/v.mp3",
-      "word": "audio/words/v.mp3",
-      "sentence": "audio/sentences/v.mp3"
+      "sentence": "audio/sentences/v.mp3",
+      "word": "audio/words/v.mp3"
     },
     "w": {
       "name": "audio/letters/w.mp3",
       "phonics": "audio/phonics/w.mp3",
-      "word": "audio/words/w.mp3",
-      "sentence": "audio/sentences/w.mp3"
+      "sentence": "audio/sentences/w.mp3",
+      "word": "audio/words/w.mp3"
     },
     "x": {
       "name": "audio/letters/x.mp3",
       "phonics": "audio/phonics/x.mp3",
-      "word": "audio/words/x.mp3",
-      "sentence": "audio/sentences/x.mp3"
+      "sentence": "audio/sentences/x.mp3",
+      "word": "audio/words/x.mp3"
     },
     "y": {
       "name": "audio/letters/y.mp3",
       "phonics": "audio/phonics/y.mp3",
-      "word": "audio/words/y.mp3",
-      "sentence": "audio/sentences/y.mp3"
+      "sentence": "audio/sentences/y.mp3",
+      "word": "audio/words/y.mp3"
     },
     "z": {
       "name": "audio/letters/z.mp3",
       "phonics": "audio/phonics/z.mp3",
-      "word": "audio/words/z.mp3",
-      "sentence": "audio/sentences/z.mp3"
+      "sentence": "audio/sentences/z.mp3",
+      "word": "audio/words/z.mp3"
     }
   },
   "celebrations": [
-    "audio/celebrations/great_job.mp3",
     "audio/celebrations/amazing.mp3",
-    "audio/celebrations/wonderful.mp3",
-    "audio/celebrations/you_did_it.mp3",
-    "audio/celebrations/super_star.mp3",
-    "audio/celebrations/yay.mp3",
-    "audio/celebrations/keep_going.mp3",
-    "audio/celebrations/well_done.mp3",
     "audio/celebrations/fantastic.mp3",
-    "audio/celebrations/proud.mp3"
+    "audio/celebrations/great_job.mp3",
+    "audio/celebrations/keep_going.mp3",
+    "audio/celebrations/proud.mp3",
+    "audio/celebrations/super_star.mp3",
+    "audio/celebrations/well_done.mp3",
+    "audio/celebrations/wonderful.mp3",
+    "audio/celebrations/yay.mp3",
+    "audio/celebrations/you.mp3",
+    "audio/celebrations/you_did_it.mp3"
   ],
   "instructions": [
     {
-      "id": "welcome",
-      "path": "audio/instructions/welcome.mp3"
-    },
-    {
-      "id": "lets_learn",
-      "path": "audio/instructions/lets_learn.mp3"
+      "id": "all_done",
+      "path": "audio/instructions/all_done.mp3"
     },
     {
       "id": "find_lowercase",
       "path": "audio/instructions/find_lowercase.mp3"
     },
     {
-      "id": "what_sound",
-      "path": "audio/instructions/what_sound.mp3"
+      "id": "lets_learn",
+      "path": "audio/instructions/lets_learn.mp3"
+    },
+    {
+      "id": "listen_carefully",
+      "path": "audio/instructions/listen_carefully.mp3"
+    },
+    {
+      "id": "pick_letter",
+      "path": "audio/instructions/pick_letter.mp3"
+    },
+    {
+      "id": "roar",
+      "path": "audio/instructions/roar.mp3"
     },
     {
       "id": "tap_to_hear",
@@ -195,58 +204,24 @@
       "path": "audio/instructions/try_again.mp3"
     },
     {
-      "id": "all_done",
-      "path": "audio/instructions/all_done.mp3"
-    },
-    {
-      "id": "pick_letter",
-      "path": "audio/instructions/pick_letter.mp3"
-    },
-    {
-      "id": "listen_carefully",
-      "path": "audio/instructions/listen_carefully.mp3"
-    },
-    {
-      "id": "roar",
-      "path": "audio/instructions/roar.mp3"
+      "id": "what_sound",
+      "path": "audio/instructions/what_sound.mp3"
     }
   ],
   "numbers": {
+    "count_1": {},
+    "count_10": {},
+    "count_2": {},
+    "count_3": {},
+    "count_4": {},
+    "count_5": {},
+    "count_6": {},
+    "count_7": {},
+    "count_8": {},
+    "count_9": {},
     "1": {
       "name": "audio/numbers/names/1.mp3",
       "sentence": "audio/numbers/sentences/1.mp3"
-    },
-    "2": {
-      "name": "audio/numbers/names/2.mp3",
-      "sentence": "audio/numbers/sentences/2.mp3"
-    },
-    "3": {
-      "name": "audio/numbers/names/3.mp3",
-      "sentence": "audio/numbers/sentences/3.mp3"
-    },
-    "4": {
-      "name": "audio/numbers/names/4.mp3",
-      "sentence": "audio/numbers/sentences/4.mp3"
-    },
-    "5": {
-      "name": "audio/numbers/names/5.mp3",
-      "sentence": "audio/numbers/sentences/5.mp3"
-    },
-    "6": {
-      "name": "audio/numbers/names/6.mp3",
-      "sentence": "audio/numbers/sentences/6.mp3"
-    },
-    "7": {
-      "name": "audio/numbers/names/7.mp3",
-      "sentence": "audio/numbers/sentences/7.mp3"
-    },
-    "8": {
-      "name": "audio/numbers/names/8.mp3",
-      "sentence": "audio/numbers/sentences/8.mp3"
-    },
-    "9": {
-      "name": "audio/numbers/names/9.mp3",
-      "sentence": "audio/numbers/sentences/9.mp3"
     },
     "10": {
       "name": "audio/numbers/names/10.mp3",
@@ -288,13 +263,46 @@
       "name": "audio/numbers/names/19.mp3",
       "sentence": "audio/numbers/sentences/19.mp3"
     },
+    "2": {
+      "name": "audio/numbers/names/2.mp3",
+      "sentence": "audio/numbers/sentences/2.mp3"
+    },
     "20": {
       "name": "audio/numbers/names/20.mp3",
       "sentence": "audio/numbers/sentences/20.mp3"
+    },
+    "3": {
+      "name": "audio/numbers/names/3.mp3",
+      "sentence": "audio/numbers/sentences/3.mp3"
+    },
+    "4": {
+      "name": "audio/numbers/names/4.mp3",
+      "sentence": "audio/numbers/sentences/4.mp3"
+    },
+    "5": {
+      "name": "audio/numbers/names/5.mp3",
+      "sentence": "audio/numbers/sentences/5.mp3"
+    },
+    "6": {
+      "name": "audio/numbers/names/6.mp3",
+      "sentence": "audio/numbers/sentences/6.mp3"
+    },
+    "7": {
+      "name": "audio/numbers/names/7.mp3",
+      "sentence": "audio/numbers/sentences/7.mp3"
+    },
+    "8": {
+      "name": "audio/numbers/names/8.mp3",
+      "sentence": "audio/numbers/sentences/8.mp3"
+    },
+    "9": {
+      "name": "audio/numbers/names/9.mp3",
+      "sentence": "audio/numbers/sentences/9.mp3"
     }
   },
   "counting": {
     "1": "audio/numbers/counting/count_1.mp3",
+    "10": "audio/numbers/counting/count_10.mp3",
     "2": "audio/numbers/counting/count_2.mp3",
     "3": "audio/numbers/counting/count_3.mp3",
     "4": "audio/numbers/counting/count_4.mp3",
@@ -302,13 +310,12 @@
     "6": "audio/numbers/counting/count_6.mp3",
     "7": "audio/numbers/counting/count_7.mp3",
     "8": "audio/numbers/counting/count_8.mp3",
-    "9": "audio/numbers/counting/count_9.mp3",
-    "10": "audio/numbers/counting/count_10.mp3"
+    "9": "audio/numbers/counting/count_9.mp3"
   },
   "number_instructions": [
     {
-      "id": "lets_count",
-      "path": "audio/numbers/instructions/lets_count.mp3"
+      "id": "all_numbers_done",
+      "path": "audio/numbers/instructions/all_numbers_done.mp3"
     },
     {
       "id": "count_animals",
@@ -319,278 +326,266 @@
       "path": "audio/numbers/instructions/how_many.mp3"
     },
     {
-      "id": "match_number",
-      "path": "audio/numbers/instructions/match_number.mp3"
-    },
-    {
-      "id": "all_numbers_done",
-      "path": "audio/numbers/instructions/all_numbers_done.mp3"
-    },
-    {
       "id": "keep_practicing",
       "path": "audio/numbers/instructions/keep_practicing.mp3"
+    },
+    {
+      "id": "lets_count",
+      "path": "audio/numbers/instructions/lets_count.mp3"
+    },
+    {
+      "id": "match_number",
+      "path": "audio/numbers/instructions/match_number.mp3"
     }
   ],
   "vocabulary": {
     "colors": {
-      "red": {
-        "word": "audio/vocabulary/colors/words/red.mp3",
-        "sentence": "audio/vocabulary/colors/sentences/red.mp3"
-      },
-      "blue": {
-        "word": "audio/vocabulary/colors/words/blue.mp3",
-        "sentence": "audio/vocabulary/colors/sentences/blue.mp3"
-      },
-      "yellow": {
-        "word": "audio/vocabulary/colors/words/yellow.mp3",
-        "sentence": "audio/vocabulary/colors/sentences/yellow.mp3"
-      },
-      "green": {
-        "word": "audio/vocabulary/colors/words/green.mp3",
-        "sentence": "audio/vocabulary/colors/sentences/green.mp3"
-      },
-      "orange": {
-        "word": "audio/vocabulary/colors/words/orange.mp3",
-        "sentence": "audio/vocabulary/colors/sentences/orange.mp3"
-      },
-      "purple": {
-        "word": "audio/vocabulary/colors/words/purple.mp3",
-        "sentence": "audio/vocabulary/colors/sentences/purple.mp3"
-      },
-      "pink": {
-        "word": "audio/vocabulary/colors/words/pink.mp3",
-        "sentence": "audio/vocabulary/colors/sentences/pink.mp3"
-      },
-      "brown": {
-        "word": "audio/vocabulary/colors/words/brown.mp3",
-        "sentence": "audio/vocabulary/colors/sentences/brown.mp3"
+      "aqua": {
+        "sentence": "audio/vocabulary/colors/sentences/aqua.mp3",
+        "word": "audio/vocabulary/colors/words/aqua.mp3"
       },
       "black": {
-        "word": "audio/vocabulary/colors/words/black.mp3",
-        "sentence": "audio/vocabulary/colors/sentences/black.mp3"
+        "sentence": "audio/vocabulary/colors/sentences/black.mp3",
+        "word": "audio/vocabulary/colors/words/black.mp3"
       },
-      "white": {
-        "word": "audio/vocabulary/colors/words/white.mp3",
-        "sentence": "audio/vocabulary/colors/sentences/white.mp3"
+      "blue": {
+        "sentence": "audio/vocabulary/colors/sentences/blue.mp3",
+        "word": "audio/vocabulary/colors/words/blue.mp3"
       },
-      "gray": {
-        "word": "audio/vocabulary/colors/words/gray.mp3",
-        "sentence": "audio/vocabulary/colors/sentences/gray.mp3"
+      "brown": {
+        "sentence": "audio/vocabulary/colors/sentences/brown.mp3",
+        "word": "audio/vocabulary/colors/words/brown.mp3"
       },
       "gold": {
-        "word": "audio/vocabulary/colors/words/gold.mp3",
-        "sentence": "audio/vocabulary/colors/sentences/gold.mp3"
+        "sentence": "audio/vocabulary/colors/sentences/gold.mp3",
+        "word": "audio/vocabulary/colors/words/gold.mp3"
       },
-      "peach": {
-        "word": "audio/vocabulary/colors/words/peach.mp3",
-        "sentence": "audio/vocabulary/colors/sentences/peach.mp3"
+      "gray": {
+        "sentence": "audio/vocabulary/colors/sentences/gray.mp3",
+        "word": "audio/vocabulary/colors/words/gray.mp3"
       },
-      "aqua": {
-        "word": "audio/vocabulary/colors/words/aqua.mp3",
-        "sentence": "audio/vocabulary/colors/sentences/aqua.mp3"
+      "green": {
+        "sentence": "audio/vocabulary/colors/sentences/green.mp3",
+        "word": "audio/vocabulary/colors/words/green.mp3"
       },
       "lime": {
-        "word": "audio/vocabulary/colors/words/lime.mp3",
-        "sentence": "audio/vocabulary/colors/sentences/lime.mp3"
+        "sentence": "audio/vocabulary/colors/sentences/lime.mp3",
+        "word": "audio/vocabulary/colors/words/lime.mp3"
+      },
+      "orange": {
+        "sentence": "audio/vocabulary/colors/sentences/orange.mp3",
+        "word": "audio/vocabulary/colors/words/orange.mp3"
+      },
+      "peach": {
+        "sentence": "audio/vocabulary/colors/sentences/peach.mp3",
+        "word": "audio/vocabulary/colors/words/peach.mp3"
+      },
+      "pink": {
+        "sentence": "audio/vocabulary/colors/sentences/pink.mp3",
+        "word": "audio/vocabulary/colors/words/pink.mp3"
+      },
+      "purple": {
+        "sentence": "audio/vocabulary/colors/sentences/purple.mp3",
+        "word": "audio/vocabulary/colors/words/purple.mp3"
+      },
+      "red": {
+        "sentence": "audio/vocabulary/colors/sentences/red.mp3",
+        "word": "audio/vocabulary/colors/words/red.mp3"
+      },
+      "white": {
+        "sentence": "audio/vocabulary/colors/sentences/white.mp3",
+        "word": "audio/vocabulary/colors/words/white.mp3"
+      },
+      "yellow": {
+        "sentence": "audio/vocabulary/colors/sentences/yellow.mp3",
+        "word": "audio/vocabulary/colors/words/yellow.mp3"
       }
     },
     "shapes": {
-      "circle": {
-        "word": "audio/vocabulary/shapes/words/circle.mp3",
-        "sentence": "audio/vocabulary/shapes/sentences/circle.mp3"
-      },
-      "square": {
-        "word": "audio/vocabulary/shapes/words/square.mp3",
-        "sentence": "audio/vocabulary/shapes/sentences/square.mp3"
-      },
-      "triangle": {
-        "word": "audio/vocabulary/shapes/words/triangle.mp3",
-        "sentence": "audio/vocabulary/shapes/sentences/triangle.mp3"
-      },
-      "star": {
-        "word": "audio/vocabulary/shapes/words/star.mp3",
-        "sentence": "audio/vocabulary/shapes/sentences/star.mp3"
-      },
-      "heart": {
-        "word": "audio/vocabulary/shapes/words/heart.mp3",
-        "sentence": "audio/vocabulary/shapes/sentences/heart.mp3"
-      },
-      "diamond": {
-        "word": "audio/vocabulary/shapes/words/diamond.mp3",
-        "sentence": "audio/vocabulary/shapes/sentences/diamond.mp3"
-      },
-      "rectangle": {
-        "word": "audio/vocabulary/shapes/words/rectangle.mp3",
-        "sentence": "audio/vocabulary/shapes/sentences/rectangle.mp3"
-      },
-      "oval": {
-        "word": "audio/vocabulary/shapes/words/oval.mp3",
-        "sentence": "audio/vocabulary/shapes/sentences/oval.mp3"
-      },
-      "crescent": {
-        "word": "audio/vocabulary/shapes/words/crescent.mp3",
-        "sentence": "audio/vocabulary/shapes/sentences/crescent.mp3"
-      },
       "arrow": {
-        "word": "audio/vocabulary/shapes/words/arrow.mp3",
-        "sentence": "audio/vocabulary/shapes/sentences/arrow.mp3"
+        "sentence": "audio/vocabulary/shapes/sentences/arrow.mp3",
+        "word": "audio/vocabulary/shapes/words/arrow.mp3"
       },
-      "cross": {
-        "word": "audio/vocabulary/shapes/words/cross.mp3",
-        "sentence": "audio/vocabulary/shapes/sentences/cross.mp3"
-      },
-      "hexagon": {
-        "word": "audio/vocabulary/shapes/words/hexagon.mp3",
-        "sentence": "audio/vocabulary/shapes/sentences/hexagon.mp3"
+      "circle": {
+        "sentence": "audio/vocabulary/shapes/sentences/circle.mp3",
+        "word": "audio/vocabulary/shapes/words/circle.mp3"
       },
       "cloud": {
-        "word": "audio/vocabulary/shapes/words/cloud.mp3",
-        "sentence": "audio/vocabulary/shapes/sentences/cloud.mp3"
+        "sentence": "audio/vocabulary/shapes/sentences/cloud.mp3",
+        "word": "audio/vocabulary/shapes/words/cloud.mp3"
       },
-      "lightning": {
-        "word": "audio/vocabulary/shapes/words/lightning.mp3",
-        "sentence": "audio/vocabulary/shapes/sentences/lightning.mp3"
+      "crescent": {
+        "sentence": "audio/vocabulary/shapes/sentences/crescent.mp3",
+        "word": "audio/vocabulary/shapes/words/crescent.mp3"
+      },
+      "cross": {
+        "sentence": "audio/vocabulary/shapes/sentences/cross.mp3",
+        "word": "audio/vocabulary/shapes/words/cross.mp3"
+      },
+      "diamond": {
+        "sentence": "audio/vocabulary/shapes/sentences/diamond.mp3",
+        "word": "audio/vocabulary/shapes/words/diamond.mp3"
       },
       "drop": {
-        "word": "audio/vocabulary/shapes/words/drop.mp3",
-        "sentence": "audio/vocabulary/shapes/sentences/drop.mp3"
+        "sentence": "audio/vocabulary/shapes/sentences/drop.mp3",
+        "word": "audio/vocabulary/shapes/words/drop.mp3"
+      },
+      "heart": {
+        "sentence": "audio/vocabulary/shapes/sentences/heart.mp3",
+        "word": "audio/vocabulary/shapes/words/heart.mp3"
+      },
+      "hexagon": {
+        "sentence": "audio/vocabulary/shapes/sentences/hexagon.mp3",
+        "word": "audio/vocabulary/shapes/words/hexagon.mp3"
+      },
+      "lightning": {
+        "sentence": "audio/vocabulary/shapes/sentences/lightning.mp3",
+        "word": "audio/vocabulary/shapes/words/lightning.mp3"
+      },
+      "oval": {
+        "sentence": "audio/vocabulary/shapes/sentences/oval.mp3",
+        "word": "audio/vocabulary/shapes/words/oval.mp3"
+      },
+      "rectangle": {
+        "sentence": "audio/vocabulary/shapes/sentences/rectangle.mp3",
+        "word": "audio/vocabulary/shapes/words/rectangle.mp3"
+      },
+      "square": {
+        "sentence": "audio/vocabulary/shapes/sentences/square.mp3",
+        "word": "audio/vocabulary/shapes/words/square.mp3"
+      },
+      "star": {
+        "sentence": "audio/vocabulary/shapes/sentences/star.mp3",
+        "word": "audio/vocabulary/shapes/words/star.mp3"
+      },
+      "triangle": {
+        "sentence": "audio/vocabulary/shapes/sentences/triangle.mp3",
+        "word": "audio/vocabulary/shapes/words/triangle.mp3"
       }
     },
     "animals": {
-      "cat": {
-        "word": "audio/vocabulary/animals/words/cat.mp3",
-        "sound": "audio/vocabulary/animals/sounds/cat.mp3",
-        "sentence": "audio/vocabulary/animals/sentences/cat.mp3"
-      },
-      "dog": {
-        "word": "audio/vocabulary/animals/words/dog.mp3",
-        "sound": "audio/vocabulary/animals/sounds/dog.mp3",
-        "sentence": "audio/vocabulary/animals/sentences/dog.mp3"
-      },
-      "cow": {
-        "word": "audio/vocabulary/animals/words/cow.mp3",
-        "sound": "audio/vocabulary/animals/sounds/cow.mp3",
-        "sentence": "audio/vocabulary/animals/sentences/cow.mp3"
-      },
-      "duck": {
-        "word": "audio/vocabulary/animals/words/duck.mp3",
-        "sound": "audio/vocabulary/animals/sounds/duck.mp3",
-        "sentence": "audio/vocabulary/animals/sentences/duck.mp3"
-      },
-      "pig": {
-        "word": "audio/vocabulary/animals/words/pig.mp3",
-        "sound": "audio/vocabulary/animals/sounds/pig.mp3",
-        "sentence": "audio/vocabulary/animals/sentences/pig.mp3"
-      },
-      "sheep": {
-        "word": "audio/vocabulary/animals/words/sheep.mp3",
-        "sound": "audio/vocabulary/animals/sounds/sheep.mp3",
-        "sentence": "audio/vocabulary/animals/sentences/sheep.mp3"
-      },
-      "horse": {
-        "word": "audio/vocabulary/animals/words/horse.mp3",
-        "sound": "audio/vocabulary/animals/sounds/horse.mp3",
-        "sentence": "audio/vocabulary/animals/sentences/horse.mp3"
-      },
-      "lion": {
-        "word": "audio/vocabulary/animals/words/lion.mp3",
-        "sound": "audio/vocabulary/animals/sounds/lion.mp3",
-        "sentence": "audio/vocabulary/animals/sentences/lion.mp3"
-      },
-      "frog": {
-        "word": "audio/vocabulary/animals/words/frog.mp3",
-        "sound": "audio/vocabulary/animals/sounds/frog.mp3",
-        "sentence": "audio/vocabulary/animals/sentences/frog.mp3"
-      },
-      "chicken": {
-        "word": "audio/vocabulary/animals/words/chicken.mp3",
-        "sound": "audio/vocabulary/animals/sounds/chicken.mp3",
-        "sentence": "audio/vocabulary/animals/sentences/chicken.mp3"
-      },
-      "bird": {
-        "word": "audio/vocabulary/animals/words/bird.mp3",
-        "sound": "audio/vocabulary/animals/sounds/bird.mp3",
-        "sentence": "audio/vocabulary/animals/sentences/bird.mp3"
-      },
-      "monkey": {
-        "word": "audio/vocabulary/animals/words/monkey.mp3",
-        "sound": "audio/vocabulary/animals/sounds/monkey.mp3",
-        "sentence": "audio/vocabulary/animals/sentences/monkey.mp3"
-      },
-      "elephant": {
-        "word": "audio/vocabulary/animals/words/elephant.mp3",
-        "sound": "audio/vocabulary/animals/sounds/elephant.mp3",
-        "sentence": "audio/vocabulary/animals/sentences/elephant.mp3"
-      },
-      "snake": {
-        "word": "audio/vocabulary/animals/words/snake.mp3",
-        "sound": "audio/vocabulary/animals/sounds/snake.mp3",
-        "sentence": "audio/vocabulary/animals/sentences/snake.mp3"
+      "bear": {
+        "sentence": "audio/vocabulary/animals/sentences/bear.mp3",
+        "sound": "audio/vocabulary/animals/sounds/bear.mp3",
+        "word": "audio/vocabulary/animals/words/bear.mp3"
       },
       "bee": {
-        "word": "audio/vocabulary/animals/words/bee.mp3",
+        "sentence": "audio/vocabulary/animals/sentences/bee.mp3",
         "sound": "audio/vocabulary/animals/sounds/bee.mp3",
-        "sentence": "audio/vocabulary/animals/sentences/bee.mp3"
+        "word": "audio/vocabulary/animals/words/bee.mp3"
       },
-      "owl": {
-        "word": "audio/vocabulary/animals/words/owl.mp3",
-        "sound": "audio/vocabulary/animals/sounds/owl.mp3",
-        "sentence": "audio/vocabulary/animals/sentences/owl.mp3"
+      "bird": {
+        "sentence": "audio/vocabulary/animals/sentences/bird.mp3",
+        "sound": "audio/vocabulary/animals/sounds/bird.mp3",
+        "word": "audio/vocabulary/animals/words/bird.mp3"
       },
-      "bear": {
-        "word": "audio/vocabulary/animals/words/bear.mp3",
-        "sound": "audio/vocabulary/animals/sounds/bear.mp3",
-        "sentence": "audio/vocabulary/animals/sentences/bear.mp3"
+      "cat": {
+        "sentence": "audio/vocabulary/animals/sentences/cat.mp3",
+        "sound": "audio/vocabulary/animals/sounds/cat.mp3",
+        "word": "audio/vocabulary/animals/words/cat.mp3"
       },
-      "mouse": {
-        "word": "audio/vocabulary/animals/words/mouse.mp3",
-        "sound": "audio/vocabulary/animals/sounds/mouse.mp3",
-        "sentence": "audio/vocabulary/animals/sentences/mouse.mp3"
+      "chicken": {
+        "sentence": "audio/vocabulary/animals/sentences/chicken.mp3",
+        "sound": "audio/vocabulary/animals/sounds/chicken.mp3",
+        "word": "audio/vocabulary/animals/words/chicken.mp3"
+      },
+      "cow": {
+        "sentence": "audio/vocabulary/animals/sentences/cow.mp3",
+        "sound": "audio/vocabulary/animals/sounds/cow.mp3",
+        "word": "audio/vocabulary/animals/words/cow.mp3"
+      },
+      "dog": {
+        "sentence": "audio/vocabulary/animals/sentences/dog.mp3",
+        "sound": "audio/vocabulary/animals/sounds/dog.mp3",
+        "word": "audio/vocabulary/animals/words/dog.mp3"
       },
       "donkey": {
-        "word": "audio/vocabulary/animals/words/donkey.mp3",
+        "sentence": "audio/vocabulary/animals/sentences/donkey.mp3",
         "sound": "audio/vocabulary/animals/sounds/donkey.mp3",
-        "sentence": "audio/vocabulary/animals/sentences/donkey.mp3"
+        "word": "audio/vocabulary/animals/words/donkey.mp3"
       },
-      "rooster": {
-        "word": "audio/vocabulary/animals/words/rooster.mp3",
-        "sound": "audio/vocabulary/animals/sounds/rooster.mp3",
-        "sentence": "audio/vocabulary/animals/sentences/rooster.mp3"
+      "duck": {
+        "sentence": "audio/vocabulary/animals/sentences/duck.mp3",
+        "sound": "audio/vocabulary/animals/sounds/duck.mp3",
+        "word": "audio/vocabulary/animals/words/duck.mp3"
       },
-      "whale": {
-        "word": "audio/vocabulary/animals/words/whale.mp3",
-        "sound": "audio/vocabulary/animals/sounds/whale.mp3",
-        "sentence": "audio/vocabulary/animals/sentences/whale.mp3"
+      "elephant": {
+        "sentence": "audio/vocabulary/animals/sentences/elephant.mp3",
+        "sound": "audio/vocabulary/animals/sounds/elephant.mp3",
+        "word": "audio/vocabulary/animals/words/elephant.mp3"
       },
-      "tiger": {
-        "word": "audio/vocabulary/animals/words/tiger.mp3",
-        "sound": "audio/vocabulary/animals/sounds/tiger.mp3",
-        "sentence": "audio/vocabulary/animals/sentences/tiger.mp3"
-      },
-      "penguin": {
-        "word": "audio/vocabulary/animals/words/penguin.mp3",
-        "sound": "audio/vocabulary/animals/sounds/penguin.mp3",
-        "sentence": "audio/vocabulary/animals/sentences/penguin.mp3"
+      "frog": {
+        "sentence": "audio/vocabulary/animals/sentences/frog.mp3",
+        "sound": "audio/vocabulary/animals/sounds/frog.mp3",
+        "word": "audio/vocabulary/animals/words/frog.mp3"
       },
       "goat": {
-        "word": "audio/vocabulary/animals/words/goat.mp3",
+        "sentence": "audio/vocabulary/animals/sentences/goat.mp3",
         "sound": "audio/vocabulary/animals/sounds/goat.mp3",
-        "sentence": "audio/vocabulary/animals/sentences/goat.mp3"
+        "word": "audio/vocabulary/animals/words/goat.mp3"
+      },
+      "horse": {
+        "sentence": "audio/vocabulary/animals/sentences/horse.mp3",
+        "sound": "audio/vocabulary/animals/sounds/horse.mp3",
+        "word": "audio/vocabulary/animals/words/horse.mp3"
+      },
+      "lion": {
+        "sentence": "audio/vocabulary/animals/sentences/lion.mp3",
+        "sound": "audio/vocabulary/animals/sounds/lion.mp3",
+        "word": "audio/vocabulary/animals/words/lion.mp3"
+      },
+      "monkey": {
+        "sentence": "audio/vocabulary/animals/sentences/monkey.mp3",
+        "sound": "audio/vocabulary/animals/sounds/monkey.mp3",
+        "word": "audio/vocabulary/animals/words/monkey.mp3"
+      },
+      "mouse": {
+        "sentence": "audio/vocabulary/animals/sentences/mouse.mp3",
+        "sound": "audio/vocabulary/animals/sounds/mouse.mp3",
+        "word": "audio/vocabulary/animals/words/mouse.mp3"
+      },
+      "owl": {
+        "sentence": "audio/vocabulary/animals/sentences/owl.mp3",
+        "sound": "audio/vocabulary/animals/sounds/owl.mp3",
+        "word": "audio/vocabulary/animals/words/owl.mp3"
+      },
+      "penguin": {
+        "sentence": "audio/vocabulary/animals/sentences/penguin.mp3",
+        "sound": "audio/vocabulary/animals/sounds/penguin.mp3",
+        "word": "audio/vocabulary/animals/words/penguin.mp3"
+      },
+      "pig": {
+        "sentence": "audio/vocabulary/animals/sentences/pig.mp3",
+        "sound": "audio/vocabulary/animals/sounds/pig.mp3",
+        "word": "audio/vocabulary/animals/words/pig.mp3"
+      },
+      "rooster": {
+        "sentence": "audio/vocabulary/animals/sentences/rooster.mp3",
+        "sound": "audio/vocabulary/animals/sounds/rooster.mp3",
+        "word": "audio/vocabulary/animals/words/rooster.mp3"
+      },
+      "sheep": {
+        "sentence": "audio/vocabulary/animals/sentences/sheep.mp3",
+        "sound": "audio/vocabulary/animals/sounds/sheep.mp3",
+        "word": "audio/vocabulary/animals/words/sheep.mp3"
+      },
+      "snake": {
+        "sentence": "audio/vocabulary/animals/sentences/snake.mp3",
+        "sound": "audio/vocabulary/animals/sounds/snake.mp3",
+        "word": "audio/vocabulary/animals/words/snake.mp3"
+      },
+      "tiger": {
+        "sentence": "audio/vocabulary/animals/sentences/tiger.mp3",
+        "sound": "audio/vocabulary/animals/sounds/tiger.mp3",
+        "word": "audio/vocabulary/animals/words/tiger.mp3"
+      },
+      "whale": {
+        "sentence": "audio/vocabulary/animals/sentences/whale.mp3",
+        "sound": "audio/vocabulary/animals/sounds/whale.mp3",
+        "word": "audio/vocabulary/animals/words/whale.mp3"
       }
     },
     "instructions": [
-      {
-        "id": "lets_learn_colors",
-        "path": "audio/vocabulary/instructions/lets_learn_colors.mp3"
-      },
-      {
-        "id": "lets_learn_shapes",
-        "path": "audio/vocabulary/instructions/lets_learn_shapes.mp3"
-      },
-      {
-        "id": "lets_learn_animals",
-        "path": "audio/vocabulary/instructions/lets_learn_animals.mp3"
-      },
       {
         "id": "find_the_color",
         "path": "audio/vocabulary/instructions/find_the_color.mp3"
@@ -600,27 +595,313 @@
         "path": "audio/vocabulary/instructions/find_the_shape.mp3"
       },
       {
-        "id": "what_animal_sound",
-        "path": "audio/vocabulary/instructions/what_animal_sound.mp3"
+        "id": "keep_practicing_vocab",
+        "path": "audio/vocabulary/instructions/keep_practicing_vocab.mp3"
+      },
+      {
+        "id": "lets_learn_animals",
+        "path": "audio/vocabulary/instructions/lets_learn_animals.mp3"
+      },
+      {
+        "id": "lets_learn_colors",
+        "path": "audio/vocabulary/instructions/lets_learn_colors.mp3"
+      },
+      {
+        "id": "lets_learn_shapes",
+        "path": "audio/vocabulary/instructions/lets_learn_shapes.mp3"
       },
       {
         "id": "this_is",
         "path": "audio/vocabulary/instructions/this_is.mp3"
       },
       {
-        "id": "keep_practicing_vocab",
-        "path": "audio/vocabulary/instructions/keep_practicing_vocab.mp3"
+        "id": "what_animal_sound",
+        "path": "audio/vocabulary/instructions/what_animal_sound.mp3"
       }
     ]
+  },
+  "picture_phonics": {
+    "airplane": {
+      "sentence": "audio/picture-phonics/sentences/airplane.mp3",
+      "word": "audio/picture-phonics/words/airplane.mp3"
+    },
+    "ant": {
+      "sentence": "audio/picture-phonics/sentences/ant.mp3",
+      "word": "audio/picture-phonics/words/ant.mp3"
+    },
+    "apple": {
+      "sentence": "audio/picture-phonics/sentences/apple.mp3",
+      "word": "audio/picture-phonics/words/apple.mp3"
+    },
+    "banana": {
+      "sentence": "audio/picture-phonics/sentences/banana.mp3",
+      "word": "audio/picture-phonics/words/banana.mp3"
+    },
+    "bear": {
+      "sentence": "audio/picture-phonics/sentences/bear.mp3",
+      "word": "audio/picture-phonics/words/bear.mp3"
+    },
+    "butterfly": {
+      "sentence": "audio/picture-phonics/sentences/butterfly.mp3",
+      "word": "audio/picture-phonics/words/butterfly.mp3"
+    },
+    "car": {
+      "sentence": "audio/picture-phonics/sentences/car.mp3",
+      "word": "audio/picture-phonics/words/car.mp3"
+    },
+    "cat": {
+      "sentence": "audio/picture-phonics/sentences/cat.mp3",
+      "word": "audio/picture-phonics/words/cat.mp3"
+    },
+    "cupcake": {
+      "sentence": "audio/picture-phonics/sentences/cupcake.mp3",
+      "word": "audio/picture-phonics/words/cupcake.mp3"
+    },
+    "dinosaur": {
+      "sentence": "audio/picture-phonics/sentences/dinosaur.mp3",
+      "word": "audio/picture-phonics/words/dinosaur.mp3"
+    },
+    "dog": {
+      "sentence": "audio/picture-phonics/sentences/dog.mp3",
+      "word": "audio/picture-phonics/words/dog.mp3"
+    },
+    "duck": {
+      "sentence": "audio/picture-phonics/sentences/duck.mp3",
+      "word": "audio/picture-phonics/words/duck.mp3"
+    },
+    "eagle": {
+      "sentence": "audio/picture-phonics/sentences/eagle.mp3",
+      "word": "audio/picture-phonics/words/eagle.mp3"
+    },
+    "egg": {
+      "sentence": "audio/picture-phonics/sentences/egg.mp3",
+      "word": "audio/picture-phonics/words/egg.mp3"
+    },
+    "elephant": {
+      "sentence": "audio/picture-phonics/sentences/elephant.mp3",
+      "word": "audio/picture-phonics/words/elephant.mp3"
+    },
+    "fish": {
+      "sentence": "audio/picture-phonics/sentences/fish.mp3",
+      "word": "audio/picture-phonics/words/fish.mp3"
+    },
+    "flower": {
+      "sentence": "audio/picture-phonics/sentences/flower.mp3",
+      "word": "audio/picture-phonics/words/flower.mp3"
+    },
+    "frog": {
+      "sentence": "audio/picture-phonics/sentences/frog.mp3",
+      "word": "audio/picture-phonics/words/frog.mp3"
+    },
+    "giraffe": {
+      "sentence": "audio/picture-phonics/sentences/giraffe.mp3",
+      "word": "audio/picture-phonics/words/giraffe.mp3"
+    },
+    "grapes": {
+      "sentence": "audio/picture-phonics/sentences/grapes.mp3",
+      "word": "audio/picture-phonics/words/grapes.mp3"
+    },
+    "guitar": {
+      "sentence": "audio/picture-phonics/sentences/guitar.mp3",
+      "word": "audio/picture-phonics/words/guitar.mp3"
+    },
+    "heart": {
+      "sentence": "audio/picture-phonics/sentences/heart.mp3",
+      "word": "audio/picture-phonics/words/heart.mp3"
+    },
+    "horse": {
+      "sentence": "audio/picture-phonics/sentences/horse.mp3",
+      "word": "audio/picture-phonics/words/horse.mp3"
+    },
+    "house": {
+      "sentence": "audio/picture-phonics/sentences/house.mp3",
+      "word": "audio/picture-phonics/words/house.mp3"
+    },
+    "ice_cream": {
+      "sentence": "audio/picture-phonics/sentences/ice_cream.mp3",
+      "word": "audio/picture-phonics/words/ice_cream.mp3"
+    },
+    "igloo": {
+      "sentence": "audio/picture-phonics/sentences/igloo.mp3",
+      "word": "audio/picture-phonics/words/igloo.mp3"
+    },
+    "jellyfish": {
+      "sentence": "audio/picture-phonics/sentences/jellyfish.mp3",
+      "word": "audio/picture-phonics/words/jellyfish.mp3"
+    },
+    "juice": {
+      "sentence": "audio/picture-phonics/sentences/juice.mp3",
+      "word": "audio/picture-phonics/words/juice.mp3"
+    },
+    "kangaroo": {
+      "sentence": "audio/picture-phonics/sentences/kangaroo.mp3",
+      "word": "audio/picture-phonics/words/kangaroo.mp3"
+    },
+    "key": {
+      "sentence": "audio/picture-phonics/sentences/key.mp3",
+      "word": "audio/picture-phonics/words/key.mp3"
+    },
+    "kite": {
+      "sentence": "audio/picture-phonics/sentences/kite.mp3",
+      "word": "audio/picture-phonics/words/kite.mp3"
+    },
+    "ladybug": {
+      "sentence": "audio/picture-phonics/sentences/ladybug.mp3",
+      "word": "audio/picture-phonics/words/ladybug.mp3"
+    },
+    "lemon": {
+      "sentence": "audio/picture-phonics/sentences/lemon.mp3",
+      "word": "audio/picture-phonics/words/lemon.mp3"
+    },
+    "lion": {
+      "sentence": "audio/picture-phonics/sentences/lion.mp3",
+      "word": "audio/picture-phonics/words/lion.mp3"
+    },
+    "monkey": {
+      "sentence": "audio/picture-phonics/sentences/monkey.mp3",
+      "word": "audio/picture-phonics/words/monkey.mp3"
+    },
+    "moon": {
+      "sentence": "audio/picture-phonics/sentences/moon.mp3",
+      "word": "audio/picture-phonics/words/moon.mp3"
+    },
+    "mushroom": {
+      "sentence": "audio/picture-phonics/sentences/mushroom.mp3",
+      "word": "audio/picture-phonics/words/mushroom.mp3"
+    },
+    "narwhal": {
+      "sentence": "audio/picture-phonics/sentences/narwhal.mp3",
+      "word": "audio/picture-phonics/words/narwhal.mp3"
+    },
+    "nest": {
+      "sentence": "audio/picture-phonics/sentences/nest.mp3",
+      "word": "audio/picture-phonics/words/nest.mp3"
+    },
+    "octopus": {
+      "sentence": "audio/picture-phonics/sentences/octopus.mp3",
+      "word": "audio/picture-phonics/words/octopus.mp3"
+    },
+    "orange": {
+      "sentence": "audio/picture-phonics/sentences/orange.mp3",
+      "word": "audio/picture-phonics/words/orange.mp3"
+    },
+    "owl": {
+      "sentence": "audio/picture-phonics/sentences/owl.mp3",
+      "word": "audio/picture-phonics/words/owl.mp3"
+    },
+    "panda": {
+      "sentence": "audio/picture-phonics/sentences/panda.mp3",
+      "word": "audio/picture-phonics/words/panda.mp3"
+    },
+    "penguin": {
+      "sentence": "audio/picture-phonics/sentences/penguin.mp3",
+      "word": "audio/picture-phonics/words/penguin.mp3"
+    },
+    "pizza": {
+      "sentence": "audio/picture-phonics/sentences/pizza.mp3",
+      "word": "audio/picture-phonics/words/pizza.mp3"
+    },
+    "quail": {
+      "sentence": "audio/picture-phonics/sentences/quail.mp3",
+      "word": "audio/picture-phonics/words/quail.mp3"
+    },
+    "queen": {
+      "sentence": "audio/picture-phonics/sentences/queen.mp3",
+      "word": "audio/picture-phonics/words/queen.mp3"
+    },
+    "rabbit": {
+      "sentence": "audio/picture-phonics/sentences/rabbit.mp3",
+      "word": "audio/picture-phonics/words/rabbit.mp3"
+    },
+    "rainbow": {
+      "sentence": "audio/picture-phonics/sentences/rainbow.mp3",
+      "word": "audio/picture-phonics/words/rainbow.mp3"
+    },
+    "rocket": {
+      "sentence": "audio/picture-phonics/sentences/rocket.mp3",
+      "word": "audio/picture-phonics/words/rocket.mp3"
+    },
+    "snake": {
+      "sentence": "audio/picture-phonics/sentences/snake.mp3",
+      "word": "audio/picture-phonics/words/snake.mp3"
+    },
+    "star": {
+      "sentence": "audio/picture-phonics/sentences/star.mp3",
+      "word": "audio/picture-phonics/words/star.mp3"
+    },
+    "sun": {
+      "sentence": "audio/picture-phonics/sentences/sun.mp3",
+      "word": "audio/picture-phonics/words/sun.mp3"
+    },
+    "tiger": {
+      "sentence": "audio/picture-phonics/sentences/tiger.mp3",
+      "word": "audio/picture-phonics/words/tiger.mp3"
+    },
+    "tree": {
+      "sentence": "audio/picture-phonics/sentences/tree.mp3",
+      "word": "audio/picture-phonics/words/tree.mp3"
+    },
+    "turtle": {
+      "sentence": "audio/picture-phonics/sentences/turtle.mp3",
+      "word": "audio/picture-phonics/words/turtle.mp3"
+    },
+    "umbrella": {
+      "sentence": "audio/picture-phonics/sentences/umbrella.mp3",
+      "word": "audio/picture-phonics/words/umbrella.mp3"
+    },
+    "unicorn": {
+      "sentence": "audio/picture-phonics/sentences/unicorn.mp3",
+      "word": "audio/picture-phonics/words/unicorn.mp3"
+    },
+    "violin": {
+      "sentence": "audio/picture-phonics/sentences/violin.mp3",
+      "word": "audio/picture-phonics/words/violin.mp3"
+    },
+    "volcano": {
+      "sentence": "audio/picture-phonics/sentences/volcano.mp3",
+      "word": "audio/picture-phonics/words/volcano.mp3"
+    },
+    "watermelon": {
+      "sentence": "audio/picture-phonics/sentences/watermelon.mp3",
+      "word": "audio/picture-phonics/words/watermelon.mp3"
+    },
+    "whale": {
+      "sentence": "audio/picture-phonics/sentences/whale.mp3",
+      "word": "audio/picture-phonics/words/whale.mp3"
+    },
+    "worm": {
+      "sentence": "audio/picture-phonics/sentences/worm.mp3",
+      "word": "audio/picture-phonics/words/worm.mp3"
+    },
+    "xray": {
+      "sentence": "audio/picture-phonics/sentences/xray.mp3",
+      "word": "audio/picture-phonics/words/xray.mp3"
+    },
+    "xylophone": {
+      "sentence": "audio/picture-phonics/sentences/xylophone.mp3",
+      "word": "audio/picture-phonics/words/xylophone.mp3"
+    },
+    "yak": {
+      "sentence": "audio/picture-phonics/sentences/yak.mp3",
+      "word": "audio/picture-phonics/words/yak.mp3"
+    },
+    "yarn": {
+      "sentence": "audio/picture-phonics/sentences/yarn.mp3",
+      "word": "audio/picture-phonics/words/yarn.mp3"
+    },
+    "zap": {
+      "sentence": "audio/picture-phonics/sentences/zap.mp3",
+      "word": "audio/picture-phonics/words/zap.mp3"
+    },
+    "zebra": {
+      "sentence": "audio/picture-phonics/sentences/zebra.mp3",
+      "word": "audio/picture-phonics/words/zebra.mp3"
+    }
   },
   "game_instructions": [
     {
       "id": "find_the_different",
       "path": "audio/games/instructions/find_the_different.mp3"
-    },
-    {
-      "id": "which_one_different",
-      "path": "audio/games/instructions/which_one_different.mp3"
     },
     {
       "id": "great_thinking",
@@ -633,29 +914,37 @@
     {
       "id": "odd_one_out_intro",
       "path": "audio/games/instructions/odd_one_out_intro.mp3"
+    },
+    {
+      "id": "which_one_different",
+      "path": "audio/games/instructions/which_one_different.mp3"
     }
   ],
   "game_explanations": {
-    "cat_is_an_animal_not_a_fruit": "audio/games/explanations/cat_is_an_animal_not_a_fruit.mp3",
-    "dog_is_an_animal_not_a_fruit": "audio/games/explanations/dog_is_an_animal_not_a_fruit.mp3",
-    "flower_is_a_plant_not_a_fruit": "audio/games/explanations/flower_is_a_plant_not_a_fruit.mp3",
-    "car_is_a_vehicle_not_an_animal": "audio/games/explanations/car_is_a_vehicle_not_an_animal.mp3",
-    "star_is_in_the_sky_not_an_animal": "audio/games/explanations/star_is_in_the_sky_not_an_animal.mp3",
-    "pizza_is_food_not_an_animal": "audio/games/explanations/pizza_is_food_not_an_animal.mp3",
-    "blue_is_different_from_all_the_red_ones": "audio/games/explanations/blue_is_different_from_all_the_red_ones.mp3",
-    "yellow_is_different_from_all_the_green_ones": "audio/games/explanations/yellow_is_different_from_all_the_green_ones.mp3",
-    "orange_is_different_from_all_the_purple_ones": "audio/games/explanations/orange_is_different_from_all_the_purple_ones.mp3",
-    "brown_is_different_from_all_the_pink_ones": "audio/games/explanations/brown_is_different_from_all_the_pink_ones.mp3",
-    "triangle_has_3_sides_circles_are_round": "audio/games/explanations/triangle_has_3_sides_circles_are_round.mp3",
-    "heart_is_different_from_all_the_stars": "audio/games/explanations/heart_is_different_from_all_the_stars.mp3",
-    "circle_is_round_squares_have_straight_sides": "audio/games/explanations/circle_is_round_squares_have_straight_sides.mp3",
-    "mouse_is_tiny_elephants_are_big": "audio/games/explanations/mouse_is_tiny_elephants_are_big.mp3",
-    "teddy_bear_is_a_toy_not_food": "audio/games/explanations/teddy_bear_is_a_toy_not_food.mp3",
     "ball_is_a_toy_not_food": "audio/games/explanations/ball_is_a_toy_not_food.mp3",
-    "fish_swims_in_water_it_cannot_fly": "audio/games/explanations/fish_swims_in_water_it_cannot_fly.mp3",
-    "lion_lives_on_land_not_in_water": "audio/games/explanations/lion_lives_on_land_not_in_water.mp3",
+    "blue_is_different_from_all_the_red_ones": "audio/games/explanations/blue_is_different_from_all_the_red_ones.mp3",
+    "books_are_for_reading_not_eating": "audio/games/explanations/books_are_for_reading_not_eating.mp3",
+    "brown_is_different_from_all_the_pink_ones": "audio/games/explanations/brown_is_different_from_all_the_pink_ones.mp3",
+    "car_is_a_vehicle_not_an_animal": "audio/games/explanations/car_is_a_vehicle_not_an_animal.mp3",
+    "carrot_is_different_from_all_the_bananas": "audio/games/explanations/carrot_is_different_from_all_the_bananas.mp3",
+    "cat_is_an_animal_not_a_fruit": "audio/games/explanations/cat_is_an_animal_not_a_fruit.mp3",
+    "circle_is_round_squares_have_straight_sides": "audio/games/explanations/circle_is_round_squares_have_straight_sides.mp3",
+    "dog_is_an_animal_not_a_fruit": "audio/games/explanations/dog_is_an_animal_not_a_fruit.mp3",
+    "dog_is_different_from_all_the_cats": "audio/games/explanations/dog_is_different_from_all_the_cats.mp3",
     "elephant_is_an_animal_not_a_vehicle": "audio/games/explanations/elephant_is_an_animal_not_a_vehicle.mp3",
+    "fish_swims_in_water_it_cannot_fly": "audio/games/explanations/fish_swims_in_water_it_cannot_fly.mp3",
+    "flower_is_a_plant_not_a_fruit": "audio/games/explanations/flower_is_a_plant_not_a_fruit.mp3",
+    "flower_is_a_plant_not_an_animal": "audio/games/explanations/flower_is_a_plant_not_an_animal.mp3",
+    "guitar_is_an_instrument_not_a_fruit": "audio/games/explanations/guitar_is_an_instrument_not_a_fruit.mp3",
+    "heart_is_different_from_all_the_stars": "audio/games/explanations/heart_is_different_from_all_the_stars.mp3",
+    "lion_lives_on_land_not_in_water": "audio/games/explanations/lion_lives_on_land_not_in_water.mp3",
     "moon_is_different_from_all_the_stars": "audio/games/explanations/moon_is_different_from_all_the_stars.mp3",
-    "dog_is_different_from_all_the_cats": "audio/games/explanations/dog_is_different_from_all_the_cats.mp3"
+    "mouse_is_tiny_elephants_are_big": "audio/games/explanations/mouse_is_tiny_elephants_are_big.mp3",
+    "orange_is_different_from_all_the_purple_ones": "audio/games/explanations/orange_is_different_from_all_the_purple_ones.mp3",
+    "pizza_is_food_not_an_animal": "audio/games/explanations/pizza_is_food_not_an_animal.mp3",
+    "star_is_in_the_sky_not_an_animal": "audio/games/explanations/star_is_in_the_sky_not_an_animal.mp3",
+    "teddy_bear_is_a_toy_not_food": "audio/games/explanations/teddy_bear_is_a_toy_not_food.mp3",
+    "triangle_has_3_sides_circles_are_round": "audio/games/explanations/triangle_has_3_sides_circles_are_round.mp3",
+    "yellow_is_different_from_all_the_green_ones": "audio/games/explanations/yellow_is_different_from_all_the_green_ones.mp3"
   }
 }

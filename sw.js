@@ -1,5 +1,5 @@
 /* sw.js */
-var CACHE_NAME = 'learning-world-v7';
+var CACHE_NAME = 'learning-world-v8';
 var urlsToCache = [
     './',
     './index.html',

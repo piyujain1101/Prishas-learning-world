@@ -622,6 +622,52 @@ playGameExplanation: function(text) {
             setTimeout(resolve, duration);
         });
     },
+    // Add this method to AudioManager in js/speech.js
+// Add inside the AudioManager object, after the playGameExplanation method:
+
+    // --- Play picture phonics word ---
+    playPicturePhonicsWord: function(word) {
+        var self = this;
+        var wordId = word.toLowerCase().replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, '_').substring(0, 60);
+
+        if (this.isLoaded && this.audioManifest.picture_phonics &&
+            this.audioManifest.picture_phonics[wordId]) {
+            return this.play(this.audioManifest.picture_phonics[wordId].word)
+                .catch(function() {
+                    console.warn('MP3 failed for picture phonics word: ' + word);
+                    Speech.speak(word, 0.8, 1.1);
+                });
+        }
+        Speech.speak(word, 0.8, 1.1);
+        return Promise.resolve();
+    },
+
+    // --- Play picture phonics sentence ("Apple starts with A!") ---
+    playPicturePhonicsSentence: function(word) {
+        var self = this;
+        var wordId = word.toLowerCase().replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, '_').substring(0, 60);
+
+        if (this.isLoaded && this.audioManifest.picture_phonics &&
+            this.audioManifest.picture_phonics[wordId]) {
+            return this.play(this.audioManifest.picture_phonics[wordId].sentence)
+                .catch(function() {
+                    console.warn('MP3 failed for picture phonics sentence: ' + word);
+                    Speech.speak(word, 0.8, 1.1);
+                });
+        }
+        Speech.speak(word, 0.8, 1.1);
+        return Promise.resolve();
+    },
+
+    // --- Preload picture phonics audio ---
+    preloadPicturePhonics: function() {
+        if (!this.isLoaded || !this.audioManifest.picture_phonics) return;
+        var words = Object.keys(this.audioManifest.picture_phonics);
+        for (var i = 0; i < Math.min(words.length, 10); i++) {
+            var item = this.audioManifest.picture_phonics[words[i]];
+            if (item.word) this.preload(item.word);
+        }
+    },
     // --- Game instruction TTS fallbacks ---
     _speakGameInstructionFallback: function(id) {
         var n = (typeof ChildName !== 'undefined' && ChildName.get()) ? ChildName.get() : 'friend';
