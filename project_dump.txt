@@ -1465,7 +1465,7 @@ FILE: sound-safari.html
 FILE: sw.js
 ================================================================
 /* sw.js */
-var CACHE_NAME = 'learning-world-v7';
+var CACHE_NAME = 'learning-world-v8';
 var urlsToCache = [
     './',
     './index.html',
@@ -1741,188 +1741,197 @@ FILE: audio/manifest.json
     "a": {
       "name": "audio/letters/a.mp3",
       "phonics": "audio/phonics/a.mp3",
-      "word": "audio/words/a.mp3",
-      "sentence": "audio/sentences/a.mp3"
+      "sentence": "audio/sentences/a.mp3",
+      "word": "audio/words/a.mp3"
     },
     "b": {
       "name": "audio/letters/b.mp3",
       "phonics": "audio/phonics/b.mp3",
-      "word": "audio/words/b.mp3",
-      "sentence": "audio/sentences/b.mp3"
+      "sentence": "audio/sentences/b.mp3",
+      "word": "audio/words/b.mp3"
     },
     "c": {
       "name": "audio/letters/c.mp3",
       "phonics": "audio/phonics/c.mp3",
-      "word": "audio/words/c.mp3",
-      "sentence": "audio/sentences/c.mp3"
+      "sentence": "audio/sentences/c.mp3",
+      "word": "audio/words/c.mp3"
     },
     "d": {
       "name": "audio/letters/d.mp3",
       "phonics": "audio/phonics/d.mp3",
-      "word": "audio/words/d.mp3",
-      "sentence": "audio/sentences/d.mp3"
+      "sentence": "audio/sentences/d.mp3",
+      "word": "audio/words/d.mp3"
     },
     "e": {
       "name": "audio/letters/e.mp3",
       "phonics": "audio/phonics/e.mp3",
-      "word": "audio/words/e.mp3",
-      "sentence": "audio/sentences/e.mp3"
+      "sentence": "audio/sentences/e.mp3",
+      "word": "audio/words/e.mp3"
     },
     "f": {
       "name": "audio/letters/f.mp3",
       "phonics": "audio/phonics/f.mp3",
-      "word": "audio/words/f.mp3",
-      "sentence": "audio/sentences/f.mp3"
+      "sentence": "audio/sentences/f.mp3",
+      "word": "audio/words/f.mp3"
     },
     "g": {
       "name": "audio/letters/g.mp3",
       "phonics": "audio/phonics/g.mp3",
-      "word": "audio/words/g.mp3",
-      "sentence": "audio/sentences/g.mp3"
+      "sentence": "audio/sentences/g.mp3",
+      "word": "audio/words/g.mp3"
     },
     "h": {
       "name": "audio/letters/h.mp3",
       "phonics": "audio/phonics/h.mp3",
-      "word": "audio/words/h.mp3",
-      "sentence": "audio/sentences/h.mp3"
+      "sentence": "audio/sentences/h.mp3",
+      "word": "audio/words/h.mp3"
     },
     "i": {
       "name": "audio/letters/i.mp3",
       "phonics": "audio/phonics/i.mp3",
-      "word": "audio/words/i.mp3",
-      "sentence": "audio/sentences/i.mp3"
+      "sentence": "audio/sentences/i.mp3",
+      "word": "audio/words/i.mp3"
     },
     "j": {
       "name": "audio/letters/j.mp3",
       "phonics": "audio/phonics/j.mp3",
-      "word": "audio/words/j.mp3",
-      "sentence": "audio/sentences/j.mp3"
+      "sentence": "audio/sentences/j.mp3",
+      "word": "audio/words/j.mp3"
     },
     "k": {
       "name": "audio/letters/k.mp3",
       "phonics": "audio/phonics/k.mp3",
-      "word": "audio/words/k.mp3",
-      "sentence": "audio/sentences/k.mp3"
+      "sentence": "audio/sentences/k.mp3",
+      "word": "audio/words/k.mp3"
     },
     "l": {
       "name": "audio/letters/l.mp3",
       "phonics": "audio/phonics/l.mp3",
-      "word": "audio/words/l.mp3",
-      "sentence": "audio/sentences/l.mp3"
+      "sentence": "audio/sentences/l.mp3",
+      "word": "audio/words/l.mp3"
     },
     "m": {
       "name": "audio/letters/m.mp3",
       "phonics": "audio/phonics/m.mp3",
-      "word": "audio/words/m.mp3",
-      "sentence": "audio/sentences/m.mp3"
+      "sentence": "audio/sentences/m.mp3",
+      "word": "audio/words/m.mp3"
     },
     "n": {
       "name": "audio/letters/n.mp3",
       "phonics": "audio/phonics/n.mp3",
-      "word": "audio/words/n.mp3",
-      "sentence": "audio/sentences/n.mp3"
+      "sentence": "audio/sentences/n.mp3",
+      "word": "audio/words/n.mp3"
     },
     "o": {
       "name": "audio/letters/o.mp3",
       "phonics": "audio/phonics/o.mp3",
-      "word": "audio/words/o.mp3",
-      "sentence": "audio/sentences/o.mp3"
+      "sentence": "audio/sentences/o.mp3",
+      "word": "audio/words/o.mp3"
     },
     "p": {
       "name": "audio/letters/p.mp3",
       "phonics": "audio/phonics/p.mp3",
-      "word": "audio/words/p.mp3",
-      "sentence": "audio/sentences/p.mp3"
+      "sentence": "audio/sentences/p.mp3",
+      "word": "audio/words/p.mp3"
     },
     "q": {
       "name": "audio/letters/q.mp3",
       "phonics": "audio/phonics/q.mp3",
-      "word": "audio/words/q.mp3",
-      "sentence": "audio/sentences/q.mp3"
+      "sentence": "audio/sentences/q.mp3",
+      "word": "audio/words/q.mp3"
     },
     "r": {
       "name": "audio/letters/r.mp3",
       "phonics": "audio/phonics/r.mp3",
-      "word": "audio/words/r.mp3",
-      "sentence": "audio/sentences/r.mp3"
+      "sentence": "audio/sentences/r.mp3",
+      "word": "audio/words/r.mp3"
     },
     "s": {
       "name": "audio/letters/s.mp3",
       "phonics": "audio/phonics/s.mp3",
-      "word": "audio/words/s.mp3",
-      "sentence": "audio/sentences/s.mp3"
+      "sentence": "audio/sentences/s.mp3",
+      "word": "audio/words/s.mp3"
     },
     "t": {
       "name": "audio/letters/t.mp3",
       "phonics": "audio/phonics/t.mp3",
-      "word": "audio/words/t.mp3",
-      "sentence": "audio/sentences/t.mp3"
+      "sentence": "audio/sentences/t.mp3",
+      "word": "audio/words/t.mp3"
     },
     "u": {
       "name": "audio/letters/u.mp3",
       "phonics": "audio/phonics/u.mp3",
-      "word": "audio/words/u.mp3",
-      "sentence": "audio/sentences/u.mp3"
+      "sentence": "audio/sentences/u.mp3",
+      "word": "audio/words/u.mp3"
     },
     "v": {
       "name": "audio/letters/v.mp3",
       "phonics": "audio/phonics/v.mp3",
-      "word": "audio/words/v.mp3",
-      "sentence": "audio/sentences/v.mp3"
+      "sentence": "audio/sentences/v.mp3",
+      "word": "audio/words/v.mp3"
     },
     "w": {
       "name": "audio/letters/w.mp3",
       "phonics": "audio/phonics/w.mp3",
-      "word": "audio/words/w.mp3",
-      "sentence": "audio/sentences/w.mp3"
+      "sentence": "audio/sentences/w.mp3",
+      "word": "audio/words/w.mp3"
     },
     "x": {
       "name": "audio/letters/x.mp3",
       "phonics": "audio/phonics/x.mp3",
-      "word": "audio/words/x.mp3",
-      "sentence": "audio/sentences/x.mp3"
+      "sentence": "audio/sentences/x.mp3",
+      "word": "audio/words/x.mp3"
     },
     "y": {
       "name": "audio/letters/y.mp3",
       "phonics": "audio/phonics/y.mp3",
-      "word": "audio/words/y.mp3",
-      "sentence": "audio/sentences/y.mp3"
+      "sentence": "audio/sentences/y.mp3",
+      "word": "audio/words/y.mp3"
     },
     "z": {
       "name": "audio/letters/z.mp3",
       "phonics": "audio/phonics/z.mp3",
-      "word": "audio/words/z.mp3",
-      "sentence": "audio/sentences/z.mp3"
+      "sentence": "audio/sentences/z.mp3",
+      "word": "audio/words/z.mp3"
     }
   },
   "celebrations": [
-    "audio/celebrations/great_job.mp3",
     "audio/celebrations/amazing.mp3",
-    "audio/celebrations/wonderful.mp3",
-    "audio/celebrations/you_did_it.mp3",
-    "audio/celebrations/super_star.mp3",
-    "audio/celebrations/yay.mp3",
-    "audio/celebrations/keep_going.mp3",
-    "audio/celebrations/well_done.mp3",
     "audio/celebrations/fantastic.mp3",
-    "audio/celebrations/proud.mp3"
+    "audio/celebrations/great_job.mp3",
+    "audio/celebrations/keep_going.mp3",
+    "audio/celebrations/proud.mp3",
+    "audio/celebrations/super_star.mp3",
+    "audio/celebrations/well_done.mp3",
+    "audio/celebrations/wonderful.mp3",
+    "audio/celebrations/yay.mp3",
+    "audio/celebrations/you.mp3",
+    "audio/celebrations/you_did_it.mp3"
   ],
   "instructions": [
     {
-      "id": "welcome",
-      "path": "audio/instructions/welcome.mp3"
-    },
-    {
-      "id": "lets_learn",
-      "path": "audio/instructions/lets_learn.mp3"
+      "id": "all_done",
+      "path": "audio/instructions/all_done.mp3"
     },
     {
       "id": "find_lowercase",
       "path": "audio/instructions/find_lowercase.mp3"
     },
     {
-      "id": "what_sound",
-      "path": "audio/instructions/what_sound.mp3"
+      "id": "lets_learn",
+      "path": "audio/instructions/lets_learn.mp3"
+    },
+    {
+      "id": "listen_carefully",
+      "path": "audio/instructions/listen_carefully.mp3"
+    },
+    {
+      "id": "pick_letter",
+      "path": "audio/instructions/pick_letter.mp3"
+    },
+    {
+      "id": "roar",
+      "path": "audio/instructions/roar.mp3"
     },
     {
       "id": "tap_to_hear",
@@ -1933,58 +1942,24 @@ FILE: audio/manifest.json
       "path": "audio/instructions/try_again.mp3"
     },
     {
-      "id": "all_done",
-      "path": "audio/instructions/all_done.mp3"
-    },
-    {
-      "id": "pick_letter",
-      "path": "audio/instructions/pick_letter.mp3"
-    },
-    {
-      "id": "listen_carefully",
-      "path": "audio/instructions/listen_carefully.mp3"
-    },
-    {
-      "id": "roar",
-      "path": "audio/instructions/roar.mp3"
+      "id": "what_sound",
+      "path": "audio/instructions/what_sound.mp3"
     }
   ],
   "numbers": {
+    "count_1": {},
+    "count_10": {},
+    "count_2": {},
+    "count_3": {},
+    "count_4": {},
+    "count_5": {},
+    "count_6": {},
+    "count_7": {},
+    "count_8": {},
+    "count_9": {},
     "1": {
       "name": "audio/numbers/names/1.mp3",
       "sentence": "audio/numbers/sentences/1.mp3"
-    },
-    "2": {
-      "name": "audio/numbers/names/2.mp3",
-      "sentence": "audio/numbers/sentences/2.mp3"
-    },
-    "3": {
-      "name": "audio/numbers/names/3.mp3",
-      "sentence": "audio/numbers/sentences/3.mp3"
-    },
-    "4": {
-      "name": "audio/numbers/names/4.mp3",
-      "sentence": "audio/numbers/sentences/4.mp3"
-    },
-    "5": {
-      "name": "audio/numbers/names/5.mp3",
-      "sentence": "audio/numbers/sentences/5.mp3"
-    },
-    "6": {
-      "name": "audio/numbers/names/6.mp3",
-      "sentence": "audio/numbers/sentences/6.mp3"
-    },
-    "7": {
-      "name": "audio/numbers/names/7.mp3",
-      "sentence": "audio/numbers/sentences/7.mp3"
-    },
-    "8": {
-      "name": "audio/numbers/names/8.mp3",
-      "sentence": "audio/numbers/sentences/8.mp3"
-    },
-    "9": {
-      "name": "audio/numbers/names/9.mp3",
-      "sentence": "audio/numbers/sentences/9.mp3"
     },
     "10": {
       "name": "audio/numbers/names/10.mp3",
@@ -2026,13 +2001,46 @@ FILE: audio/manifest.json
       "name": "audio/numbers/names/19.mp3",
       "sentence": "audio/numbers/sentences/19.mp3"
     },
+    "2": {
+      "name": "audio/numbers/names/2.mp3",
+      "sentence": "audio/numbers/sentences/2.mp3"
+    },
     "20": {
       "name": "audio/numbers/names/20.mp3",
       "sentence": "audio/numbers/sentences/20.mp3"
+    },
+    "3": {
+      "name": "audio/numbers/names/3.mp3",
+      "sentence": "audio/numbers/sentences/3.mp3"
+    },
+    "4": {
+      "name": "audio/numbers/names/4.mp3",
+      "sentence": "audio/numbers/sentences/4.mp3"
+    },
+    "5": {
+      "name": "audio/numbers/names/5.mp3",
+      "sentence": "audio/numbers/sentences/5.mp3"
+    },
+    "6": {
+      "name": "audio/numbers/names/6.mp3",
+      "sentence": "audio/numbers/sentences/6.mp3"
+    },
+    "7": {
+      "name": "audio/numbers/names/7.mp3",
+      "sentence": "audio/numbers/sentences/7.mp3"
+    },
+    "8": {
+      "name": "audio/numbers/names/8.mp3",
+      "sentence": "audio/numbers/sentences/8.mp3"
+    },
+    "9": {
+      "name": "audio/numbers/names/9.mp3",
+      "sentence": "audio/numbers/sentences/9.mp3"
     }
   },
   "counting": {
     "1": "audio/numbers/counting/count_1.mp3",
+    "10": "audio/numbers/counting/count_10.mp3",
     "2": "audio/numbers/counting/count_2.mp3",
     "3": "audio/numbers/counting/count_3.mp3",
     "4": "audio/numbers/counting/count_4.mp3",
@@ -2040,13 +2048,12 @@ FILE: audio/manifest.json
     "6": "audio/numbers/counting/count_6.mp3",
     "7": "audio/numbers/counting/count_7.mp3",
     "8": "audio/numbers/counting/count_8.mp3",
-    "9": "audio/numbers/counting/count_9.mp3",
-    "10": "audio/numbers/counting/count_10.mp3"
+    "9": "audio/numbers/counting/count_9.mp3"
   },
   "number_instructions": [
     {
-      "id": "lets_count",
-      "path": "audio/numbers/instructions/lets_count.mp3"
+      "id": "all_numbers_done",
+      "path": "audio/numbers/instructions/all_numbers_done.mp3"
     },
     {
       "id": "count_animals",
@@ -2057,278 +2064,266 @@ FILE: audio/manifest.json
       "path": "audio/numbers/instructions/how_many.mp3"
     },
     {
-      "id": "match_number",
-      "path": "audio/numbers/instructions/match_number.mp3"
-    },
-    {
-      "id": "all_numbers_done",
-      "path": "audio/numbers/instructions/all_numbers_done.mp3"
-    },
-    {
       "id": "keep_practicing",
       "path": "audio/numbers/instructions/keep_practicing.mp3"
+    },
+    {
+      "id": "lets_count",
+      "path": "audio/numbers/instructions/lets_count.mp3"
+    },
+    {
+      "id": "match_number",
+      "path": "audio/numbers/instructions/match_number.mp3"
     }
   ],
   "vocabulary": {
     "colors": {
-      "red": {
-        "word": "audio/vocabulary/colors/words/red.mp3",
-        "sentence": "audio/vocabulary/colors/sentences/red.mp3"
-      },
-      "blue": {
-        "word": "audio/vocabulary/colors/words/blue.mp3",
-        "sentence": "audio/vocabulary/colors/sentences/blue.mp3"
-      },
-      "yellow": {
-        "word": "audio/vocabulary/colors/words/yellow.mp3",
-        "sentence": "audio/vocabulary/colors/sentences/yellow.mp3"
-      },
-      "green": {
-        "word": "audio/vocabulary/colors/words/green.mp3",
-        "sentence": "audio/vocabulary/colors/sentences/green.mp3"
-      },
-      "orange": {
-        "word": "audio/vocabulary/colors/words/orange.mp3",
-        "sentence": "audio/vocabulary/colors/sentences/orange.mp3"
-      },
-      "purple": {
-        "word": "audio/vocabulary/colors/words/purple.mp3",
-        "sentence": "audio/vocabulary/colors/sentences/purple.mp3"
-      },
-      "pink": {
-        "word": "audio/vocabulary/colors/words/pink.mp3",
-        "sentence": "audio/vocabulary/colors/sentences/pink.mp3"
-      },
-      "brown": {
-        "word": "audio/vocabulary/colors/words/brown.mp3",
-        "sentence": "audio/vocabulary/colors/sentences/brown.mp3"
+      "aqua": {
+        "sentence": "audio/vocabulary/colors/sentences/aqua.mp3",
+        "word": "audio/vocabulary/colors/words/aqua.mp3"
       },
       "black": {
-        "word": "audio/vocabulary/colors/words/black.mp3",
-        "sentence": "audio/vocabulary/colors/sentences/black.mp3"
+        "sentence": "audio/vocabulary/colors/sentences/black.mp3",
+        "word": "audio/vocabulary/colors/words/black.mp3"
       },
-      "white": {
-        "word": "audio/vocabulary/colors/words/white.mp3",
-        "sentence": "audio/vocabulary/colors/sentences/white.mp3"
+      "blue": {
+        "sentence": "audio/vocabulary/colors/sentences/blue.mp3",
+        "word": "audio/vocabulary/colors/words/blue.mp3"
       },
-      "gray": {
-        "word": "audio/vocabulary/colors/words/gray.mp3",
-        "sentence": "audio/vocabulary/colors/sentences/gray.mp3"
+      "brown": {
+        "sentence": "audio/vocabulary/colors/sentences/brown.mp3",
+        "word": "audio/vocabulary/colors/words/brown.mp3"
       },
       "gold": {
-        "word": "audio/vocabulary/colors/words/gold.mp3",
-        "sentence": "audio/vocabulary/colors/sentences/gold.mp3"
+        "sentence": "audio/vocabulary/colors/sentences/gold.mp3",
+        "word": "audio/vocabulary/colors/words/gold.mp3"
       },
-      "peach": {
-        "word": "audio/vocabulary/colors/words/peach.mp3",
-        "sentence": "audio/vocabulary/colors/sentences/peach.mp3"
+      "gray": {
+        "sentence": "audio/vocabulary/colors/sentences/gray.mp3",
+        "word": "audio/vocabulary/colors/words/gray.mp3"
       },
-      "aqua": {
-        "word": "audio/vocabulary/colors/words/aqua.mp3",
-        "sentence": "audio/vocabulary/colors/sentences/aqua.mp3"
+      "green": {
+        "sentence": "audio/vocabulary/colors/sentences/green.mp3",
+        "word": "audio/vocabulary/colors/words/green.mp3"
       },
       "lime": {
-        "word": "audio/vocabulary/colors/words/lime.mp3",
-        "sentence": "audio/vocabulary/colors/sentences/lime.mp3"
+        "sentence": "audio/vocabulary/colors/sentences/lime.mp3",
+        "word": "audio/vocabulary/colors/words/lime.mp3"
+      },
+      "orange": {
+        "sentence": "audio/vocabulary/colors/sentences/orange.mp3",
+        "word": "audio/vocabulary/colors/words/orange.mp3"
+      },
+      "peach": {
+        "sentence": "audio/vocabulary/colors/sentences/peach.mp3",
+        "word": "audio/vocabulary/colors/words/peach.mp3"
+      },
+      "pink": {
+        "sentence": "audio/vocabulary/colors/sentences/pink.mp3",
+        "word": "audio/vocabulary/colors/words/pink.mp3"
+      },
+      "purple": {
+        "sentence": "audio/vocabulary/colors/sentences/purple.mp3",
+        "word": "audio/vocabulary/colors/words/purple.mp3"
+      },
+      "red": {
+        "sentence": "audio/vocabulary/colors/sentences/red.mp3",
+        "word": "audio/vocabulary/colors/words/red.mp3"
+      },
+      "white": {
+        "sentence": "audio/vocabulary/colors/sentences/white.mp3",
+        "word": "audio/vocabulary/colors/words/white.mp3"
+      },
+      "yellow": {
+        "sentence": "audio/vocabulary/colors/sentences/yellow.mp3",
+        "word": "audio/vocabulary/colors/words/yellow.mp3"
       }
     },
     "shapes": {
-      "circle": {
-        "word": "audio/vocabulary/shapes/words/circle.mp3",
-        "sentence": "audio/vocabulary/shapes/sentences/circle.mp3"
-      },
-      "square": {
-        "word": "audio/vocabulary/shapes/words/square.mp3",
-        "sentence": "audio/vocabulary/shapes/sentences/square.mp3"
-      },
-      "triangle": {
-        "word": "audio/vocabulary/shapes/words/triangle.mp3",
-        "sentence": "audio/vocabulary/shapes/sentences/triangle.mp3"
-      },
-      "star": {
-        "word": "audio/vocabulary/shapes/words/star.mp3",
-        "sentence": "audio/vocabulary/shapes/sentences/star.mp3"
-      },
-      "heart": {
-        "word": "audio/vocabulary/shapes/words/heart.mp3",
-        "sentence": "audio/vocabulary/shapes/sentences/heart.mp3"
-      },
-      "diamond": {
-        "word": "audio/vocabulary/shapes/words/diamond.mp3",
-        "sentence": "audio/vocabulary/shapes/sentences/diamond.mp3"
-      },
-      "rectangle": {
-        "word": "audio/vocabulary/shapes/words/rectangle.mp3",
-        "sentence": "audio/vocabulary/shapes/sentences/rectangle.mp3"
-      },
-      "oval": {
-        "word": "audio/vocabulary/shapes/words/oval.mp3",
-        "sentence": "audio/vocabulary/shapes/sentences/oval.mp3"
-      },
-      "crescent": {
-        "word": "audio/vocabulary/shapes/words/crescent.mp3",
-        "sentence": "audio/vocabulary/shapes/sentences/crescent.mp3"
-      },
       "arrow": {
-        "word": "audio/vocabulary/shapes/words/arrow.mp3",
-        "sentence": "audio/vocabulary/shapes/sentences/arrow.mp3"
+        "sentence": "audio/vocabulary/shapes/sentences/arrow.mp3",
+        "word": "audio/vocabulary/shapes/words/arrow.mp3"
       },
-      "cross": {
-        "word": "audio/vocabulary/shapes/words/cross.mp3",
-        "sentence": "audio/vocabulary/shapes/sentences/cross.mp3"
-      },
-      "hexagon": {
-        "word": "audio/vocabulary/shapes/words/hexagon.mp3",
-        "sentence": "audio/vocabulary/shapes/sentences/hexagon.mp3"
+      "circle": {
+        "sentence": "audio/vocabulary/shapes/sentences/circle.mp3",
+        "word": "audio/vocabulary/shapes/words/circle.mp3"
       },
       "cloud": {
-        "word": "audio/vocabulary/shapes/words/cloud.mp3",
-        "sentence": "audio/vocabulary/shapes/sentences/cloud.mp3"
+        "sentence": "audio/vocabulary/shapes/sentences/cloud.mp3",
+        "word": "audio/vocabulary/shapes/words/cloud.mp3"
       },
-      "lightning": {
-        "word": "audio/vocabulary/shapes/words/lightning.mp3",
-        "sentence": "audio/vocabulary/shapes/sentences/lightning.mp3"
+      "crescent": {
+        "sentence": "audio/vocabulary/shapes/sentences/crescent.mp3",
+        "word": "audio/vocabulary/shapes/words/crescent.mp3"
+      },
+      "cross": {
+        "sentence": "audio/vocabulary/shapes/sentences/cross.mp3",
+        "word": "audio/vocabulary/shapes/words/cross.mp3"
+      },
+      "diamond": {
+        "sentence": "audio/vocabulary/shapes/sentences/diamond.mp3",
+        "word": "audio/vocabulary/shapes/words/diamond.mp3"
       },
       "drop": {
-        "word": "audio/vocabulary/shapes/words/drop.mp3",
-        "sentence": "audio/vocabulary/shapes/sentences/drop.mp3"
+        "sentence": "audio/vocabulary/shapes/sentences/drop.mp3",
+        "word": "audio/vocabulary/shapes/words/drop.mp3"
+      },
+      "heart": {
+        "sentence": "audio/vocabulary/shapes/sentences/heart.mp3",
+        "word": "audio/vocabulary/shapes/words/heart.mp3"
+      },
+      "hexagon": {
+        "sentence": "audio/vocabulary/shapes/sentences/hexagon.mp3",
+        "word": "audio/vocabulary/shapes/words/hexagon.mp3"
+      },
+      "lightning": {
+        "sentence": "audio/vocabulary/shapes/sentences/lightning.mp3",
+        "word": "audio/vocabulary/shapes/words/lightning.mp3"
+      },
+      "oval": {
+        "sentence": "audio/vocabulary/shapes/sentences/oval.mp3",
+        "word": "audio/vocabulary/shapes/words/oval.mp3"
+      },
+      "rectangle": {
+        "sentence": "audio/vocabulary/shapes/sentences/rectangle.mp3",
+        "word": "audio/vocabulary/shapes/words/rectangle.mp3"
+      },
+      "square": {
+        "sentence": "audio/vocabulary/shapes/sentences/square.mp3",
+        "word": "audio/vocabulary/shapes/words/square.mp3"
+      },
+      "star": {
+        "sentence": "audio/vocabulary/shapes/sentences/star.mp3",
+        "word": "audio/vocabulary/shapes/words/star.mp3"
+      },
+      "triangle": {
+        "sentence": "audio/vocabulary/shapes/sentences/triangle.mp3",
+        "word": "audio/vocabulary/shapes/words/triangle.mp3"
       }
     },
     "animals": {
-      "cat": {
-        "word": "audio/vocabulary/animals/words/cat.mp3",
-        "sound": "audio/vocabulary/animals/sounds/cat.mp3",
-        "sentence": "audio/vocabulary/animals/sentences/cat.mp3"
-      },
-      "dog": {
-        "word": "audio/vocabulary/animals/words/dog.mp3",
-        "sound": "audio/vocabulary/animals/sounds/dog.mp3",
-        "sentence": "audio/vocabulary/animals/sentences/dog.mp3"
-      },
-      "cow": {
-        "word": "audio/vocabulary/animals/words/cow.mp3",
-        "sound": "audio/vocabulary/animals/sounds/cow.mp3",
-        "sentence": "audio/vocabulary/animals/sentences/cow.mp3"
-      },
-      "duck": {
-        "word": "audio/vocabulary/animals/words/duck.mp3",
-        "sound": "audio/vocabulary/animals/sounds/duck.mp3",
-        "sentence": "audio/vocabulary/animals/sentences/duck.mp3"
-      },
-      "pig": {
-        "word": "audio/vocabulary/animals/words/pig.mp3",
-        "sound": "audio/vocabulary/animals/sounds/pig.mp3",
-        "sentence": "audio/vocabulary/animals/sentences/pig.mp3"
-      },
-      "sheep": {
-        "word": "audio/vocabulary/animals/words/sheep.mp3",
-        "sound": "audio/vocabulary/animals/sounds/sheep.mp3",
-        "sentence": "audio/vocabulary/animals/sentences/sheep.mp3"
-      },
-      "horse": {
-        "word": "audio/vocabulary/animals/words/horse.mp3",
-        "sound": "audio/vocabulary/animals/sounds/horse.mp3",
-        "sentence": "audio/vocabulary/animals/sentences/horse.mp3"
-      },
-      "lion": {
-        "word": "audio/vocabulary/animals/words/lion.mp3",
-        "sound": "audio/vocabulary/animals/sounds/lion.mp3",
-        "sentence": "audio/vocabulary/animals/sentences/lion.mp3"
-      },
-      "frog": {
-        "word": "audio/vocabulary/animals/words/frog.mp3",
-        "sound": "audio/vocabulary/animals/sounds/frog.mp3",
-        "sentence": "audio/vocabulary/animals/sentences/frog.mp3"
-      },
-      "chicken": {
-        "word": "audio/vocabulary/animals/words/chicken.mp3",
-        "sound": "audio/vocabulary/animals/sounds/chicken.mp3",
-        "sentence": "audio/vocabulary/animals/sentences/chicken.mp3"
-      },
-      "bird": {
-        "word": "audio/vocabulary/animals/words/bird.mp3",
-        "sound": "audio/vocabulary/animals/sounds/bird.mp3",
-        "sentence": "audio/vocabulary/animals/sentences/bird.mp3"
-      },
-      "monkey": {
-        "word": "audio/vocabulary/animals/words/monkey.mp3",
-        "sound": "audio/vocabulary/animals/sounds/monkey.mp3",
-        "sentence": "audio/vocabulary/animals/sentences/monkey.mp3"
-      },
-      "elephant": {
-        "word": "audio/vocabulary/animals/words/elephant.mp3",
-        "sound": "audio/vocabulary/animals/sounds/elephant.mp3",
-        "sentence": "audio/vocabulary/animals/sentences/elephant.mp3"
-      },
-      "snake": {
-        "word": "audio/vocabulary/animals/words/snake.mp3",
-        "sound": "audio/vocabulary/animals/sounds/snake.mp3",
-        "sentence": "audio/vocabulary/animals/sentences/snake.mp3"
+      "bear": {
+        "sentence": "audio/vocabulary/animals/sentences/bear.mp3",
+        "sound": "audio/vocabulary/animals/sounds/bear.mp3",
+        "word": "audio/vocabulary/animals/words/bear.mp3"
       },
       "bee": {
-        "word": "audio/vocabulary/animals/words/bee.mp3",
+        "sentence": "audio/vocabulary/animals/sentences/bee.mp3",
         "sound": "audio/vocabulary/animals/sounds/bee.mp3",
-        "sentence": "audio/vocabulary/animals/sentences/bee.mp3"
+        "word": "audio/vocabulary/animals/words/bee.mp3"
       },
-      "owl": {
-        "word": "audio/vocabulary/animals/words/owl.mp3",
-        "sound": "audio/vocabulary/animals/sounds/owl.mp3",
-        "sentence": "audio/vocabulary/animals/sentences/owl.mp3"
+      "bird": {
+        "sentence": "audio/vocabulary/animals/sentences/bird.mp3",
+        "sound": "audio/vocabulary/animals/sounds/bird.mp3",
+        "word": "audio/vocabulary/animals/words/bird.mp3"
       },
-      "bear": {
-        "word": "audio/vocabulary/animals/words/bear.mp3",
-        "sound": "audio/vocabulary/animals/sounds/bear.mp3",
-        "sentence": "audio/vocabulary/animals/sentences/bear.mp3"
+      "cat": {
+        "sentence": "audio/vocabulary/animals/sentences/cat.mp3",
+        "sound": "audio/vocabulary/animals/sounds/cat.mp3",
+        "word": "audio/vocabulary/animals/words/cat.mp3"
       },
-      "mouse": {
-        "word": "audio/vocabulary/animals/words/mouse.mp3",
-        "sound": "audio/vocabulary/animals/sounds/mouse.mp3",
-        "sentence": "audio/vocabulary/animals/sentences/mouse.mp3"
+      "chicken": {
+        "sentence": "audio/vocabulary/animals/sentences/chicken.mp3",
+        "sound": "audio/vocabulary/animals/sounds/chicken.mp3",
+        "word": "audio/vocabulary/animals/words/chicken.mp3"
+      },
+      "cow": {
+        "sentence": "audio/vocabulary/animals/sentences/cow.mp3",
+        "sound": "audio/vocabulary/animals/sounds/cow.mp3",
+        "word": "audio/vocabulary/animals/words/cow.mp3"
+      },
+      "dog": {
+        "sentence": "audio/vocabulary/animals/sentences/dog.mp3",
+        "sound": "audio/vocabulary/animals/sounds/dog.mp3",
+        "word": "audio/vocabulary/animals/words/dog.mp3"
       },
       "donkey": {
-        "word": "audio/vocabulary/animals/words/donkey.mp3",
+        "sentence": "audio/vocabulary/animals/sentences/donkey.mp3",
         "sound": "audio/vocabulary/animals/sounds/donkey.mp3",
-        "sentence": "audio/vocabulary/animals/sentences/donkey.mp3"
+        "word": "audio/vocabulary/animals/words/donkey.mp3"
       },
-      "rooster": {
-        "word": "audio/vocabulary/animals/words/rooster.mp3",
-        "sound": "audio/vocabulary/animals/sounds/rooster.mp3",
-        "sentence": "audio/vocabulary/animals/sentences/rooster.mp3"
+      "duck": {
+        "sentence": "audio/vocabulary/animals/sentences/duck.mp3",
+        "sound": "audio/vocabulary/animals/sounds/duck.mp3",
+        "word": "audio/vocabulary/animals/words/duck.mp3"
       },
-      "whale": {
-        "word": "audio/vocabulary/animals/words/whale.mp3",
-        "sound": "audio/vocabulary/animals/sounds/whale.mp3",
-        "sentence": "audio/vocabulary/animals/sentences/whale.mp3"
+      "elephant": {
+        "sentence": "audio/vocabulary/animals/sentences/elephant.mp3",
+        "sound": "audio/vocabulary/animals/sounds/elephant.mp3",
+        "word": "audio/vocabulary/animals/words/elephant.mp3"
       },
-      "tiger": {
-        "word": "audio/vocabulary/animals/words/tiger.mp3",
-        "sound": "audio/vocabulary/animals/sounds/tiger.mp3",
-        "sentence": "audio/vocabulary/animals/sentences/tiger.mp3"
-      },
-      "penguin": {
-        "word": "audio/vocabulary/animals/words/penguin.mp3",
-        "sound": "audio/vocabulary/animals/sounds/penguin.mp3",
-        "sentence": "audio/vocabulary/animals/sentences/penguin.mp3"
+      "frog": {
+        "sentence": "audio/vocabulary/animals/sentences/frog.mp3",
+        "sound": "audio/vocabulary/animals/sounds/frog.mp3",
+        "word": "audio/vocabulary/animals/words/frog.mp3"
       },
       "goat": {
-        "word": "audio/vocabulary/animals/words/goat.mp3",
+        "sentence": "audio/vocabulary/animals/sentences/goat.mp3",
         "sound": "audio/vocabulary/animals/sounds/goat.mp3",
-        "sentence": "audio/vocabulary/animals/sentences/goat.mp3"
+        "word": "audio/vocabulary/animals/words/goat.mp3"
+      },
+      "horse": {
+        "sentence": "audio/vocabulary/animals/sentences/horse.mp3",
+        "sound": "audio/vocabulary/animals/sounds/horse.mp3",
+        "word": "audio/vocabulary/animals/words/horse.mp3"
+      },
+      "lion": {
+        "sentence": "audio/vocabulary/animals/sentences/lion.mp3",
+        "sound": "audio/vocabulary/animals/sounds/lion.mp3",
+        "word": "audio/vocabulary/animals/words/lion.mp3"
+      },
+      "monkey": {
+        "sentence": "audio/vocabulary/animals/sentences/monkey.mp3",
+        "sound": "audio/vocabulary/animals/sounds/monkey.mp3",
+        "word": "audio/vocabulary/animals/words/monkey.mp3"
+      },
+      "mouse": {
+        "sentence": "audio/vocabulary/animals/sentences/mouse.mp3",
+        "sound": "audio/vocabulary/animals/sounds/mouse.mp3",
+        "word": "audio/vocabulary/animals/words/mouse.mp3"
+      },
+      "owl": {
+        "sentence": "audio/vocabulary/animals/sentences/owl.mp3",
+        "sound": "audio/vocabulary/animals/sounds/owl.mp3",
+        "word": "audio/vocabulary/animals/words/owl.mp3"
+      },
+      "penguin": {
+        "sentence": "audio/vocabulary/animals/sentences/penguin.mp3",
+        "sound": "audio/vocabulary/animals/sounds/penguin.mp3",
+        "word": "audio/vocabulary/animals/words/penguin.mp3"
+      },
+      "pig": {
+        "sentence": "audio/vocabulary/animals/sentences/pig.mp3",
+        "sound": "audio/vocabulary/animals/sounds/pig.mp3",
+        "word": "audio/vocabulary/animals/words/pig.mp3"
+      },
+      "rooster": {
+        "sentence": "audio/vocabulary/animals/sentences/rooster.mp3",
+        "sound": "audio/vocabulary/animals/sounds/rooster.mp3",
+        "word": "audio/vocabulary/animals/words/rooster.mp3"
+      },
+      "sheep": {
+        "sentence": "audio/vocabulary/animals/sentences/sheep.mp3",
+        "sound": "audio/vocabulary/animals/sounds/sheep.mp3",
+        "word": "audio/vocabulary/animals/words/sheep.mp3"
+      },
+      "snake": {
+        "sentence": "audio/vocabulary/animals/sentences/snake.mp3",
+        "sound": "audio/vocabulary/animals/sounds/snake.mp3",
+        "word": "audio/vocabulary/animals/words/snake.mp3"
+      },
+      "tiger": {
+        "sentence": "audio/vocabulary/animals/sentences/tiger.mp3",
+        "sound": "audio/vocabulary/animals/sounds/tiger.mp3",
+        "word": "audio/vocabulary/animals/words/tiger.mp3"
+      },
+      "whale": {
+        "sentence": "audio/vocabulary/animals/sentences/whale.mp3",
+        "sound": "audio/vocabulary/animals/sounds/whale.mp3",
+        "word": "audio/vocabulary/animals/words/whale.mp3"
       }
     },
     "instructions": [
-      {
-        "id": "lets_learn_colors",
-        "path": "audio/vocabulary/instructions/lets_learn_colors.mp3"
-      },
-      {
-        "id": "lets_learn_shapes",
-        "path": "audio/vocabulary/instructions/lets_learn_shapes.mp3"
-      },
-      {
-        "id": "lets_learn_animals",
-        "path": "audio/vocabulary/instructions/lets_learn_animals.mp3"
-      },
       {
         "id": "find_the_color",
         "path": "audio/vocabulary/instructions/find_the_color.mp3"
@@ -2338,27 +2333,313 @@ FILE: audio/manifest.json
         "path": "audio/vocabulary/instructions/find_the_shape.mp3"
       },
       {
-        "id": "what_animal_sound",
-        "path": "audio/vocabulary/instructions/what_animal_sound.mp3"
+        "id": "keep_practicing_vocab",
+        "path": "audio/vocabulary/instructions/keep_practicing_vocab.mp3"
+      },
+      {
+        "id": "lets_learn_animals",
+        "path": "audio/vocabulary/instructions/lets_learn_animals.mp3"
+      },
+      {
+        "id": "lets_learn_colors",
+        "path": "audio/vocabulary/instructions/lets_learn_colors.mp3"
+      },
+      {
+        "id": "lets_learn_shapes",
+        "path": "audio/vocabulary/instructions/lets_learn_shapes.mp3"
       },
       {
         "id": "this_is",
         "path": "audio/vocabulary/instructions/this_is.mp3"
       },
       {
-        "id": "keep_practicing_vocab",
-        "path": "audio/vocabulary/instructions/keep_practicing_vocab.mp3"
+        "id": "what_animal_sound",
+        "path": "audio/vocabulary/instructions/what_animal_sound.mp3"
       }
     ]
+  },
+  "picture_phonics": {
+    "airplane": {
+      "sentence": "audio/picture-phonics/sentences/airplane.mp3",
+      "word": "audio/picture-phonics/words/airplane.mp3"
+    },
+    "ant": {
+      "sentence": "audio/picture-phonics/sentences/ant.mp3",
+      "word": "audio/picture-phonics/words/ant.mp3"
+    },
+    "apple": {
+      "sentence": "audio/picture-phonics/sentences/apple.mp3",
+      "word": "audio/picture-phonics/words/apple.mp3"
+    },
+    "banana": {
+      "sentence": "audio/picture-phonics/sentences/banana.mp3",
+      "word": "audio/picture-phonics/words/banana.mp3"
+    },
+    "bear": {
+      "sentence": "audio/picture-phonics/sentences/bear.mp3",
+      "word": "audio/picture-phonics/words/bear.mp3"
+    },
+    "butterfly": {
+      "sentence": "audio/picture-phonics/sentences/butterfly.mp3",
+      "word": "audio/picture-phonics/words/butterfly.mp3"
+    },
+    "car": {
+      "sentence": "audio/picture-phonics/sentences/car.mp3",
+      "word": "audio/picture-phonics/words/car.mp3"
+    },
+    "cat": {
+      "sentence": "audio/picture-phonics/sentences/cat.mp3",
+      "word": "audio/picture-phonics/words/cat.mp3"
+    },
+    "cupcake": {
+      "sentence": "audio/picture-phonics/sentences/cupcake.mp3",
+      "word": "audio/picture-phonics/words/cupcake.mp3"
+    },
+    "dinosaur": {
+      "sentence": "audio/picture-phonics/sentences/dinosaur.mp3",
+      "word": "audio/picture-phonics/words/dinosaur.mp3"
+    },
+    "dog": {
+      "sentence": "audio/picture-phonics/sentences/dog.mp3",
+      "word": "audio/picture-phonics/words/dog.mp3"
+    },
+    "duck": {
+      "sentence": "audio/picture-phonics/sentences/duck.mp3",
+      "word": "audio/picture-phonics/words/duck.mp3"
+    },
+    "eagle": {
+      "sentence": "audio/picture-phonics/sentences/eagle.mp3",
+      "word": "audio/picture-phonics/words/eagle.mp3"
+    },
+    "egg": {
+      "sentence": "audio/picture-phonics/sentences/egg.mp3",
+      "word": "audio/picture-phonics/words/egg.mp3"
+    },
+    "elephant": {
+      "sentence": "audio/picture-phonics/sentences/elephant.mp3",
+      "word": "audio/picture-phonics/words/elephant.mp3"
+    },
+    "fish": {
+      "sentence": "audio/picture-phonics/sentences/fish.mp3",
+      "word": "audio/picture-phonics/words/fish.mp3"
+    },
+    "flower": {
+      "sentence": "audio/picture-phonics/sentences/flower.mp3",
+      "word": "audio/picture-phonics/words/flower.mp3"
+    },
+    "frog": {
+      "sentence": "audio/picture-phonics/sentences/frog.mp3",
+      "word": "audio/picture-phonics/words/frog.mp3"
+    },
+    "giraffe": {
+      "sentence": "audio/picture-phonics/sentences/giraffe.mp3",
+      "word": "audio/picture-phonics/words/giraffe.mp3"
+    },
+    "grapes": {
+      "sentence": "audio/picture-phonics/sentences/grapes.mp3",
+      "word": "audio/picture-phonics/words/grapes.mp3"
+    },
+    "guitar": {
+      "sentence": "audio/picture-phonics/sentences/guitar.mp3",
+      "word": "audio/picture-phonics/words/guitar.mp3"
+    },
+    "heart": {
+      "sentence": "audio/picture-phonics/sentences/heart.mp3",
+      "word": "audio/picture-phonics/words/heart.mp3"
+    },
+    "horse": {
+      "sentence": "audio/picture-phonics/sentences/horse.mp3",
+      "word": "audio/picture-phonics/words/horse.mp3"
+    },
+    "house": {
+      "sentence": "audio/picture-phonics/sentences/house.mp3",
+      "word": "audio/picture-phonics/words/house.mp3"
+    },
+    "ice_cream": {
+      "sentence": "audio/picture-phonics/sentences/ice_cream.mp3",
+      "word": "audio/picture-phonics/words/ice_cream.mp3"
+    },
+    "igloo": {
+      "sentence": "audio/picture-phonics/sentences/igloo.mp3",
+      "word": "audio/picture-phonics/words/igloo.mp3"
+    },
+    "jellyfish": {
+      "sentence": "audio/picture-phonics/sentences/jellyfish.mp3",
+      "word": "audio/picture-phonics/words/jellyfish.mp3"
+    },
+    "juice": {
+      "sentence": "audio/picture-phonics/sentences/juice.mp3",
+      "word": "audio/picture-phonics/words/juice.mp3"
+    },
+    "kangaroo": {
+      "sentence": "audio/picture-phonics/sentences/kangaroo.mp3",
+      "word": "audio/picture-phonics/words/kangaroo.mp3"
+    },
+    "key": {
+      "sentence": "audio/picture-phonics/sentences/key.mp3",
+      "word": "audio/picture-phonics/words/key.mp3"
+    },
+    "kite": {
+      "sentence": "audio/picture-phonics/sentences/kite.mp3",
+      "word": "audio/picture-phonics/words/kite.mp3"
+    },
+    "ladybug": {
+      "sentence": "audio/picture-phonics/sentences/ladybug.mp3",
+      "word": "audio/picture-phonics/words/ladybug.mp3"
+    },
+    "lemon": {
+      "sentence": "audio/picture-phonics/sentences/lemon.mp3",
+      "word": "audio/picture-phonics/words/lemon.mp3"
+    },
+    "lion": {
+      "sentence": "audio/picture-phonics/sentences/lion.mp3",
+      "word": "audio/picture-phonics/words/lion.mp3"
+    },
+    "monkey": {
+      "sentence": "audio/picture-phonics/sentences/monkey.mp3",
+      "word": "audio/picture-phonics/words/monkey.mp3"
+    },
+    "moon": {
+      "sentence": "audio/picture-phonics/sentences/moon.mp3",
+      "word": "audio/picture-phonics/words/moon.mp3"
+    },
+    "mushroom": {
+      "sentence": "audio/picture-phonics/sentences/mushroom.mp3",
+      "word": "audio/picture-phonics/words/mushroom.mp3"
+    },
+    "narwhal": {
+      "sentence": "audio/picture-phonics/sentences/narwhal.mp3",
+      "word": "audio/picture-phonics/words/narwhal.mp3"
+    },
+    "nest": {
+      "sentence": "audio/picture-phonics/sentences/nest.mp3",
+      "word": "audio/picture-phonics/words/nest.mp3"
+    },
+    "octopus": {
+      "sentence": "audio/picture-phonics/sentences/octopus.mp3",
+      "word": "audio/picture-phonics/words/octopus.mp3"
+    },
+    "orange": {
+      "sentence": "audio/picture-phonics/sentences/orange.mp3",
+      "word": "audio/picture-phonics/words/orange.mp3"
+    },
+    "owl": {
+      "sentence": "audio/picture-phonics/sentences/owl.mp3",
+      "word": "audio/picture-phonics/words/owl.mp3"
+    },
+    "panda": {
+      "sentence": "audio/picture-phonics/sentences/panda.mp3",
+      "word": "audio/picture-phonics/words/panda.mp3"
+    },
+    "penguin": {
+      "sentence": "audio/picture-phonics/sentences/penguin.mp3",
+      "word": "audio/picture-phonics/words/penguin.mp3"
+    },
+    "pizza": {
+      "sentence": "audio/picture-phonics/sentences/pizza.mp3",
+      "word": "audio/picture-phonics/words/pizza.mp3"
+    },
+    "quail": {
+      "sentence": "audio/picture-phonics/sentences/quail.mp3",
+      "word": "audio/picture-phonics/words/quail.mp3"
+    },
+    "queen": {
+      "sentence": "audio/picture-phonics/sentences/queen.mp3",
+      "word": "audio/picture-phonics/words/queen.mp3"
+    },
+    "rabbit": {
+      "sentence": "audio/picture-phonics/sentences/rabbit.mp3",
+      "word": "audio/picture-phonics/words/rabbit.mp3"
+    },
+    "rainbow": {
+      "sentence": "audio/picture-phonics/sentences/rainbow.mp3",
+      "word": "audio/picture-phonics/words/rainbow.mp3"
+    },
+    "rocket": {
+      "sentence": "audio/picture-phonics/sentences/rocket.mp3",
+      "word": "audio/picture-phonics/words/rocket.mp3"
+    },
+    "snake": {
+      "sentence": "audio/picture-phonics/sentences/snake.mp3",
+      "word": "audio/picture-phonics/words/snake.mp3"
+    },
+    "star": {
+      "sentence": "audio/picture-phonics/sentences/star.mp3",
+      "word": "audio/picture-phonics/words/star.mp3"
+    },
+    "sun": {
+      "sentence": "audio/picture-phonics/sentences/sun.mp3",
+      "word": "audio/picture-phonics/words/sun.mp3"
+    },
+    "tiger": {
+      "sentence": "audio/picture-phonics/sentences/tiger.mp3",
+      "word": "audio/picture-phonics/words/tiger.mp3"
+    },
+    "tree": {
+      "sentence": "audio/picture-phonics/sentences/tree.mp3",
+      "word": "audio/picture-phonics/words/tree.mp3"
+    },
+    "turtle": {
+      "sentence": "audio/picture-phonics/sentences/turtle.mp3",
+      "word": "audio/picture-phonics/words/turtle.mp3"
+    },
+    "umbrella": {
+      "sentence": "audio/picture-phonics/sentences/umbrella.mp3",
+      "word": "audio/picture-phonics/words/umbrella.mp3"
+    },
+    "unicorn": {
+      "sentence": "audio/picture-phonics/sentences/unicorn.mp3",
+      "word": "audio/picture-phonics/words/unicorn.mp3"
+    },
+    "violin": {
+      "sentence": "audio/picture-phonics/sentences/violin.mp3",
+      "word": "audio/picture-phonics/words/violin.mp3"
+    },
+    "volcano": {
+      "sentence": "audio/picture-phonics/sentences/volcano.mp3",
+      "word": "audio/picture-phonics/words/volcano.mp3"
+    },
+    "watermelon": {
+      "sentence": "audio/picture-phonics/sentences/watermelon.mp3",
+      "word": "audio/picture-phonics/words/watermelon.mp3"
+    },
+    "whale": {
+      "sentence": "audio/picture-phonics/sentences/whale.mp3",
+      "word": "audio/picture-phonics/words/whale.mp3"
+    },
+    "worm": {
+      "sentence": "audio/picture-phonics/sentences/worm.mp3",
+      "word": "audio/picture-phonics/words/worm.mp3"
+    },
+    "xray": {
+      "sentence": "audio/picture-phonics/sentences/xray.mp3",
+      "word": "audio/picture-phonics/words/xray.mp3"
+    },
+    "xylophone": {
+      "sentence": "audio/picture-phonics/sentences/xylophone.mp3",
+      "word": "audio/picture-phonics/words/xylophone.mp3"
+    },
+    "yak": {
+      "sentence": "audio/picture-phonics/sentences/yak.mp3",
+      "word": "audio/picture-phonics/words/yak.mp3"
+    },
+    "yarn": {
+      "sentence": "audio/picture-phonics/sentences/yarn.mp3",
+      "word": "audio/picture-phonics/words/yarn.mp3"
+    },
+    "zap": {
+      "sentence": "audio/picture-phonics/sentences/zap.mp3",
+      "word": "audio/picture-phonics/words/zap.mp3"
+    },
+    "zebra": {
+      "sentence": "audio/picture-phonics/sentences/zebra.mp3",
+      "word": "audio/picture-phonics/words/zebra.mp3"
+    }
   },
   "game_instructions": [
     {
       "id": "find_the_different",
       "path": "audio/games/instructions/find_the_different.mp3"
-    },
-    {
-      "id": "which_one_different",
-      "path": "audio/games/instructions/which_one_different.mp3"
     },
     {
       "id": "great_thinking",
@@ -2371,30 +2652,38 @@ FILE: audio/manifest.json
     {
       "id": "odd_one_out_intro",
       "path": "audio/games/instructions/odd_one_out_intro.mp3"
+    },
+    {
+      "id": "which_one_different",
+      "path": "audio/games/instructions/which_one_different.mp3"
     }
   ],
   "game_explanations": {
-    "cat_is_an_animal_not_a_fruit": "audio/games/explanations/cat_is_an_animal_not_a_fruit.mp3",
-    "dog_is_an_animal_not_a_fruit": "audio/games/explanations/dog_is_an_animal_not_a_fruit.mp3",
-    "flower_is_a_plant_not_a_fruit": "audio/games/explanations/flower_is_a_plant_not_a_fruit.mp3",
-    "car_is_a_vehicle_not_an_animal": "audio/games/explanations/car_is_a_vehicle_not_an_animal.mp3",
-    "star_is_in_the_sky_not_an_animal": "audio/games/explanations/star_is_in_the_sky_not_an_animal.mp3",
-    "pizza_is_food_not_an_animal": "audio/games/explanations/pizza_is_food_not_an_animal.mp3",
-    "blue_is_different_from_all_the_red_ones": "audio/games/explanations/blue_is_different_from_all_the_red_ones.mp3",
-    "yellow_is_different_from_all_the_green_ones": "audio/games/explanations/yellow_is_different_from_all_the_green_ones.mp3",
-    "orange_is_different_from_all_the_purple_ones": "audio/games/explanations/orange_is_different_from_all_the_purple_ones.mp3",
-    "brown_is_different_from_all_the_pink_ones": "audio/games/explanations/brown_is_different_from_all_the_pink_ones.mp3",
-    "triangle_has_3_sides_circles_are_round": "audio/games/explanations/triangle_has_3_sides_circles_are_round.mp3",
-    "heart_is_different_from_all_the_stars": "audio/games/explanations/heart_is_different_from_all_the_stars.mp3",
-    "circle_is_round_squares_have_straight_sides": "audio/games/explanations/circle_is_round_squares_have_straight_sides.mp3",
-    "mouse_is_tiny_elephants_are_big": "audio/games/explanations/mouse_is_tiny_elephants_are_big.mp3",
-    "teddy_bear_is_a_toy_not_food": "audio/games/explanations/teddy_bear_is_a_toy_not_food.mp3",
     "ball_is_a_toy_not_food": "audio/games/explanations/ball_is_a_toy_not_food.mp3",
-    "fish_swims_in_water_it_cannot_fly": "audio/games/explanations/fish_swims_in_water_it_cannot_fly.mp3",
-    "lion_lives_on_land_not_in_water": "audio/games/explanations/lion_lives_on_land_not_in_water.mp3",
+    "blue_is_different_from_all_the_red_ones": "audio/games/explanations/blue_is_different_from_all_the_red_ones.mp3",
+    "books_are_for_reading_not_eating": "audio/games/explanations/books_are_for_reading_not_eating.mp3",
+    "brown_is_different_from_all_the_pink_ones": "audio/games/explanations/brown_is_different_from_all_the_pink_ones.mp3",
+    "car_is_a_vehicle_not_an_animal": "audio/games/explanations/car_is_a_vehicle_not_an_animal.mp3",
+    "carrot_is_different_from_all_the_bananas": "audio/games/explanations/carrot_is_different_from_all_the_bananas.mp3",
+    "cat_is_an_animal_not_a_fruit": "audio/games/explanations/cat_is_an_animal_not_a_fruit.mp3",
+    "circle_is_round_squares_have_straight_sides": "audio/games/explanations/circle_is_round_squares_have_straight_sides.mp3",
+    "dog_is_an_animal_not_a_fruit": "audio/games/explanations/dog_is_an_animal_not_a_fruit.mp3",
+    "dog_is_different_from_all_the_cats": "audio/games/explanations/dog_is_different_from_all_the_cats.mp3",
     "elephant_is_an_animal_not_a_vehicle": "audio/games/explanations/elephant_is_an_animal_not_a_vehicle.mp3",
+    "fish_swims_in_water_it_cannot_fly": "audio/games/explanations/fish_swims_in_water_it_cannot_fly.mp3",
+    "flower_is_a_plant_not_a_fruit": "audio/games/explanations/flower_is_a_plant_not_a_fruit.mp3",
+    "flower_is_a_plant_not_an_animal": "audio/games/explanations/flower_is_a_plant_not_an_animal.mp3",
+    "guitar_is_an_instrument_not_a_fruit": "audio/games/explanations/guitar_is_an_instrument_not_a_fruit.mp3",
+    "heart_is_different_from_all_the_stars": "audio/games/explanations/heart_is_different_from_all_the_stars.mp3",
+    "lion_lives_on_land_not_in_water": "audio/games/explanations/lion_lives_on_land_not_in_water.mp3",
     "moon_is_different_from_all_the_stars": "audio/games/explanations/moon_is_different_from_all_the_stars.mp3",
-    "dog_is_different_from_all_the_cats": "audio/games/explanations/dog_is_different_from_all_the_cats.mp3"
+    "mouse_is_tiny_elephants_are_big": "audio/games/explanations/mouse_is_tiny_elephants_are_big.mp3",
+    "orange_is_different_from_all_the_purple_ones": "audio/games/explanations/orange_is_different_from_all_the_purple_ones.mp3",
+    "pizza_is_food_not_an_animal": "audio/games/explanations/pizza_is_food_not_an_animal.mp3",
+    "star_is_in_the_sky_not_an_animal": "audio/games/explanations/star_is_in_the_sky_not_an_animal.mp3",
+    "teddy_bear_is_a_toy_not_food": "audio/games/explanations/teddy_bear_is_a_toy_not_food.mp3",
+    "triangle_has_3_sides_circles_are_round": "audio/games/explanations/triangle_has_3_sides_circles_are_round.mp3",
+    "yellow_is_different_from_all_the_green_ones": "audio/games/explanations/yellow_is_different_from_all_the_green_ones.mp3"
   }
 }
 
@@ -9267,6 +9556,9 @@ function startPicturePhonics() {
     ppState.comboStreak = 0;
     ppState.bestStreak = 0;
 
+    // Preload picture phonics audio
+    AudioManager.preloadPicturePhonics();
+
     document.getElementById('pp-score-correct').textContent = '✅ 0';
     document.getElementById('pp-score-wrong').textContent = '❌ 0';
     document.getElementById('pp-combo').innerHTML = '';
@@ -9361,24 +9653,28 @@ function nextPpRound() {
 // SPEAK PICTURE WORD
 // ========================================
 
+// js/picture-phonics.js
+// Replace the existing speakPictureWord function with this:
+
 function speakPictureWord() {
     if (!ppState.currentPicture) return;
     var word = ppState.currentPicture.word;
 
-    // Try to use existing audio for known words, fallback to TTS
-    var letter = ppState.currentPicture.letter;
-
-    // Check if this word matches the letter's default word in phonics
-    if (AudioManager.isLoaded && AudioManager.audioManifest &&
-        AudioManager.audioManifest.letters && AudioManager.audioManifest.letters[letter]) {
-        // Use the word audio for this letter
-        AudioManager.play(AudioManager.audioManifest.letters[letter].word)
-            .catch(function() {
+    // Use dedicated picture phonics audio (generated by sync_audio.py)
+    AudioManager.playPicturePhonicsWord(word)
+        .catch(function() {
+            // Final fallback: try letter-based word audio, then TTS
+            var letter = ppState.currentPicture.letter;
+            if (AudioManager.isLoaded && AudioManager.audioManifest &&
+                AudioManager.audioManifest.letters && AudioManager.audioManifest.letters[letter]) {
+                AudioManager.play(AudioManager.audioManifest.letters[letter].word)
+                    .catch(function() {
+                        Speech.speak(word, 0.8, 1.1);
+                    });
+            } else {
                 Speech.speak(word, 0.8, 1.1);
-            });
-    } else {
-        Speech.speak(word, 0.8, 1.1);
-    }
+            }
+        });
 }
 
 function replayPictureWord() {
@@ -10688,6 +10984,52 @@ playGameExplanation: function(text) {
         return new Promise(function(resolve) {
             setTimeout(resolve, duration);
         });
+    },
+    // Add this method to AudioManager in js/speech.js
+// Add inside the AudioManager object, after the playGameExplanation method:
+
+    // --- Play picture phonics word ---
+    playPicturePhonicsWord: function(word) {
+        var self = this;
+        var wordId = word.toLowerCase().replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, '_').substring(0, 60);
+
+        if (this.isLoaded && this.audioManifest.picture_phonics &&
+            this.audioManifest.picture_phonics[wordId]) {
+            return this.play(this.audioManifest.picture_phonics[wordId].word)
+                .catch(function() {
+                    console.warn('MP3 failed for picture phonics word: ' + word);
+                    Speech.speak(word, 0.8, 1.1);
+                });
+        }
+        Speech.speak(word, 0.8, 1.1);
+        return Promise.resolve();
+    },
+
+    // --- Play picture phonics sentence ("Apple starts with A!") ---
+    playPicturePhonicsSentence: function(word) {
+        var self = this;
+        var wordId = word.toLowerCase().replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, '_').substring(0, 60);
+
+        if (this.isLoaded && this.audioManifest.picture_phonics &&
+            this.audioManifest.picture_phonics[wordId]) {
+            return this.play(this.audioManifest.picture_phonics[wordId].sentence)
+                .catch(function() {
+                    console.warn('MP3 failed for picture phonics sentence: ' + word);
+                    Speech.speak(word, 0.8, 1.1);
+                });
+        }
+        Speech.speak(word, 0.8, 1.1);
+        return Promise.resolve();
+    },
+
+    // --- Preload picture phonics audio ---
+    preloadPicturePhonics: function() {
+        if (!this.isLoaded || !this.audioManifest.picture_phonics) return;
+        var words = Object.keys(this.audioManifest.picture_phonics);
+        for (var i = 0; i < Math.min(words.length, 10); i++) {
+            var item = this.audioManifest.picture_phonics[words[i]];
+            if (item.word) this.preload(item.word);
+        }
     },
     // --- Game instruction TTS fallbacks ---
     _speakGameInstructionFallback: function(id) {
@@ -12212,6 +12554,1208 @@ def main():
         asyncio.run(generate_all_edge())
 
     generate_audio_manifest()
+
+
+if __name__ == "__main__":
+    main()
+
+================================================================
+FILE: tools/sync_audio.py
+================================================================
+# tools/sync_audio.py
+#!/usr/bin/env python3
+"""
+========================================
+Smart Audio Sync for Learning World
+========================================
+Scans JS source files, extracts all text
+that needs audio, generates missing MP3s
+via Edge TTS, cleans up orphans, and
+auto-generates manifest.json.
+
+Usage:
+    cd tools
+    python sync_audio.py
+
+Requirements:
+    pip install edge-tts
+========================================
+"""
+
+import os
+import re
+import sys
+import json
+import asyncio
+import random
+from pathlib import Path
+
+# ========================================
+# CONFIGURATION
+# ========================================
+
+# Project root (parent of tools/)
+PROJECT_DIR = Path(__file__).parent.parent
+JS_DIR = PROJECT_DIR / "js"
+AUDIO_DIR = PROJECT_DIR / "audio"
+MANIFEST_PATH = AUDIO_DIR / "manifest.json"
+
+# Edge TTS settings
+VOICE = "en-US-AnaNeural"
+TTS_SETTINGS = {
+    "letter_name":    {"rate": "-25%", "pitch": "+8Hz"},
+    "phonics":        {"rate": "-25%", "pitch": "+2Hz"},
+    "word":           {"rate": "-15%", "pitch": "+8Hz"},
+    "sentence":       {"rate": "-15%", "pitch": "+8Hz"},
+    "celebration":    {"rate": "-5%",  "pitch": "+12Hz"},
+    "instruction":    {"rate": "-15%", "pitch": "+8Hz"},
+    "animal_sound":   {"rate": "-5%",  "pitch": "+12Hz"},
+    "counting":       {"rate": "-25%", "pitch": "+8Hz"},
+}
+
+# ========================================
+# JS PARSING HELPERS
+# ========================================
+
+def read_file(filepath):
+    """Read a file and return its content."""
+    with open(filepath, 'r', encoding='utf-8') as f:
+        return f.read()
+
+
+def extract_js_array(content, var_name):
+    """
+    Extract the contents of a JS array variable.
+    Handles: var NAME = [...];  /  const NAME = [...];  /  let NAME = [...];
+    Returns the raw string between the outer [ and ].
+    """
+    # Match: var/let/const VARNAME = [
+    pattern = r'(?:var|let|const)\s+' + re.escape(var_name) + r'\s*=\s*\['
+    match = re.search(pattern, content)
+    if not match:
+        return None
+
+    start = match.end() - 1  # position of '['
+    depth = 0
+    i = start
+    while i < len(content):
+        if content[i] == '[':
+            depth += 1
+        elif content[i] == ']':
+            depth -= 1
+            if depth == 0:
+                return content[start:i + 1]
+        i += 1
+    return None
+
+
+def extract_objects_from_array(array_str):
+    """
+    Extract individual { ... } objects from a JS array string.
+    Returns a list of raw object strings.
+    """
+    objects = []
+    depth = 0
+    current_start = None
+
+    for i, char in enumerate(array_str):
+        if char == '{':
+            if depth == 0:
+                current_start = i
+            depth += 1
+        elif char == '}':
+            depth -= 1
+            if depth == 0 and current_start is not None:
+                objects.append(array_str[current_start:i + 1])
+                current_start = None
+    return objects
+
+
+def extract_field(obj_str, field_name):
+    """
+    Extract a string field value from a JS object string.
+    Handles both single and double quotes.
+    e.g., extract_field("{ name: 'Cat', id: 'cat' }", "name") -> "Cat"
+    """
+    # Pattern: fieldName: 'value' or fieldName: "value"
+    pattern = r'(?:^|[,\s{])' + re.escape(field_name) + r"""\s*:\s*(['"])((?:(?!\1).|\\.)*?)\1"""
+    match = re.search(pattern, obj_str)
+    if match:
+        return match.group(2)
+    return None
+
+
+def text_to_id(text):
+    """Convert text to a file-safe snake_case ID."""
+    text = text.lower()
+    text = re.sub(r'[^a-z0-9\s]', '', text)
+    text = re.sub(r'\s+', '_', text.strip())
+    return text[:60]  # Cap length
+
+
+def file_exists_and_valid(filepath):
+    """Check if file exists and has content (>100 bytes)."""
+    return filepath.exists() and filepath.stat().st_size > 100
+
+
+# ========================================
+# SCANNERS — One per source file / data type
+# ========================================
+
+def scan_letters():
+    """Scan phonics.js for LETTERS array."""
+    audio_entries = {}
+    filepath = JS_DIR / "phonics.js"
+    if not filepath.exists():
+        print("   ⚠️  phonics.js not found")
+        return audio_entries
+
+    content = read_file(filepath)
+    array_str = extract_js_array(content, 'LETTERS')
+    if not array_str:
+        print("   ⚠️  LETTERS array not found in phonics.js")
+        return audio_entries
+
+    objects = extract_objects_from_array(array_str)
+    print(f"   📝 Found {len(objects)} letters in phonics.js")
+
+    for obj_str in objects:
+        upper = extract_field(obj_str, 'upper')
+        lower = extract_field(obj_str, 'lower')
+        word = extract_field(obj_str, 'word')
+        dino_tip = extract_field(obj_str, 'dinoTip')
+
+        if not upper or not lower:
+            continue
+
+        letter = lower.lower()
+
+        # Extract phonics sound from dinoTip: 'A says "aah" like Apple!'
+        phonics_text = extract_phonics_from_tip(upper, dino_tip)
+
+        # Letter name
+        audio_entries[f"audio/letters/{letter}.mp3"] = {
+            "text": f"{upper}.",
+            "type": "letter_name",
+            "category": "letters"
+        }
+
+        # Phonics sound
+        audio_entries[f"audio/phonics/{letter}.mp3"] = {
+            "text": phonics_text,
+            "type": "phonics",
+            "category": "letters"
+        }
+
+        # Word
+        if word:
+            audio_entries[f"audio/words/{letter}.mp3"] = {
+                "text": f"{word}.",
+                "type": "word",
+                "category": "letters"
+            }
+
+            # Sentence
+            audio_entries[f"audio/sentences/{letter}.mp3"] = {
+                "text": f"{upper} is for {word}",
+                "type": "sentence",
+                "category": "letters"
+            }
+
+    return audio_entries
+
+
+def extract_phonics_from_tip(letter, dino_tip):
+    """Extract phonics sound text from dinoTip string."""
+    phonics_map = {
+        'A': 'aah', 'B': 'bah', 'C': 'kah', 'D': 'dah', 'E': 'ehh',
+        'F': 'fah', 'G': 'gah', 'H': 'hah', 'I': 'iih', 'J': 'jah',
+        'K': 'kah', 'L': 'lah', 'M': 'mah', 'N': 'nah', 'O': 'awe',
+        'P': 'pah', 'Q': 'kwah', 'R': 'rah', 'S': 'sah', 'T': 'tah',
+        'U': 'uhh', 'V': 'vah', 'W': 'wah', 'X': 'ecks', 'Y': 'yah', 'Z': 'zah'
+    }
+
+    if dino_tip:
+        # Try to extract from pattern: says "XXX"
+        match = re.search(r'says\s+["\']([^"\']+)["\']', dino_tip)
+        if match:
+            return match.group(1)
+
+    return phonics_map.get(letter.upper(), letter.lower())
+
+
+def scan_numbers():
+    """Scan numbers.js for NUMBERS_DATA array."""
+    audio_entries = {}
+    filepath = JS_DIR / "numbers.js"
+    if not filepath.exists():
+        print("   ⚠️  numbers.js not found")
+        return audio_entries
+
+    content = read_file(filepath)
+    array_str = extract_js_array(content, 'NUMBERS_DATA')
+    if not array_str:
+        print("   ⚠️  NUMBERS_DATA array not found in numbers.js")
+        return audio_entries
+
+    objects = extract_objects_from_array(array_str)
+    print(f"   🔢 Found {len(objects)} numbers in numbers.js")
+
+    for obj_str in objects:
+        # Extract num field (it's not a string, so special handling)
+        num_match = re.search(r'num\s*:\s*(\d+)', obj_str)
+        word = extract_field(obj_str, 'word')
+        emoji = extract_field(obj_str, 'emoji')
+
+        if not num_match or not word:
+            continue
+
+        num = num_match.group(1)
+        num_int = int(num)
+
+        # Number name
+        audio_entries[f"audio/numbers/names/{num}.mp3"] = {
+            "text": word,
+            "type": "word",
+            "category": "numbers"
+        }
+
+        # Number sentence
+        if num_int <= 10 and emoji:
+            object_name = get_object_name_from_emoji(emoji, num_int)
+            sentence = f"{word}. {num} {object_name}!"
+        else:
+            sentence = f"{word}."
+
+        audio_entries[f"audio/numbers/sentences/{num}.mp3"] = {
+            "text": sentence,
+            "type": "sentence",
+            "category": "numbers"
+        }
+
+    # Counting sequences (1-10)
+    for i in range(1, 11):
+        words = ", ".join([str(x) for x in range(1, i + 1)])
+        audio_entries[f"audio/numbers/counting/count_{i}.mp3"] = {
+            "text": f"{words}!",
+            "type": "counting",
+            "category": "numbers"
+        }
+
+    return audio_entries
+
+
+def get_object_name_from_emoji(emoji, count):
+    """Get object name from emoji for number sentences."""
+    names = {
+        '🦕': ('Dinosaur', 'Dinosaurs'), '🐱': ('Cat', 'Cats'),
+        '⭐': ('Star', 'Stars'), '🐟': ('Fish', 'Fish'),
+        '🍎': ('Apple', 'Apples'), '🦋': ('Butterfly', 'Butterflies'),
+        '🌙': ('Moon', 'Moons'), '🐢': ('Turtle', 'Turtles'),
+        '🌈': ('Rainbow', 'Rainbows'), '🐧': ('Penguin', 'Penguins'),
+        '🍇': ('Grape', 'Grapes'), '🐘': ('Elephant', 'Elephants'),
+        '🦁': ('Lion', 'Lions'), '🍦': ('Ice Cream', 'Ice Creams'),
+        '🐙': ('Octopus', 'Octopuses'), '🪁': ('Kite', 'Kites'),
+        '🐋': ('Whale', 'Whales'), '🎵': ('Music Note', 'Music Notes'),
+        '🧶': ('Yarn Ball', 'Yarn Balls'), '🦖': ('T-Rex', 'T-Rexes'),
+    }
+    singular, plural = names.get(emoji, ('item', 'items'))
+    return singular if count == 1 else plural
+
+
+def scan_colors():
+    """Scan vocabulary.js for COLORS_DATA."""
+    audio_entries = {}
+    filepath = JS_DIR / "vocabulary.js"
+    if not filepath.exists():
+        print("   ⚠️  vocabulary.js not found")
+        return audio_entries
+
+    content = read_file(filepath)
+    array_str = extract_js_array(content, 'COLORS_DATA')
+    if not array_str:
+        print("   ⚠️  COLORS_DATA array not found")
+        return audio_entries
+
+    objects = extract_objects_from_array(array_str)
+    print(f"   🎨 Found {len(objects)} colors in vocabulary.js")
+
+    for obj_str in objects:
+        name = extract_field(obj_str, 'name')
+        item_id = extract_field(obj_str, 'id')
+        sentence = extract_field(obj_str, 'sentence')
+
+        if not name or not item_id:
+            continue
+
+        audio_entries[f"audio/vocabulary/colors/words/{item_id}.mp3"] = {
+            "text": name,
+            "type": "word",
+            "category": "vocabulary_colors"
+        }
+
+        if sentence:
+            audio_entries[f"audio/vocabulary/colors/sentences/{item_id}.mp3"] = {
+                "text": f"{name}! {sentence}",
+                "type": "sentence",
+                "category": "vocabulary_colors"
+            }
+
+    return audio_entries
+
+
+def scan_shapes():
+    """Scan vocabulary.js for SHAPES_DATA."""
+    audio_entries = {}
+    filepath = JS_DIR / "vocabulary.js"
+    if not filepath.exists():
+        return audio_entries
+
+    content = read_file(filepath)
+    array_str = extract_js_array(content, 'SHAPES_DATA')
+    if not array_str:
+        print("   ⚠️  SHAPES_DATA array not found")
+        return audio_entries
+
+    objects = extract_objects_from_array(array_str)
+    print(f"   🔷 Found {len(objects)} shapes in vocabulary.js")
+
+    for obj_str in objects:
+        name = extract_field(obj_str, 'name')
+        item_id = extract_field(obj_str, 'id')
+        sentence = extract_field(obj_str, 'sentence')
+
+        if not name or not item_id:
+            continue
+
+        audio_entries[f"audio/vocabulary/shapes/words/{item_id}.mp3"] = {
+            "text": name,
+            "type": "word",
+            "category": "vocabulary_shapes"
+        }
+
+        if sentence:
+            audio_entries[f"audio/vocabulary/shapes/sentences/{item_id}.mp3"] = {
+                "text": f"{name}! {sentence}",
+                "type": "sentence",
+                "category": "vocabulary_shapes"
+            }
+
+    return audio_entries
+
+
+def scan_animals():
+    """Scan vocabulary.js for ANIMALS_DATA."""
+    audio_entries = {}
+    filepath = JS_DIR / "vocabulary.js"
+    if not filepath.exists():
+        return audio_entries
+
+    content = read_file(filepath)
+    array_str = extract_js_array(content, 'ANIMALS_DATA')
+    if not array_str:
+        print("   ⚠️  ANIMALS_DATA array not found")
+        return audio_entries
+
+    objects = extract_objects_from_array(array_str)
+    print(f"   🐾 Found {len(objects)} animals in vocabulary.js")
+
+    for obj_str in objects:
+        name = extract_field(obj_str, 'name')
+        item_id = extract_field(obj_str, 'id')
+        sound = extract_field(obj_str, 'sound')
+        sentence = extract_field(obj_str, 'sentence')
+
+        if not name or not item_id:
+            continue
+
+        audio_entries[f"audio/vocabulary/animals/words/{item_id}.mp3"] = {
+            "text": name,
+            "type": "word",
+            "category": "vocabulary_animals"
+        }
+
+        if sound:
+            audio_entries[f"audio/vocabulary/animals/sounds/{item_id}.mp3"] = {
+                "text": sound,
+                "type": "animal_sound",
+                "category": "vocabulary_animals"
+            }
+
+        if sentence:
+            audio_entries[f"audio/vocabulary/animals/sentences/{item_id}.mp3"] = {
+                "text": f"{name}! {sentence}",
+                "type": "sentence",
+                "category": "vocabulary_animals"
+            }
+
+    return audio_entries
+
+
+def scan_picture_phonics():
+    """Scan picture-phonics.js for PP_PICTURES — every unique word gets audio."""
+    audio_entries = {}
+    filepath = JS_DIR / "picture-phonics.js"
+    if not filepath.exists():
+        print("   ⚠️  picture-phonics.js not found")
+        return audio_entries
+
+    content = read_file(filepath)
+    array_str = extract_js_array(content, 'PP_PICTURES')
+    if not array_str:
+        print("   ⚠️  PP_PICTURES array not found")
+        return audio_entries
+
+    objects = extract_objects_from_array(array_str)
+
+    # Deduplicate by word (multiple entries may have same word)
+    seen_words = set()
+    unique_count = 0
+
+    for obj_str in objects:
+        word = extract_field(obj_str, 'word')
+        letter = extract_field(obj_str, 'letter')
+
+        if not word or not letter:
+            continue
+
+        word_id = text_to_id(word)
+        if word_id in seen_words:
+            continue
+        seen_words.add(word_id)
+        unique_count += 1
+
+        # Word audio: "Apple!"
+        audio_entries[f"audio/picture-phonics/words/{word_id}.mp3"] = {
+            "text": f"{word}!",
+            "type": "word",
+            "category": "picture_phonics"
+        }
+
+        # Sentence audio: "Apple starts with A!"
+        audio_entries[f"audio/picture-phonics/sentences/{word_id}.mp3"] = {
+            "text": f"{word} starts with {letter.upper()}!",
+            "type": "sentence",
+            "category": "picture_phonics"
+        }
+
+    print(f"   🖼️  Found {unique_count} unique picture-phonics words in picture-phonics.js")
+    return audio_entries
+
+
+def scan_odd_one_out():
+    """Scan odd-one-out.js for OOO_PUZZLES explanations."""
+    audio_entries = {}
+    filepath = JS_DIR / "odd-one-out.js"
+    if not filepath.exists():
+        print("   ⚠️  odd-one-out.js not found")
+        return audio_entries
+
+    content = read_file(filepath)
+    array_str = extract_js_array(content, 'OOO_PUZZLES')
+    if not array_str:
+        print("   ⚠️  OOO_PUZZLES array not found")
+        return audio_entries
+
+    objects = extract_objects_from_array(array_str)
+
+    seen_explanations = set()
+    count = 0
+
+    for obj_str in objects:
+        explanation = extract_field(obj_str, 'explanation')
+        if not explanation:
+            continue
+
+        exp_id = text_to_id(explanation)
+        if exp_id in seen_explanations:
+            continue
+        seen_explanations.add(exp_id)
+        count += 1
+
+        audio_entries[f"audio/games/explanations/{exp_id}.mp3"] = {
+            "text": explanation,
+            "type": "sentence",
+            "category": "game_explanations"
+        }
+
+    print(f"   🎮 Found {count} unique game explanations in odd-one-out.js")
+    return audio_entries
+
+
+def scan_any_game_file():
+    """
+    Scan ALL JS files in js/ for any array that contains 'explanation' fields.
+    This future-proofs for new game types.
+    Skips odd-one-out.js (already handled separately).
+    """
+    audio_entries = {}
+    skip_files = {'odd-one-out.js', 'app.js', 'speech.js', 'home.js'}
+
+    for js_file in JS_DIR.glob("*.js"):
+        if js_file.name in skip_files:
+            continue
+
+        content = read_file(js_file)
+
+        # Find all explanation fields in any context
+        explanation_matches = re.findall(
+            r"""explanation\s*:\s*['"]([^'"]+)['"]""",
+            content
+        )
+
+        if not explanation_matches:
+            continue
+
+        count = 0
+        for explanation in explanation_matches:
+            exp_id = text_to_id(explanation)
+            path = f"audio/games/explanations/{exp_id}.mp3"
+
+            # Don't overwrite entries already found by specific scanners
+            if path not in audio_entries:
+                audio_entries[path] = {
+                    "text": explanation,
+                    "type": "sentence",
+                    "category": "game_explanations"
+                }
+                count += 1
+
+        if count > 0:
+            print(f"   🎮 Found {count} additional game explanations in {js_file.name}")
+
+    return audio_entries
+
+
+def scan_instructions():
+    """
+    Scan speech.js for instruction text, celebration text,
+    and all instruction fallback maps.
+    """
+    audio_entries = {}
+    filepath = JS_DIR / "speech.js"
+    if not filepath.exists():
+        print("   ⚠️  speech.js not found")
+        return audio_entries
+
+    content = read_file(filepath)
+
+    # --- Extract instruction fallback text maps ---
+    # Pattern: 'instruction_id': "Text to speak"
+    # Found in: playInstruction, _speakNumInstructionFallback, _speakVocabInstructionFallback, _speakGameInstructionFallback
+
+    instruction_maps = {
+        "instructions": {},
+        "numbers/instructions": {},
+        "vocabulary/instructions": {},
+        "games/instructions": {},
+    }
+
+    # General instructions (in playInstruction fallback)
+    general_instructions = extract_fallback_map(content, 'playInstruction')
+    if general_instructions:
+        for inst_id, text in general_instructions.items():
+            audio_entries[f"audio/instructions/{inst_id}.mp3"] = {
+                "text": text,
+                "type": "instruction",
+                "category": "instructions"
+            }
+
+    # Number instructions
+    num_instructions = extract_fallback_map(content, '_speakNumInstructionFallback')
+    if num_instructions:
+        for inst_id, text in num_instructions.items():
+            audio_entries[f"audio/numbers/instructions/{inst_id}.mp3"] = {
+                "text": text,
+                "type": "instruction",
+                "category": "number_instructions"
+            }
+
+    # Vocab instructions
+    vocab_instructions = extract_fallback_map(content, '_speakVocabInstructionFallback')
+    if vocab_instructions:
+        for inst_id, text in vocab_instructions.items():
+            audio_entries[f"audio/vocabulary/instructions/{inst_id}.mp3"] = {
+                "text": text,
+                "type": "instruction",
+                "category": "vocabulary_instructions"
+            }
+
+    # Game instructions
+    game_instructions = extract_fallback_map(content, '_speakGameInstructionFallback')
+    if game_instructions:
+        for inst_id, text in game_instructions.items():
+            audio_entries[f"audio/games/instructions/{inst_id}.mp3"] = {
+                "text": text,
+                "type": "instruction",
+                "category": "game_instructions"
+            }
+
+    inst_count = len(audio_entries)
+    print(f"   🗣️  Found {inst_count} instructions in speech.js")
+
+    return audio_entries
+
+
+def scan_celebrations():
+    """Scan app.js for celebration phrases."""
+    audio_entries = {}
+
+    # Check app.js for celebration phrases
+    filepath = JS_DIR / "app.js"
+    if not filepath.exists():
+        print("   ⚠️  app.js not found")
+        return audio_entries
+
+    content = read_file(filepath)
+
+    # Find the celebrate() function and extract phrases
+    # Pattern: "Great job, ...", "You're amazing, ...", etc.
+    celebrate_match = re.search(
+        r'celebrate\s*\(\s*\)\s*\{.*?phrases\s*=\s*\[(.*?)\]',
+        content, re.DOTALL
+    )
+
+    if celebrate_match:
+        phrases_block = celebrate_match.group(1)
+        # Extract quoted strings, remove ${name} / variable interpolation
+        phrases = re.findall(r'[`"\'](.*?)[`"\']', phrases_block)
+
+        for phrase in phrases:
+            # Clean up template literal variables
+            clean_phrase = re.sub(r'\$\{[^}]+\}', '', phrase).strip()
+            clean_phrase = re.sub(r',\s*$', '', clean_phrase).strip()
+            if not clean_phrase or len(clean_phrase) < 3:
+                continue
+
+            phrase_id = text_to_id(clean_phrase)
+            audio_entries[f"audio/celebrations/{phrase_id}.mp3"] = {
+                "text": clean_phrase,
+                "type": "celebration",
+                "category": "celebrations"
+            }
+
+    # Also add well-known celebrations that might be referenced
+    # These are the standard ones used throughout the app
+    standard_celebrations = [
+        {"id": "great_job", "text": "Great job!"},
+        {"id": "amazing", "text": "You're amazing!"},
+        {"id": "wonderful", "text": "Wonderful!"},
+        {"id": "you_did_it", "text": "You did it!"},
+        {"id": "super_star", "text": "Super star!"},
+        {"id": "yay", "text": "Yay!"},
+        {"id": "keep_going", "text": "Keep going! You're doing great!"},
+        {"id": "well_done", "text": "Well done!"},
+        {"id": "fantastic", "text": "Fantastic!"},
+        {"id": "proud", "text": "I'm so proud of you!"},
+    ]
+
+    for item in standard_celebrations:
+        path = f"audio/celebrations/{item['id']}.mp3"
+        if path not in audio_entries:
+            audio_entries[path] = {
+                "text": item["text"],
+                "type": "celebration",
+                "category": "celebrations"
+            }
+
+    print(f"   🎉 Found {len(audio_entries)} celebrations")
+    return audio_entries
+
+
+def extract_fallback_map(content, function_name):
+    """
+    Extract a fallback text map from a JS function.
+    Looks for patterns like:
+        var fallback = {
+            'id': "Text to speak",
+            'id2': 'More text',
+        };
+    Inside or near the specified function.
+    """
+    results = {}
+
+    # Find the function
+    func_pattern = re.escape(function_name) + r'\s*[:=]\s*function\s*\([^)]*\)\s*\{'
+    func_match = re.search(func_pattern, content)
+
+    if not func_match:
+        # Also try: async functionName() {
+        func_pattern2 = r'(?:async\s+)?' + re.escape(function_name) + r'\s*\([^)]*\)\s*\{'
+        func_match = re.search(func_pattern2, content)
+
+    if not func_match:
+        return results
+
+    # Extract from the function body (find matching closing brace)
+    start = func_match.end()
+    depth = 1
+    i = start
+    while i < len(content) and depth > 0:
+        if content[i] == '{':
+            depth += 1
+        elif content[i] == '}':
+            depth -= 1
+        i += 1
+
+    func_body = content[start:i]
+
+    # Find fallback map entries: 'key': "value" or 'key': 'value'
+    entries = re.findall(
+        r"""['"]([a-z_]+)['"]\s*:\s*['"`]((?:(?!['"`]).)*?)['"`]""",
+        func_body
+    )
+
+    for key, value in entries:
+        # Clean up template literals and interpolated variables
+        clean_value = re.sub(r'\$\{[^}]+\}', '', value).strip()
+        clean_value = re.sub(r'\s*\+\s*\w+\s*\+\s*', ' ', clean_value).strip()
+        clean_value = re.sub(r"['\"]?\s*\+\s*['\"]?", ' ', clean_value).strip()
+        clean_value = re.sub(r'\s+', ' ', clean_value).strip()
+
+        # Remove trailing commas or quotes
+        clean_value = clean_value.rstrip("',\"")
+
+        if clean_value and len(clean_value) >= 3:
+            results[key] = clean_value
+
+    return results
+
+
+# ========================================
+# MASTER SCAN
+# ========================================
+
+def scan_all():
+    """Run all scanners and merge results."""
+    print("🔍 Scanning JS files...\n")
+
+    all_entries = {}
+
+    scanners = [
+        ("Letters", scan_letters),
+        ("Numbers", scan_numbers),
+        ("Colors", scan_colors),
+        ("Shapes", scan_shapes),
+        ("Animals", scan_animals),
+        ("Picture Phonics", scan_picture_phonics),
+        ("Odd One Out", scan_odd_one_out),
+        ("Other Games", scan_any_game_file),
+        ("Instructions", scan_instructions),
+        ("Celebrations", scan_celebrations),
+    ]
+
+    for name, scanner in scanners:
+        entries = scanner()
+        # Merge without overwriting
+        for path, data in entries.items():
+            if path not in all_entries:
+                all_entries[path] = data
+        # Small separator
+        pass
+
+    print(f"\n   📊 Total: {len(all_entries)} audio entries found across all JS files")
+    return all_entries
+
+
+# ========================================
+# DIFF ENGINE
+# ========================================
+
+def diff_audio(all_entries):
+    """
+    Compare scanned entries against existing MP3 files on disk.
+    Returns: (new_entries, existing_entries, orphaned_files)
+    """
+    new_entries = {}
+    existing_entries = {}
+    orphaned_files = []
+
+    # Check which scanned entries already exist
+    for path, data in all_entries.items():
+        full_path = PROJECT_DIR / path
+        if file_exists_and_valid(full_path):
+            existing_entries[path] = data
+        else:
+            new_entries[path] = data
+
+    # Find orphaned MP3 files (exist on disk but not in scan results)
+    audio_subdirs = [
+        "letters", "phonics", "words", "sentences",
+        "celebrations", "instructions",
+        "numbers/names", "numbers/sentences", "numbers/counting", "numbers/instructions",
+        "vocabulary/colors/words", "vocabulary/colors/sentences",
+        "vocabulary/shapes/words", "vocabulary/shapes/sentences",
+        "vocabulary/animals/words", "vocabulary/animals/sounds", "vocabulary/animals/sentences",
+        "vocabulary/instructions",
+        "games/instructions", "games/explanations",
+        "picture-phonics/words", "picture-phonics/sentences",
+    ]
+
+    for subdir in audio_subdirs:
+        dir_path = AUDIO_DIR / subdir
+        if not dir_path.exists():
+            continue
+        for mp3_file in dir_path.glob("*.mp3"):
+            rel_path = str(mp3_file.relative_to(PROJECT_DIR)).replace("\\", "/")
+            if rel_path not in all_entries:
+                orphaned_files.append(rel_path)
+
+    return new_entries, existing_entries, orphaned_files
+
+
+# ========================================
+# AUDIO GENERATION
+# ========================================
+
+async def generate_edge_tts(text, filepath, tts_type="word", max_retries=3):
+    """Generate a single MP3 file using Edge TTS."""
+    import edge_tts
+
+    settings = TTS_SETTINGS.get(tts_type, TTS_SETTINGS["word"])
+
+    # Ensure directory exists
+    filepath.parent.mkdir(parents=True, exist_ok=True)
+
+    for attempt in range(max_retries):
+        try:
+            communicate = edge_tts.Communicate(
+                text=text,
+                voice=VOICE,
+                rate=settings["rate"],
+                pitch=settings["pitch"]
+            )
+            await communicate.save(str(filepath))
+            await asyncio.sleep(random.uniform(1.5, 3.0))
+            return True
+        except Exception as e:
+            if attempt < max_retries - 1:
+                wait_time = (attempt + 1) * 8 + random.uniform(2, 5)
+                print(f"      ⚠️  Retry {attempt + 1}/{max_retries} in {wait_time:.0f}s... ({e})")
+                await asyncio.sleep(wait_time)
+            else:
+                print(f"      ❌ Failed after {max_retries} attempts: {text}")
+                return False
+
+
+async def generate_all_new(new_entries):
+    """Generate all new audio files."""
+    if not new_entries:
+        print("   ✅ Nothing to generate!")
+        return
+
+    total = len(new_entries)
+    print(f"\n🎙️  Generating {total} new audio files...\n")
+
+    # Group by category for nicer output
+    by_category = {}
+    for path, data in new_entries.items():
+        cat = data.get("category", "other")
+        if cat not in by_category:
+            by_category[cat] = []
+        by_category[cat].append((path, data))
+
+    generated = 0
+    failed = 0
+
+    for category, entries in by_category.items():
+        print(f"   📂 {category} ({len(entries)} files)")
+
+        for path, data in entries:
+            full_path = PROJECT_DIR / path
+            text = data["text"]
+            tts_type = data.get("type", "word")
+
+            success = await generate_edge_tts(text, full_path, tts_type)
+
+            if success:
+                generated += 1
+                print(f"      ✅ {path}")
+            else:
+                failed += 1
+                print(f"      ❌ {path}")
+
+        # Pause between categories to avoid rate limiting
+        await asyncio.sleep(random.uniform(2, 4))
+
+    print(f"\n   🎉 Generated: {generated} | Failed: {failed}")
+
+
+# ========================================
+# CLEANUP
+# ========================================
+
+def cleanup_orphans(orphaned_files):
+    """Delete orphaned MP3 files."""
+    if not orphaned_files:
+        return
+
+    print(f"\n🗑️  Cleaning up {len(orphaned_files)} orphaned files:\n")
+    for rel_path in orphaned_files:
+        full_path = PROJECT_DIR / rel_path
+        try:
+            full_path.unlink()
+            print(f"   🗑️  Deleted: {rel_path}")
+        except Exception as e:
+            print(f"   ⚠️  Failed to delete {rel_path}: {e}")
+
+    # Clean up empty directories
+    for subdir in AUDIO_DIR.rglob("*"):
+        if subdir.is_dir() and not any(subdir.iterdir()):
+            try:
+                subdir.rmdir()
+                print(f"   📁 Removed empty dir: {subdir.relative_to(PROJECT_DIR)}")
+            except Exception:
+                pass
+
+
+# ========================================
+# MANIFEST GENERATION
+# ========================================
+
+def generate_manifest(all_entries):
+    """Auto-generate manifest.json from scan results."""
+    manifest = {
+        "letters": {},
+        "celebrations": [],
+        "instructions": [],
+        "numbers": {},
+        "counting": {},
+        "number_instructions": [],
+        "vocabulary": {
+            "colors": {},
+            "shapes": {},
+            "animals": {},
+            "instructions": []
+        },
+        "picture_phonics": {},
+        "game_instructions": [],
+        "game_explanations": {}
+    }
+
+    for path, data in sorted(all_entries.items()):
+        category = data.get("category", "")
+
+        # --- Letters ---
+        if category == "letters":
+            # Extract letter from path: audio/letters/a.mp3 → a
+            filename = Path(path).stem
+
+            if "/letters/" in path:
+                if filename not in manifest["letters"]:
+                    manifest["letters"][filename] = {}
+                manifest["letters"][filename]["name"] = path
+            elif "/phonics/" in path:
+                if filename not in manifest["letters"]:
+                    manifest["letters"][filename] = {}
+                manifest["letters"][filename]["phonics"] = path
+            elif "/words/" in path:
+                if filename not in manifest["letters"]:
+                    manifest["letters"][filename] = {}
+                manifest["letters"][filename]["word"] = path
+            elif "/sentences/" in path:
+                if filename not in manifest["letters"]:
+                    manifest["letters"][filename] = {}
+                manifest["letters"][filename]["sentence"] = path
+
+        # --- Celebrations ---
+        elif category == "celebrations":
+            manifest["celebrations"].append(path)
+
+        # --- Instructions ---
+        elif category == "instructions":
+            inst_id = Path(path).stem
+            manifest["instructions"].append({"id": inst_id, "path": path})
+
+        # --- Numbers ---
+        elif category == "numbers":
+            num = Path(path).stem
+            if num not in manifest["numbers"]:
+                manifest["numbers"][num] = {}
+            if "/names/" in path:
+                manifest["numbers"][num]["name"] = path
+            elif "/sentences/" in path:
+                manifest["numbers"][num]["sentence"] = path
+            elif "/counting/" in path:
+                count_num = num.replace("count_", "")
+                manifest["counting"][count_num] = path
+
+        # --- Number Instructions ---
+        elif category == "number_instructions":
+            inst_id = Path(path).stem
+            manifest["number_instructions"].append({"id": inst_id, "path": path})
+
+        # --- Vocabulary Colors ---
+        elif category == "vocabulary_colors":
+            item_id = Path(path).stem
+            if item_id not in manifest["vocabulary"]["colors"]:
+                manifest["vocabulary"]["colors"][item_id] = {}
+            if "/words/" in path:
+                manifest["vocabulary"]["colors"][item_id]["word"] = path
+            elif "/sentences/" in path:
+                manifest["vocabulary"]["colors"][item_id]["sentence"] = path
+
+        # --- Vocabulary Shapes ---
+        elif category == "vocabulary_shapes":
+            item_id = Path(path).stem
+            if item_id not in manifest["vocabulary"]["shapes"]:
+                manifest["vocabulary"]["shapes"][item_id] = {}
+            if "/words/" in path:
+                manifest["vocabulary"]["shapes"][item_id]["word"] = path
+            elif "/sentences/" in path:
+                manifest["vocabulary"]["shapes"][item_id]["sentence"] = path
+
+        # --- Vocabulary Animals ---
+        elif category == "vocabulary_animals":
+            item_id = Path(path).stem
+            if item_id not in manifest["vocabulary"]["animals"]:
+                manifest["vocabulary"]["animals"][item_id] = {}
+            if "/words/" in path:
+                manifest["vocabulary"]["animals"][item_id]["word"] = path
+            elif "/sounds/" in path:
+                manifest["vocabulary"]["animals"][item_id]["sound"] = path
+            elif "/sentences/" in path:
+                manifest["vocabulary"]["animals"][item_id]["sentence"] = path
+
+        # --- Vocabulary Instructions ---
+        elif category == "vocabulary_instructions":
+            inst_id = Path(path).stem
+            manifest["vocabulary"]["instructions"].append({"id": inst_id, "path": path})
+
+        # --- Picture Phonics ---
+        elif category == "picture_phonics":
+            word_id = Path(path).stem
+            if word_id not in manifest["picture_phonics"]:
+                manifest["picture_phonics"][word_id] = {}
+            if "/words/" in path:
+                manifest["picture_phonics"][word_id]["word"] = path
+            elif "/sentences/" in path:
+                manifest["picture_phonics"][word_id]["sentence"] = path
+
+        # --- Game Instructions ---
+        elif category == "game_instructions":
+            inst_id = Path(path).stem
+            manifest["game_instructions"].append({"id": inst_id, "path": path})
+
+        # --- Game Explanations ---
+        elif category == "game_explanations":
+            exp_id = Path(path).stem
+            manifest["game_explanations"][exp_id] = path
+
+    # Handle counting entries that weren't caught above
+    for path, data in all_entries.items():
+        if "/counting/" in path and data.get("category") == "numbers":
+            num = Path(path).stem.replace("count_", "")
+            manifest["counting"][num] = path
+
+    # Save manifest
+    AUDIO_DIR.mkdir(parents=True, exist_ok=True)
+    with open(MANIFEST_PATH, 'w', encoding='utf-8') as f:
+        json.dump(manifest, f, indent=2)
+
+    print(f"\n📋 Manifest saved to {MANIFEST_PATH.relative_to(PROJECT_DIR)}")
+    print(f"   Letters: {len(manifest['letters'])}")
+    print(f"   Numbers: {len(manifest['numbers'])}")
+    print(f"   Celebrations: {len(manifest['celebrations'])}")
+    print(f"   Instructions: {len(manifest['instructions'])}")
+    print(f"   Colors: {len(manifest['vocabulary']['colors'])}")
+    print(f"   Shapes: {len(manifest['vocabulary']['shapes'])}")
+    print(f"   Animals: {len(manifest['vocabulary']['animals'])}")
+    print(f"   Picture Phonics: {len(manifest['picture_phonics'])}")
+    print(f"   Game Explanations: {len(manifest['game_explanations'])}")
+    print(f"   Game Instructions: {len(manifest['game_instructions'])}")
+
+
+# ========================================
+# SERVICE WORKER UPDATER
+# ========================================
+
+def update_service_worker():
+    """Bump the service worker cache version to force refresh."""
+    sw_path = PROJECT_DIR / "sw.js"
+    if not sw_path.exists():
+        return
+
+    content = read_file(sw_path)
+
+    # Find and bump version: 'learning-world-v7' -> 'learning-world-v8'
+    match = re.search(r"CACHE_NAME\s*=\s*'learning-world-v(\d+)'", content)
+    if match:
+        old_version = int(match.group(1))
+        new_version = old_version + 1
+        new_content = content.replace(
+            f"learning-world-v{old_version}",
+            f"learning-world-v{new_version}"
+        )
+        with open(sw_path, 'w', encoding='utf-8') as f:
+            f.write(new_content)
+        print(f"\n🔄 Service worker cache bumped: v{old_version} → v{new_version}")
+
+
+# ========================================
+# MAIN
+# ========================================
+
+def main():
+    print("=" * 50)
+    print("🦕 Learning World — Smart Audio Sync")
+    print("=" * 50)
+    print()
+
+    # Step 1: Scan
+    all_entries = scan_all()
+
+    # Step 2: Diff
+    print("\n📊 Comparing with existing audio files...\n")
+    new_entries, existing_entries, orphaned_files = diff_audio(all_entries)
+
+    print(f"   ✅ Existing (up to date): {len(existing_entries)}")
+    print(f"   🆕 New (to generate):     {len(new_entries)}")
+    print(f"   🗑️  Orphaned (to delete):  {len(orphaned_files)}")
+
+    if new_entries:
+        print("\n   New files needed:")
+        for path in sorted(new_entries.keys()):
+            print(f"      + {path}")
+
+    if orphaned_files:
+        print("\n   Orphaned files:")
+        for path in sorted(orphaned_files):
+            print(f"      - {path}")
+
+    # Step 3: Generate new files
+    if new_entries:
+        try:
+            import edge_tts
+        except ImportError:
+            print("\n❌ edge-tts not installed!")
+            print("   Run: pip install edge-tts")
+            print("\n   Skipping generation, but manifest will still be updated.")
+            new_entries = {}  # Skip generation but continue with manifest
+
+        if new_entries:
+            asyncio.run(generate_all_new(new_entries))
+
+    # Step 4: Cleanup orphans
+    if orphaned_files:
+        cleanup_orphans(orphaned_files)
+
+    # Step 5: Generate manifest (always, to ensure it's in sync)
+    generate_manifest(all_entries)
+
+    # Step 6: Bump service worker
+    if new_entries or orphaned_files:
+        update_service_worker()
+
+    print("\n" + "=" * 50)
+    print("✅ Audio sync complete!")
+    print("=" * 50)
+
+    if new_entries or orphaned_files:
+        print("\n💡 Next steps:")
+        print("   git add .")
+        print('   git commit -m "Sync audio files"')
+        print("   git push")
 
 
 if __name__ == "__main__":

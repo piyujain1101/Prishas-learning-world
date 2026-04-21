@@ -290,3 +290,241 @@ function replaySound() {
     AudioManager.stopAll();
     playSafariSound();
 }
+/* ──────────────────────────────────────────────────
+   Handle a child's letter choice
+   ────────────────────────────────────────────────── */
+function handleSafariChoice(selectedLetterData, btnElement) {
+    // Guard: already answered this round
+    if (safariState.isAnswered) return;
+    safariState.isAnswered = true;
+
+    // Stop any running timers and audio
+    clearSafariTimers();
+    AudioManager.stopAll();
+
+    const allBtns = document.querySelectorAll('#safari-choices .safari-choice-btn');
+    const isCorrect = selectedLetterData.letter === safariState.currentLetter.letter;
+    const feedbackEl = document.getElementById('safari-feedback');
+    const teachingEl = document.getElementById('teaching-moment');
+
+    // Disable every button immediately
+    allBtns.forEach(b => { b.disabled = true; b.classList.add('disabled'); });
+
+    if (isCorrect) {
+        /* ── Correct answer ── */
+        btnElement.classList.add('correct');
+        safariState.score++;
+        safariState.streak++;
+        document.getElementById('safari-score-correct').textContent = safariState.score;
+
+        // Confetti every 3 correct
+        if (safariState.streak % 3 === 0 && typeof launchConfetti === 'function') {
+            launchConfetti();
+        }
+
+        const cur = safariState.currentLetter;
+        feedbackEl.textContent = '🎉 Great job!';
+        feedbackEl.className = 'safari-feedback correct';
+
+        // Teaching moment: "B says 'bah'! 🦋 B is for Butterfly!"
+        teachingEl.textContent = cur.letter + " says '" + cur.phoneme + "'! " +
+            cur.emoji + ' ' + cur.letter + ' is for ' + cur.word + '!';
+        teachingEl.style.display = 'block';
+
+        // Audio chain: celebration → letter sound → word
+        AudioManager.playInstruction('correct')
+            .then(function () {
+                return AudioManager.playPhonicsSound(cur.letter.toLowerCase());
+            })
+            .then(function () {
+                return AudioManager.playInstruction(cur.word.toLowerCase());
+            })
+            .then(function () {
+                safariTimers.push(setTimeout(function () {
+                    teachingEl.style.display = 'none';
+                    nextSafariRound();
+                }, 1800));
+            })
+            .catch(function () {
+                safariTimers.push(setTimeout(function () {
+                    teachingEl.style.display = 'none';
+                    nextSafariRound();
+                }, 2500));
+            });
+
+    } else {
+        /* ── Wrong answer ── */
+        btnElement.classList.add('wrong');
+        safariState.wrong++;
+        safariState.streak = 0;
+        safariState.wrongLetters.push(safariState.currentLetter);
+        document.getElementById('safari-score-wrong').textContent = safariState.wrong;
+
+        feedbackEl.textContent = 'Not quite — try the highlighted one!';
+        feedbackEl.className = 'safari-feedback wrong';
+
+        // Highlight the correct button with hint
+        var correctBtn = null;
+        allBtns.forEach(function (b) {
+            if (b.dataset.letter === safariState.currentLetter.letter) {
+                b.classList.add('hint');
+                b.classList.remove('disabled');
+                b.disabled = false;
+                correctBtn = b;
+            }
+        });
+
+        AudioManager.playInstruction('try_again').catch(function () { /* silent */ });
+
+        // Let the child tap the correct (hinted) button to continue
+        if (correctBtn) {
+            correctBtn.onclick = function () {
+                correctBtn.onclick = null;
+                correctBtn.classList.remove('hint');
+                correctBtn.classList.add('correct');
+                correctBtn.disabled = true;
+
+                clearSafariTimers();
+                AudioManager.stopAll();
+
+                var cur = safariState.currentLetter;
+                feedbackEl.textContent = '✅ That\'s ' + cur.letter + '!';
+                feedbackEl.className = 'safari-feedback correct';
+
+                teachingEl.textContent = cur.letter + " says '" + cur.phoneme + "'! " +
+                    cur.emoji + ' ' + cur.letter + ' is for ' + cur.word + '!';
+                teachingEl.style.display = 'block';
+
+                AudioManager.playPhonicsSound(cur.letter.toLowerCase())
+                    .then(function () {
+                        return AudioManager.playInstruction(cur.word.toLowerCase());
+                    })
+                    .then(function () {
+                        safariTimers.push(setTimeout(function () {
+                            teachingEl.style.display = 'none';
+                            nextSafariRound();
+                        }, 1800));
+                    })
+                    .catch(function () {
+                        safariTimers.push(setTimeout(function () {
+                            teachingEl.style.display = 'none';
+                            nextSafariRound();
+                        }, 2500));
+                    });
+            };
+        }
+    }
+}
+
+/* ──────────────────────────────────────────────────
+   Show results screen after all rounds
+   ────────────────────────────────────────────────── */
+function showSafariResults() {
+    clearSafariTimers();
+    AudioManager.stopAll();
+
+    document.getElementById('safari-game').style.display = 'none';
+    document.getElementById('safari-results').style.display = 'block';
+
+    var total = safariState.score + safariState.wrong;
+    var pct = total > 0 ? Math.round((safariState.score / total) * 100) : 0;
+
+    // Determine stars (1-5)
+    var stars;
+    if (pct === 100)     stars = 5;
+    else if (pct >= 80)  stars = 4;
+    else if (pct >= 60)  stars = 3;
+    else if (pct >= 40)  stars = 2;
+    else                 stars = 1;
+
+    // Award stars
+    if (typeof Rewards !== 'undefined' && Rewards.addStars) {
+        Rewards.addStars('phonics', stars);
+    }
+
+    // Title and mascot by tier
+    var title, mascot;
+    if (pct === 100) {
+        title = 'Perfect Safari! 🏆';
+        mascot = '🦁';
+    } else if (pct >= 80) {
+        title = 'Amazing Explorer!';
+        mascot = '🐘';
+    } else if (pct >= 60) {
+        title = 'Great Listener!';
+        mascot = '🦒';
+    } else if (pct >= 40) {
+        title = 'Good Try!';
+        mascot = '🐒';
+    } else {
+        title = 'Keep Practicing!';
+        mascot = '🐢';
+    }
+
+    var childName = (typeof ChildName !== 'undefined' && ChildName.get) ? ChildName.get() : '';
+
+    document.getElementById('safari-results-mascot').textContent = mascot;
+    document.getElementById('safari-results-title').textContent = title;
+    document.getElementById('safari-results-stars').textContent = '⭐'.repeat(stars);
+    document.getElementById('safari-results-text').textContent =
+        (childName ? childName + ', you' : 'You') + ' got ' + safariState.score +
+        ' out of ' + total + ' correct! (' + pct + '%)';
+
+    // Review wrong answers
+    var reviewEl = document.getElementById('safari-results-review');
+    reviewEl.innerHTML = '';
+    if (safariState.wrongLetters.length > 0) {
+        var heading = document.createElement('p');
+        heading.innerHTML = '<strong>Let\'s review these letters:</strong>';
+        reviewEl.appendChild(heading);
+
+        safariState.wrongLetters.forEach(function (item) {
+            var div = document.createElement('div');
+            div.className = 'review-item';
+            div.textContent = item.emoji + ' ' + item.letter + " says '" +
+                item.phoneme + "' — " + item.letter + ' is for ' + item.word;
+            reviewEl.appendChild(div);
+        });
+    }
+
+    // Audio feedback
+    if (pct >= 80) {
+        AudioManager.playInstruction('celebration').catch(function () {});
+        if (typeof launchConfetti === 'function') launchConfetti();
+    } else {
+        AudioManager.playInstruction('good_try').catch(function () {});
+    }
+
+    updateSafariStars();
+}
+
+/* ──────────────────────────────────────────────────
+   Update star counter in the UI
+   ────────────────────────────────────────────────── */
+function updateSafariStars() {
+    var el = document.getElementById('star-counter');
+    if (el && typeof Rewards !== 'undefined' && Rewards.getStars) {
+        el.textContent = '⭐ ' + Rewards.getStars('phonics');
+    }
+}
+
+/* ──────────────────────────────────────────────────
+   Shuffle an array (Fisher-Yates)
+   ────────────────────────────────────────────────── */
+function shuffleSafariArray(arr) {
+    var a = arr.slice(); // work on a copy
+    for (var i = a.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = a[i];
+        a[i] = a[j];
+        a[j] = temp;
+    }
+    return a;
+}
+
+/* ──────────────────────────────────────────────────
+   Init on DOM ready
+   ────────────────────────────────────────────────── */
+document.addEventListener('DOMContentLoaded', function () {
+    updateSafariStars();
+});
